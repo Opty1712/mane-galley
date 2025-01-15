@@ -7,7 +7,6 @@ export default function Home() {
       <ul>
         <li>С днем рождения!💖</li>
       </ul>
-
       <Image
         src="/me.webp"
         width={960}
