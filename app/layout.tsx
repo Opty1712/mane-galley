@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import BottomNav from "./components/BottomNav";
 import Sidebar from "./components/Sidebar";
 import "./globals.css";
+import styles from "./layout.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,17 +21,7 @@ export default function RootLayout({
     <html lang="ru">
       <body className={inter.className}>
         <Sidebar />
-        <main
-          style={{
-            marginLeft: "100px",
-            padding: "2rem",
-            "@media (maxWidth: 768px)": {
-              marginLeft: 0,
-            },
-          }}
-        >
-          {children}
-        </main>
+        <main className={styles.main}>{children}</main>
         <BottomNav />
       </body>
     </html>

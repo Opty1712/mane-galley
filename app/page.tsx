@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="pb-20">
-      <div>
+      <section className="min-h-screen py-20">
         <ul>
           <li>С днем рождения!💖</li>
         </ul>
@@ -14,7 +14,7 @@ export default function Home() {
           priority
           alt="С днем рождения!💖"
         />
-      </div>
+      </section>
       <section id="projects" className="min-h-screen py-20">
         <h2 className="text-4xl font-bold mb-8">Проекты</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
