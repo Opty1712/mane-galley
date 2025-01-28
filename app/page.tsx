@@ -1,6 +1,20 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="pb-20">
+      <div>
+        <ul>
+          <li>С днем рождения!💖</li>
+        </ul>
+        <Image
+          src="/me.webp"
+          width={960}
+          height={1280}
+          priority
+          alt="С днем рождения!💖"
+        />
+      </div>
       <section id="projects" className="min-h-screen py-20">
         <h2 className="text-4xl font-bold mb-8">Проекты</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
