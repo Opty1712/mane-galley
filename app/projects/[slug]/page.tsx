@@ -31,8 +31,9 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 }
 
 export async function generateStaticParams() {
-  // Return an array of objects with the `slug` parameter for each project
-  return Object.keys(projects).map((project) => ({
-    slug: projects[project as keyof typeof projects],
+  const params = Object.keys(projects).map((project) => ({
+    slug: project,
   }));
+
+  return params;
 }
