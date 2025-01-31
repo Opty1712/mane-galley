@@ -1,3 +1,7 @@
+.section {
+  margin-bottom: 6vh;
+}
+
 .h1 {
   font-size: clamp(40px, 10vw, 120px);
   font-weight: 600;
@@ -69,37 +73,84 @@
 .pageGrid {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  gap: 10px;
+  gap: 16px;
 }
 
 .grid2 {
   grid-column: span 2;
 }
-
 .grid3 {
   grid-column: span 3;
 }
-
 .grid4 {
   grid-column: span 4;
 }
-
 .grid5 {
   grid-column: span 5;
 }
-
 .grid6 {
   grid-column: span 6;
 }
-
 .grid7 {
   grid-column: span 7;
 }
-
 .grid8 {
   grid-column: span 8;
 }
-
 .grid9 {
   grid-column: span 9;
+}
+
+@media (max-width: 800px) {
+  .grid2,
+  .grid3,
+  .grid4,
+  .grid5,
+  .grid6,
+  .grid7,
+  .grid8,
+  .grid9 {
+    grid-column: span 10;
+  }
+}
+
+.scrollDown {
+  margin: 10rem 0;
+  cursor: pointer;
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.project {
+  margin-bottom: 8vh;
+}
+
+.projectHeader {
+  font-weight: 600;
+  font-size: clamp(24px, 8vw, 48px);
+  color: #413d3e;
+}
+
+.projectDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  color: #464444;
+  text-wrap: balance;
+}
+
+.projectDate {
+  color: var(--accent-color);
+  font-size: 18px;
+}
+
+.projectBadge {
+  background-color: #ededed;
+  color: #2c2929;
+  padding: 1vh 1vw;
+  font-weight: 500;
+  font-size: clamp(16px, 4vw, 18px);
+  margin: 0 10px 10px 0;
+  display: inline-block;
 }

@@ -2,6 +2,7 @@
 
 import { FC, useEffect, useState } from "react";
 import { Section } from "../types";
+import { scrollToSection } from "../utils";
 import styles from "./BottomNav.module.css";
 
 export const BottomNav: FC<{ sections: Array<Section> }> = ({ sections }) => {
@@ -28,13 +29,6 @@ export const BottomNav: FC<{ sections: Array<Section> }> = ({ sections }) => {
 
     return () => observer.disconnect();
   }, [sections]);
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <nav className={styles.bottomNav}>
