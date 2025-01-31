@@ -1,0 +1,1 @@
+export { typogrpah } from "./typogrpah";

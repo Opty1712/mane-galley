@@ -1,7 +1,7 @@
 .sidebar {
   left: 0;
   top: 0;
-  width: 200px;
+  width: 240px;
   height: 100vh;
   display: flex;
   padding: 120px 32px;
@@ -17,7 +17,7 @@
   font-weight: bold;
   text-align: center;
   margin-bottom: 2rem;
-  color: #ff0055;
+  color: var(--accent-color);
   text-decoration: none;
   transition: transform 0.3s ease;
   font-family: "SuisseIntl", Arial, Helvetica, sans-serif;
@@ -61,14 +61,29 @@
 }
 
 .menuItem:hover {
-  color: #ff0055;
+  color: var(--accent-color);
 }
 
 .menuButton {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 100;
+  background: white;
+  border: none;
+  cursor: pointer;
+  padding: 21px 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 0.5s, transform 0.5s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .sidebar {
     margin-left: -100%;
     transition: margin 0.5s ease;
@@ -83,19 +98,8 @@
   }
 
   .menuButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    z-index: 100;
-    background: white;
-    border: none;
-    cursor: pointer;
-    padding: 21px 10px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transform: translateX(0);
   }
 
   .menuButton__inner {

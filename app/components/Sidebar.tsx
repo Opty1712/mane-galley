@@ -19,7 +19,7 @@ export const Sidebar = () => {
 
   const animate = useCallback(() => {
     const bodyWidth = document.body.offsetWidth;
-    const isMobile = bodyWidth <= 768;
+    const isMobile = bodyWidth <= 1000;
 
     if (ref.current && isMobile) {
       ref.current.style.transform = "translateY(0)";

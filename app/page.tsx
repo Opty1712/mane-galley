@@ -1,61 +1,74 @@
-import Image from "next/image";
+import { clsx } from "clsx";
 import { BottomNav } from "./components";
+import styles from "./page.module.css";
+import { typogrpah } from "./utils.ts";
 
 export default function Home() {
   return (
-    <div className="pb-20">
-      <section className="min-h-screen py-20">
-        <Image
-          src="/images/me.webp"
-          width={960}
-          height={1280}
-          priority
-          alt="С днем рождения!💖"
-        />
-      </section>
-      <section id="projects" className="min-h-screen py-20">
-        <h2 className="text-4xl font-bold mb-8">Проекты</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Project cards will be added here */}
+    <>
+      <section>
+        <h1 className={styles.h1}>Продуктовый дизайнер</h1>
+        <div className={styles.pageGrid}>
+          <div className={clsx(styles.dateIntro, styles.grid8)}>
+            <div className={styles.date}>2021 — 2025</div>
+            <div className={styles.intro}>
+              {typogrpah.execute(
+                `Привет! Я Наталья, проектирую сайты и мобильные приложения, исследую потребности пользователей и развиваю продукты. Люблю создавать эмоциональные и дружелюбные для человека решения. Ниже приведены кейсы`
+              )}
+            </div>
+          </div>
+        </div>
+        <div className={styles.photoBlock}>
+          <img
+            src="/images/me_small.webp"
+            width="100%"
+            height="100%"
+            alt="Наталья, продуктовый дизайнер"
+          />
+          <div className={styles.contactsTop}>
+            <a
+              href="https://t.me/NatalyMane"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Telegram
+            </a>
+            <a href="mailto:manatkina@mail.ru">Email</a>
+          </div>
         </div>
       </section>
 
-      <section id="feedback" className="min-h-screen py-20">
-        <h2 className="text-4xl font-bold mb-8">Отзывы</h2>
-        <div className="space-y-6">
-          {/* Education content will be added here */}
-        </div>
+      <section id="projects">
+        <h2 className={styles.h2}>Проекты</h2>
+        <div className=""></div>
       </section>
 
-      <section id="education" className="min-h-screen py-20">
-        <h2 className="text-4xl font-bold mb-8">Образование</h2>
-        <div className="space-y-6">
-          {/* Education content will be added here */}
-        </div>
+      <section id="feedback">
+        <h2 className={styles.h2}>Отзывы</h2>
+        <div className=""></div>
       </section>
 
-      <section id="experience" className="min-h-screen py-20">
-        <h2 className="text-4xl font-bold mb-8">Опыт работы</h2>
-        <div className="space-y-8">
-          {/* Experience content will be added here */}
-        </div>
+      <section id="education">
+        <h2 className={styles.h2}>Образование</h2>
+        <div className="space-y-6"></div>
       </section>
 
-      <section id="skills" className="min-h-screen py-20">
-        <h2 className="text-4xl font-bold mb-8">Скилы</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {/* Skills content will be added here */}
-        </div>
+      <section id="experience">
+        <h2 className={styles.h2}>Опыт работы</h2>
+        <div className=""></div>
       </section>
 
-      <section id="contacts" className="min-h-screen py-20">
-        <h2 className="text-4xl font-bold mb-8">Контакты</h2>
-        <div className="max-w-2xl">
-          {/* Contacts content will be added here */}
-        </div>
+      <section id="skills">
+        <h2 className={styles.h2}>Скилы</h2>
+        <div className=""></div>
+      </section>
+
+      <section id="contacts">
+        <h2 className={styles.h2}>Контакты</h2>
+        <div className=""></div>
       </section>
       <BottomNav sections={sections} />
-    </div>
+    </>
   );
 }
 
