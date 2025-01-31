@@ -1,18 +1,11 @@
 "use client";
 
-import { useEffect, useState } from 'react';
-import styles from '../styles/BottomNav.module.css';
+import { FC, useEffect, useState } from "react";
+import { Section } from "../types";
+import styles from "./BottomNav.module.css";
 
-const sections = [
-  { id: 'projects', title: 'Проекты' },
-  { id: 'education', title: 'Образование' },
-  { id: 'experience', title: 'Опыт работы' },
-  { id: 'skills', title: 'Скилы' },
-  { id: 'contacts', title: 'Контакты' }
-];
-
-export default function BottomNav() {
-  const [activeSection, setActiveSection] = useState('');
+export const BottomNav: FC<{ sections: Array<Section> }> = ({ sections }) => {
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -28,16 +21,18 @@ export default function BottomNav() {
 
     sections.forEach(({ id }) => {
       const element = document.getElementById(id);
-      if (element) observer.observe(element);
+      if (element) {
+        observer.observe(element);
+      }
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [sections]);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -46,7 +41,9 @@ export default function BottomNav() {
       {sections.map(({ id, title }) => (
         <button
           key={id}
-          className={`${styles.navItem} ${activeSection === id ? styles.active : ''}`}
+          className={`${styles.navItem} ${
+            activeSection === id ? styles.active : ""
+          }`}
           onClick={() => scrollToSection(id)}
         >
           {title}
@@ -54,4 +51,4 @@ export default function BottomNav() {
       ))}
     </nav>
   );
-}
+};

@@ -1,0 +1,146 @@
+.sidebar {
+  left: 0;
+  top: 0;
+  width: 150px;
+  height: 100vh;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 50;
+  position: absolute;
+  transition: transform 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.logo {
+  font-size: 4.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ff0055;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  font-family: "SuisseIntl", Arial, Helvetica, sans-serif;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.nav {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.menuTitle {
+  padding: 0.5rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.menuItem {
+  display: block;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.menuItem:hover {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+.menuButton {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    margin-left: -100%;
+    transition: margin 0.5s ease;
+    width: 250px;
+    background: white;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+  }
+
+  .sidebarOpen {
+    margin-left: 0;
+  }
+
+  .menuButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 100;
+    background: white;
+    border: none;
+    cursor: pointer;
+    padding: 21px 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .menuButton__inner {
+    width: 24px;
+    height: 2px;
+    background-color: currentColor;
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .menuButton__inner::before,
+  .menuButton__inner::after {
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: currentColor;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .menuButton__inner::before {
+    transform: translateY(-10px);
+  }
+
+  .menuButton__inner::after {
+    transform: translateY(10px);
+  }
+
+  .menuButton.active .menuButton__inner {
+    transform: rotate(45deg);
+  }
+
+  .menuButton.active .menuButton__inner::before {
+    transform: rotate(90deg);
+  }
+
+  .menuButton.active .menuButton__inner::after {
+    opacity: 0;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 50;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease;
+    opacity: 0;
+  }
+
+  .overlayVisible {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

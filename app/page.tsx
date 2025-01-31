@@ -1,14 +1,12 @@
 import Image from "next/image";
+import { BottomNav } from "./components";
 
 export default function Home() {
   return (
     <div className="pb-20">
       <section className="min-h-screen py-20">
-        <ul>
-          <li>С днем рождения!💖</li>
-        </ul>
         <Image
-          src="/me.webp"
+          src="/images/me.webp"
           width={960}
           height={1280}
           priority
@@ -19,6 +17,13 @@ export default function Home() {
         <h2 className="text-4xl font-bold mb-8">Проекты</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Project cards will be added here */}
+        </div>
+      </section>
+
+      <section id="feedback" className="min-h-screen py-20">
+        <h2 className="text-4xl font-bold mb-8">Отзывы</h2>
+        <div className="space-y-6">
+          {/* Education content will be added here */}
         </div>
       </section>
 
@@ -49,6 +54,16 @@ export default function Home() {
           {/* Contacts content will be added here */}
         </div>
       </section>
+      <BottomNav sections={sections} />
     </div>
   );
 }
+
+const sections = [
+  { id: "projects", title: "Проекты" },
+  { id: "feedback", title: "Отзывы" },
+  { id: "education", title: "Образование" },
+  { id: "experience", title: "Опыт работы" },
+  { id: "skills", title: "Скиллы" },
+  { id: "contacts", title: "Контакты" },
+];

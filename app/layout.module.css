@@ -1,8 +1,11 @@
 .main {
-  margin-left: 100px;
+  margin-left: 150px;
   padding: 2rem;
+  transition: margin 0.3s;
+}
 
-  @media (max-width: 768px) : {
+@media (max-width: 768px) {
+  .main {
     margin-left: 0;
   }
 }

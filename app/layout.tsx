@@ -1,29 +1,28 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import BottomNav from "./components/BottomNav";
-import Sidebar from "./components/Sidebar";
+import { FC } from "react";
+import { Sidebar } from "./components";
 import "./globals.css";
 import styles from "./layout.module.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Personal portfolio website",
+  title: "Наталья, продуктовый дизайнер",
+  description:
+    "Портфолио и резюме Натальи Манаткиной, продуктого дизайнера, UX/UI дизайнера",
 };
 
-export default function RootLayout({
-  children,
-}: {
+type RootLayoutProps = {
   children: React.ReactNode;
-}) {
+};
+
+const RootLayout: FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="ru">
-      <body className={inter.className}>
+      <body>
         <Sidebar />
         <main className={styles.main}>{children}</main>
-        <BottomNav />
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
