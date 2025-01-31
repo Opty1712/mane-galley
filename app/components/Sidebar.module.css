@@ -1,12 +1,13 @@
 .sidebar {
   left: 0;
   top: 0;
-  width: 150px;
+  width: 200px;
   height: 100vh;
-  padding: 2rem 0;
   display: flex;
+  padding: 120px 32px;
   flex-direction: column;
   z-index: 50;
+  box-sizing: border-box;
   position: absolute;
   transition: transform 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
@@ -29,28 +30,38 @@
 .nav {
   flex: 1;
   overflow-y: auto;
+  font-size: 1.1rem;
 }
 
 .menuTitle {
   padding: 0.5rem;
   font-weight: 500;
-  color: #000;
+  color: #181515;
   margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.menuTitle::after {
+  content: "";
+  width: 36px;
+  height: 1px;
+  background-color: #181515;
+  position: absolute;
+  top: 2.2rem;
+  left: 0.5rem;
 }
 
 .menuItem {
   display: block;
-  padding: 0.5rem;
+  padding: 0.1rem 0.5rem;
   cursor: pointer;
-  transition: all 0.3s ease;
-  color: #666;
+  transition: color 0.3s ease;
+  color: #7b7b7b;
   text-decoration: none;
-  font-size: 0.9rem;
 }
 
 .menuItem:hover {
-  background-color: #f5f5f5;
-  color: #000;
+  color: #ff0055;
 }
 
 .menuButton {
