@@ -24,7 +24,8 @@
   color: #666;
   cursor: pointer;
   font-size: 0.9rem;
-  transition: all 0.3s ease;
+  will-change: color, width;
+  transition: color 0.3s ease, width 0.3s ease;
   position: relative;
 }
 
@@ -36,7 +37,8 @@
   width: 0;
   height: 2px;
   background: #000;
-  transition: all 0.3s ease;
+  will-change: color, transform;
+  transition: color 0.3s ease, width 0.3s ease;
   transform: translateX(-50%);
 }
 

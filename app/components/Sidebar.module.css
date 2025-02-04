@@ -79,6 +79,7 @@
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   opacity: 0;
+  will-change: transform, opacity, margin;
   transform: translateX(-100px);
   transition: opacity 0.5s, transform 0.5s;
 }
@@ -107,6 +108,7 @@
     height: 2px;
     background-color: currentColor;
     position: relative;
+    will-change: transform, opacity;
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
@@ -118,6 +120,7 @@
     background-color: currentColor;
     position: absolute;
     left: 0;
+    will-change: transform, opacity;
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
@@ -149,6 +152,7 @@
     bottom: 0;
     background: rgba(0, 0, 0, 0.7);
     z-index: 50;
+    will-change: transform, opacity;
     transform: translateX(-100%);
     transition: opacity 0.5s ease;
     opacity: 0;

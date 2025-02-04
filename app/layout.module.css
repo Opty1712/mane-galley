@@ -1,6 +1,7 @@
 .main {
   margin-left: 240px;
   padding: 0 2rem 0 0;
+  will-change: margin;
   transition: margin 0.3s;
 
   @media (max-width: 1000px) {
