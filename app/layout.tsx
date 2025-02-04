@@ -17,6 +17,7 @@ type RootLayoutProps = {
 const RootLayout: FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="ru">
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       <body>
         <Sidebar />
         <main className={styles.main}>{children}</main>
