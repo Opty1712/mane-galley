@@ -20,7 +20,6 @@
   color: var(--accent-color);
   text-decoration: none;
   transition: transform 0.3s ease;
-  font-family: "SuisseIntl", Arial, Helvetica, sans-serif;
 }
 
 .logo:hover {
