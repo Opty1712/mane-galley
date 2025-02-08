@@ -48,15 +48,30 @@ export const Sidebar = () => {
 
   return (
     <>
-      <button
-        className={`${styles.menuButton} ${
-          isMobileMenuOpen ? styles.active : ""
-        }`}
-        onClick={toggleMobileMenu}
-        aria-label="Toggle menu"
-      >
-        <div className={styles.menuButton__inner} />
-      </button>
+      <div className={styles.mobileHeader}>
+        <Link href="/" className={styles.logoMobile}>
+          M
+        </Link>
+
+        <span>
+          Наталья{" "}
+          <img
+            src="/icons/telegram.svg"
+            width={20}
+            height={20}
+            alt="Telegram"
+          />
+        </span>
+        <button
+          className={`${styles.menuButton} ${
+            isMobileMenuOpen ? styles.active : ""
+          }`}
+          onClick={toggleMobileMenu}
+          aria-label="Toggle menu"
+        >
+          <div className={styles.menuButton__inner} />
+        </button>
+      </div>
 
       <div
         className={`${styles.overlay} ${
@@ -75,6 +90,7 @@ export const Sidebar = () => {
           M
         </Link>
         <nav className={styles.nav}>
+          <div className={styles.menuTitle}>Обо мне</div>
           <div className={styles.menuTitle}>Проекты [06]</div>
           {projects.map((project) => (
             <Link
@@ -86,6 +102,14 @@ export const Sidebar = () => {
               {project.title}
             </Link>
           ))}
+
+          <img
+            src="/icons/telegram.svg"
+            width={20}
+            height={20}
+            alt="Telegram"
+          />
+          <img src="/icons/mail.svg" width={20} height={20} alt="Email" />
         </nav>
       </aside>
     </>

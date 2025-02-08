@@ -1,0 +1,99 @@
+@property --progress {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+
+@property --opacity {
+  syntax: "<opacity>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@keyframes progress {
+  0% {
+    --progress: 0%;
+    --opacity: 0;
+  }
+  3% {
+    --opacity: 0.1;
+  }
+  4% {
+    --opacity: 0.2;
+  }
+  5% {
+    --opacity: 0.3;
+  }
+  6% {
+    --opacity: 0.4;
+  }
+  7% {
+    --opacity: 0.5;
+  }
+  8% {
+    --opacity: 0.6;
+  }
+  9% {
+    --opacity: 0.7;
+  }
+  10% {
+    --opacity: 0.8;
+  }
+  11% {
+    --opacity: 0.9;
+  }
+  12% {
+    --opacity: 1;
+  }
+  100% {
+    --progress: 100%;
+  }
+}
+
+.backToTop {
+  --white: #fff;
+  background-image: linear-gradient(
+    var(--accent-color) 0% var(--progress),
+    var(--white) var(--progress) 100%
+  );
+  box-shadow: 0 0 7px 0px #999;
+  border-radius: 0.5em;
+  display: inline-block;
+  position: fixed;
+  inset: auto 2rem 2rem auto;
+  overflow: hidden;
+  animation: progress linear;
+  animation-timeline: scroll();
+  opacity: var(--opacity);
+  padding: 10px;
+}
+
+@supports not (animation-timeline: scroll()) {
+  .backToTop {
+    background: var(--accent-color);
+  }
+}
+
+.backToTop:is(:link, :visited) {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.backToTopInner {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.backToTopSVG {
+  display: block;
+  fill: none;
+  stroke: currentcolor;
+  stroke-linejoin: round;
+  stroke-width: 3px;
+  transform: rotate(270deg);
+}

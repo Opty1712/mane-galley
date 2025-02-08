@@ -29,3 +29,7 @@ body {
 :root {
   --accent-color: #ff0055;
 }
+
+html {
+  scroll-behavior: smooth;
+}
