@@ -16,6 +16,12 @@
   margin: 0 auto;
   text-align: center;
   text-wrap: balance;
+  will-change: transition;
+  transition: transform 0.5s;
+
+  &.hidden {
+    transform: translateY(200%);
+  }
 }
 
 .navItem {

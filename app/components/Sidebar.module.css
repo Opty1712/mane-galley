@@ -46,14 +46,17 @@
   padding: 10px;
   opacity: 0;
   box-sizing: border-box;
-  will-change: opacity;
-  transition: opacity 0.5s;
+  will-change: opacity transform;
+  transition: opacity 0.5s, transform 0.5s;
   color: #fff;
   pointer-events: none;
-
   background-image: url(/images/header_bkg.webp);
   background-repeat: no-repeat;
   background-size: clamp(750px, 100%, 100%);
+
+  &.hidden {
+    transform: translateY(-100%);
+  }
 }
 
 .logoMobile {

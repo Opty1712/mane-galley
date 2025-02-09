@@ -1,8 +1,10 @@
 "use client";
 
+import { clsx } from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useScrollDirection } from "../utils";
 import styles from "./Sidebar.module.css";
 
 const projects = [
@@ -16,6 +18,7 @@ const projects = [
 
 export const Sidebar = () => {
   const pathname = usePathname();
+  const { isScrollDown } = useScrollDirection();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const ref = useRef<HTMLElement>(null);
 
@@ -54,7 +57,7 @@ export const Sidebar = () => {
 
   return (
     <>
-      <div className={styles.mobileHeader}>
+      <div className={clsx(styles.mobileHeader, isScrollDown && styles.hidden)}>
         <Link href={mainHref} className={styles.logoMobile}>
           M
         </Link>

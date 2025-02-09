@@ -1,11 +1,13 @@
 "use client";
 
+import { clsx } from "clsx";
 import { FC, useEffect, useState } from "react";
 import { Section } from "../types";
-import { scrollToSection } from "../utils";
+import { scrollToSection, useScrollDirection } from "../utils";
 import styles from "./BottomNav.module.css";
 
 export const BottomNav: FC<{ sections: Array<Section> }> = ({ sections }) => {
+  const { isScrollDown } = useScrollDirection();
   const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
@@ -31,7 +33,7 @@ export const BottomNav: FC<{ sections: Array<Section> }> = ({ sections }) => {
   }, [sections]);
 
   return (
-    <nav className={styles.bottomNav}>
+    <nav className={clsx(styles.bottomNav, !isScrollDown && styles.hidden)}>
       {sections.map(({ id, title }) => (
         <button
           key={id}
