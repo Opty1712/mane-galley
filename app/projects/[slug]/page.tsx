@@ -1,3 +1,4 @@
+import { PageProps } from "@/.next/types/app/layout";
 import { notFound } from "next/navigation";
 
 const projects = {
@@ -15,8 +16,8 @@ const projects = {
   },
 } as const;
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
-  const project = projects[params.slug as keyof typeof projects];
+export default async function ProjectPage({ params }: PageProps) {
+  const project = projects[(await params).slug as keyof typeof projects];
 
   if (!project) {
     notFound();

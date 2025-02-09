@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import styles from "./Sidebar.module.css";
 
@@ -15,7 +15,7 @@ const projects = [
 ];
 
 export const Sidebar = () => {
-  const { pathname } = useRouter();
+  const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const ref = useRef<HTMLElement>(null);
 
@@ -49,11 +49,13 @@ export const Sidebar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  console.log(pathname);
+  const isMainPage = pathname === "/";
+  const mainHref = isMainPage ? "#content" : "/";
+
   return (
     <>
       <div className={styles.mobileHeader}>
-        <Link href="/" className={styles.logoMobile}>
+        <Link href={mainHref} className={styles.logoMobile}>
           M
         </Link>
 
@@ -90,7 +92,7 @@ export const Sidebar = () => {
           isMobileMenuOpen ? styles.sidebarOpen : ""
         }`}
       >
-        <Link href="/" className={styles.logo}>
+        <Link href={mainHref} className={styles.logo}>
           M
         </Link>
         <nav className={styles.nav}>
