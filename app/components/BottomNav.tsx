@@ -3,12 +3,14 @@
 import { clsx } from "clsx";
 import { FC, useEffect, useState } from "react";
 import { Section } from "../types";
-import { scrollToSection, useScrollDirection } from "../utils";
+import { checkIsMobile, scrollToSection, useScrollDirection } from "../utils";
 import styles from "./BottomNav.module.css";
 
 export const BottomNav: FC<{ sections: Array<Section> }> = ({ sections }) => {
   const { isScrollDown } = useScrollDirection();
   const [activeSection, setActiveSection] = useState("");
+
+  const isMobile = checkIsMobile();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -33,7 +35,12 @@ export const BottomNav: FC<{ sections: Array<Section> }> = ({ sections }) => {
   }, [sections]);
 
   return (
-    <nav className={clsx(styles.bottomNav, !isScrollDown && styles.hidden)}>
+    <nav
+      className={clsx(
+        styles.bottomNav,
+        !isScrollDown && isMobile && styles.hidden
+      )}
+    >
       {sections.map(({ id, title }) => (
         <button
           key={id}

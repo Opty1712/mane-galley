@@ -4,7 +4,7 @@ import { clsx } from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { useScrollDirection } from "../utils";
+import { checkIsMobile, useScrollDirection } from "../utils";
 import styles from "./Sidebar.module.css";
 
 const projects = [
@@ -23,8 +23,7 @@ export const Sidebar = () => {
   const ref = useRef<HTMLElement>(null);
 
   const animate = useCallback(() => {
-    const bodyWidth = document.body.offsetWidth;
-    const isMobile = bodyWidth <= 1000;
+    const isMobile = checkIsMobile();
 
     if (ref.current && isMobile) {
       ref.current.style.transform = "translateY(0)";
