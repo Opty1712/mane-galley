@@ -2,12 +2,15 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
 export const useScrollDirection = () => {
-  const scrollTop = useRef(0);
+  const scrollTopRef = useRef(0);
   const [isScrollDown, setIsScrollDown] = useState(true);
+  const [scrollTop, setScrollTop] = useState(0);
 
   const calculateScroll = useCallback(() => {
-    setIsScrollDown(scrollTop.current < document.documentElement.scrollTop);
-    scrollTop.current = document.documentElement.scrollTop;
+    const scrollTop = document.documentElement.scrollTop;
+    setIsScrollDown(scrollTopRef.current < scrollTop);
+    scrollTopRef.current = scrollTop;
+    setScrollTop(scrollTop);
   }, []);
 
   useEffect(() => {
@@ -16,5 +19,5 @@ export const useScrollDirection = () => {
     return () => window.removeEventListener("scroll", calculateScroll);
   }, [calculateScroll]);
 
-  return { isScrollDown };
+  return { isScrollDown, scrollTop };
 };

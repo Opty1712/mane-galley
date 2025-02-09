@@ -18,7 +18,7 @@ const projects = [
 
 export const Sidebar = () => {
   const pathname = usePathname();
-  const { isScrollDown } = useScrollDirection();
+  const { isScrollDown, scrollTop } = useScrollDirection();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const ref = useRef<HTMLElement>(null);
 
@@ -55,9 +55,16 @@ export const Sidebar = () => {
   const isMainPage = pathname === "/";
   const mainHref = isMainPage ? "#content" : "/";
 
+  console.log(scrollTop);
+
   return (
     <>
-      <div className={clsx(styles.mobileHeader, isScrollDown && styles.hidden)}>
+      <div
+        className={clsx(
+          styles.mobileHeader,
+          isScrollDown && scrollTop && styles.hidden
+        )}
+      >
         <Link href={mainHref} className={styles.logoMobile}>
           M
         </Link>
