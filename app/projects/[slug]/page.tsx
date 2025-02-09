@@ -1,4 +1,3 @@
-import { PageProps } from "@/.next/types/app/layout";
 import { notFound } from "next/navigation";
 
 const projects = {
@@ -16,7 +15,11 @@ const projects = {
   },
 } as const;
 
-export default async function ProjectPage({ params }: PageProps) {
+export default async function ProjectPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const project = projects[(await params).slug as keyof typeof projects];
 
   if (!project) {
