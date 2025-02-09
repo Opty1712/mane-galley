@@ -4,8 +4,9 @@
   width: 240px;
   height: 100vh;
   display: flex;
-  padding: 120px 32px;
+  padding: calc(118 / 1440 * 100vw + 6vw) 32px 0 32px;
   flex-direction: column;
+  align-items: baseline;
   z-index: 50;
   box-sizing: border-box;
   position: absolute;
@@ -20,6 +21,7 @@
   color: var(--accent-color);
   text-decoration: none;
   transition: transform 0.3s ease;
+
   @media (max-width: 1000px) {
     display: none;
   }
@@ -34,18 +36,24 @@
   top: 0;
   left: 0;
   backdrop-filter: blur(5px);
-  background-color: #ffffffcc;
   display: flex;
   gap: 20px;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  transform: translateY(-100%);
-  box-shadow: 0 0 20px 0 #ddd;
+  box-shadow: none;
   backdrop-filter: blur(5px);
   padding: 10px;
+  opacity: 0;
   box-sizing: border-box;
-  transition: transform 0.3s ease-in-out;
+  will-change: opacity;
+  transition: opacity 0.5s;
+  color: #fff;
+  pointer-events: none;
+
+  background-image: url(/images/header_bkg.webp);
+  background-repeat: no-repeat;
+  background-size: clamp(750px, 100%, 100%);
 }
 
 .logoMobile {
@@ -54,10 +62,6 @@
   text-align: center;
   color: var(--accent-color);
   text-decoration: none;
-
-  @media (min-width: 1000px) {
-    display: none;
-  }
 }
 
 .nav {
@@ -67,11 +71,19 @@
 }
 
 .menuTitle {
+  display: block;
   padding: 0.5rem;
   font-weight: 500;
-  color: #181515;
+  color: var(--main-color);
   margin-bottom: 0.5rem;
   position: relative;
+  text-decoration: none;
+  will-change: color;
+  transition: color 0.3s;
+}
+
+a.menuTitle:hover {
+  color: var(--accent-color);
 }
 
 .menuTitle::after {
@@ -127,7 +139,8 @@
 
   .mobileHeader {
     opacity: 1;
-    transform: translateX(0);
+    box-shadow: 0 0 20px 0 #ddd;
+    pointer-events: all;
   }
 
   .menuButton__inner {

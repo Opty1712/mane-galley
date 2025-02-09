@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useCallback, useEffect, useRef, useState } from "react";
 import styles from "./Sidebar.module.css";
 
@@ -14,6 +15,7 @@ const projects = [
 ];
 
 export const Sidebar = () => {
+  const { pathname } = useRouter();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const ref = useRef<HTMLElement>(null);
 
@@ -27,6 +29,12 @@ export const Sidebar = () => {
 
     if (ref.current && !isMobile) {
       ref.current.style.transform = `translateY(${window.scrollY}px)`;
+
+      const isScrolled = document.documentElement.scrollTop > 120;
+
+      ref.current.style.paddingTop = isScrolled
+        ? "50px"
+        : "calc(118 / 1440 * 100vw + 6vw)";
     }
   }, []);
 
@@ -41,11 +49,7 @@ export const Sidebar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const closeMobileMenu = () => {
-    animate();
-    setIsMobileMenuOpen(false);
-  };
-
+  console.log(pathname);
   return (
     <>
       <div className={styles.mobileHeader}>
@@ -77,7 +81,7 @@ export const Sidebar = () => {
         className={`${styles.overlay} ${
           isMobileMenuOpen ? styles.overlayVisible : ""
         }`}
-        onClick={closeMobileMenu}
+        onClick={toggleMobileMenu}
       />
 
       <aside
@@ -90,18 +94,21 @@ export const Sidebar = () => {
           M
         </Link>
         <nav className={styles.nav}>
-          <div className={styles.menuTitle}>Обо мне</div>
           <div className={styles.menuTitle}>Проекты [06]</div>
           {projects.map((project) => (
             <Link
               key={project.slug}
               href={`/projects/${project.slug}`}
               className={styles.menuItem}
-              onClick={closeMobileMenu}
+              onClick={toggleMobileMenu}
             >
               {project.title}
             </Link>
           ))}
+
+          <a className={styles.menuTitle} href="#feedback">
+            Обо мне
+          </a>
 
           <img
             src="/icons/telegram.svg"
