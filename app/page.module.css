@@ -13,10 +13,16 @@
 }
 
 .h2 {
-  font-size: clamp(30px, 8vw, 40px);
+  font-size: clamp(30px, 8vw, 48px);
   font-weight: 600;
   color: #413d3e;
   margin: 0;
+  text-wrap: balance;
+
+  &.divider {
+    font-weight: 400;
+    margin-bottom: 5vh;
+  }
 }
 
 .date {
@@ -36,23 +42,6 @@
   @media (max-width: 1000px) {
     margin-top: 0;
   }
-}
-
-.photoBlock {
-  width: 160px;
-  text-align: right;
-  margin-left: calc(100% - 160px);
-
-  @media (max-width: 1000px) {
-    margin-top: 2rem;
-    margin-left: 0;
-    width: 100%;
-  }
-}
-
-.contactsTop {
-  display: flex;
-  justify-content: space-between;
 }
 
 .pageGrid {
@@ -172,55 +161,167 @@
 
 .project {
   margin-bottom: 20vh;
+  padding: 2vw 0;
+  cursor: pointer;
+  will-change: background-color;
+  transition: background-color 0.3s;
 
   @media (max-width: 1000px) {
     margin-top: 4vh;
     margin-bottom: 8vh;
   }
-}
 
-.projectHeader {
-  font-weight: 600;
-  font-size: clamp(24px, 8vw, 48px);
-  color: var(--main-color);
-}
+  @media (min-width: 1000px) {
+    &:hover {
+      background-color: var(--main-color);
+      padding-right: 2vw;
+      padding-left: 2vw;
+      margin-left: -2vw;
+      margin-right: -2vw;
 
-.projectCell {
-  display: flex;
-  flex-direction: column;
-  gap: 2vh;
-}
+      .projectLink {
+        color: var(--main-color);
+        background-color: var(--link);
+      }
 
-.projectLine {
-  color: var(--main-color);
-  text-wrap: balance;
-  line-height: 24px;
-  font-size: clamp(16px, 1.3vw, 20px);
-}
+      .projectHeader,
+      .projectLine {
+        color: var(--opposite-color);
+      }
+    }
+  }
 
-.projectDescription {
-  color: var(--second-color);
-  text-wrap: balance;
-  line-height: 24px;
-  font-size: clamp(16px, 1.3vw, 20px);
-}
+  .projectHeader {
+    font-weight: 900;
+    font-size: clamp(24px, 8vw, 48px);
+    color: var(--main-color);
+    will-change: color;
+    transition: color 0.3s;
+  }
 
-.projectDate {
-  color: var(--accent-color);
-  font-size: 18px;
-  margin: 2vh 0;
+  .projectCell {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
 
-  @media (max-width: 1000px) {
+  .projectLine {
+    color: var(--main-color);
+  }
+
+  .projectDescription {
+    color: var(--second-color);
+    text-wrap: balance;
+    line-height: 24px;
+    font-size: clamp(16px, 1.3vw, 20px);
+  }
+
+  .projectDate {
+    color: var(--accent-color);
+    font-size: 18px;
+    margin: 2vh 0;
+
+    @media (max-width: 1000px) {
+      margin: 1vh 0;
+    }
+  }
+
+  .projectBadge {
+    background-color: var(--badge-background);
+    color: var(--second-color);
+    padding: 1vh 1vw;
+    font-weight: 500;
+    font-size: clamp(16px, 4vw, 18px);
+    margin: 0 10px 10px 0;
+    display: inline-block;
+  }
+
+  .projectNumber {
+    margin: 0 0 0 15px;
+    padding: 0;
+    line-height: 150%;
+    list-style-type: none;
+
+    & li {
+      position: relative;
+    }
+
+    & li::before {
+      position: absolute;
+      content: "-";
+      color: rgb(145, 145, 145);
+      display: inline-block;
+      left: -15px;
+      top: -1px;
+    }
+  }
+
+  .projectSubHeader {
     margin: 1vh 0;
+    color: var(--tertiary-color);
+  }
+
+  .projectLink {
+    display: inline-block;
+    font-size: clamp(16px, 1.3vw, 20px);
+    color: var(--link);
+    padding: 1vh 2vh;
+    background-color: var(--main-color);
+    text-decoration: none;
+    will-change: background-color;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: var(--accent-color);
+    }
   }
 }
 
-.projectBadge {
-  background-color: var(--badge-background);
+.opinionBlock {
+  color: var(--main-color);
+  font-size: clamp(14px, 1vw, 16px);
+  display: flex;
+  gap: 16px;
+  margin-bottom: 2vh;
+  text-wrap: balance;
+}
+
+.opinionPosition {
   color: var(--second-color);
-  padding: 1vh 1vw;
-  font-weight: 500;
+  margin-top: 0.5vh;
+}
+
+.opinionText {
+  color: var(--main-color);
   font-size: clamp(16px, 4vw, 18px);
-  margin: 0 10px 10px 0;
-  display: inline-block;
+  line-height: 130%;
+  margin-bottom: 8vh;
+
+  @media (max-width: 1000px) {
+    margin-bottom: 4vh;
+  }
+}
+
+.education {
+  font-size: clamp(16px, 4vw, 18px);
+  line-height: 130%;
+
+  .educationBlock {
+    display: flex;
+    gap: 0.5vh;
+    margin-bottom: 2vh;
+    flex-direction: column;
+  }
+
+  .educationSchool {
+    font-weight: 500;
+  }
+
+  .educationName {
+    color: var(--second-color);
+  }
+
+  .educationDate {
+    color: var(--accent-color);
+  }
 }

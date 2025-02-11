@@ -9,8 +9,8 @@ import styles from "./Sidebar.module.css";
 
 const projects = [
   { title: "Uncle VPN", slug: "uncle-vpn" },
-  { title: "Xcore VPN", slug: "xcore-vpn" },
-  { title: "Mos.ru", slug: "mos-ru" },
+  { title: "xCore VPN", slug: "x-core-vpn" },
+  { title: "Mos.ru", slug: "mos-ru-sport" },
   { title: "Supra", slug: "supra" },
   { title: "SberJazz", slug: "sber-jazz" },
   { title: "Калитники", slug: "kalitniki" },
@@ -34,8 +34,10 @@ export const Sidebar = () => {
 
       const isScrolled = document.documentElement.scrollTop > 120;
 
+      const smallPadding = window.innerHeight < 300 ? "0" : "50px";
+
       ref.current.style.paddingTop = isScrolled
-        ? "50px"
+        ? smallPadding
         : "calc(118 / 1440 * 100vw + 6vw)";
     }
   }, []);
@@ -53,8 +55,6 @@ export const Sidebar = () => {
 
   const isMainPage = pathname === "/";
   const mainHref = isMainPage ? "#content" : "/";
-
-  console.log(scrollTop);
 
   return (
     <>
@@ -101,34 +101,38 @@ export const Sidebar = () => {
           isMobileMenuOpen ? styles.sidebarOpen : ""
         }`}
       >
-        <Link href={mainHref} className={styles.logo}>
-          M
-        </Link>
-        <nav className={styles.nav}>
-          <div className={styles.menuTitle}>Проекты [06]</div>
-          {projects.map((project) => (
-            <Link
-              key={project.slug}
-              href={`/projects/${project.slug}`}
-              className={styles.menuItem}
-              onClick={toggleMobileMenu}
-            >
-              {project.title}
-            </Link>
-          ))}
+        <span className={styles.sidebarContent}>
+          <Link href={mainHref} className={styles.logo}>
+            M
+          </Link>
+          <nav className={styles.nav}>
+            <div className={styles.menuTitle}>Проекты [06]</div>
 
-          <a className={styles.menuTitle} href="#feedback">
-            Обо мне
+            {projects.map((project) => (
+              <Link
+                key={project.slug}
+                href={`/projects/${project.slug}`}
+                className={styles.menuItem}
+                onClick={toggleMobileMenu}
+              >
+                {project.title}
+              </Link>
+            ))}
+          </nav>
+          <a
+            href="https://t.me/NatalyMane"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/icons/telegram.svg"
+              width={20}
+              height={20}
+              alt="Telegram"
+              style={{ marginTop: "20px", padding: "10px" }}
+            />
           </a>
-
-          <img
-            src="/icons/telegram.svg"
-            width={20}
-            height={20}
-            alt="Telegram"
-          />
-          <img src="/icons/mail.svg" width={20} height={20} alt="Email" />
-        </nav>
+        </span>
       </aside>
     </>
   );

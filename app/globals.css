@@ -63,7 +63,10 @@ body::before {
   --accent-color: #f9132e;
   --main-color: #101828;
   --second-color: #545860;
+  --tertiary-color: #9b9ea4;
   --badge-background: #f2f4f7;
+  --link: #fff;
+  --opposite-color: #fff;
 }
 
 html {
