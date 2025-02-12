@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { BottomNav, PortfolioLink, Typograph } from "./components";
 import styles from "./page.module.css";
+import { copyToClipboard } from "./utils";
 
 export default function Home() {
   const { push } = useRouter();
@@ -552,47 +553,49 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className={clsx(styles.pageGrid, styles.education)}>
+        <div className={clsx(styles.pageGrid, styles.commonSection)}>
           <div className={styles.grid5} />
           <div className={styles.grid6}>Мой любимый универ:)</div>
           <div className={styles.grid7}>
-            <div className={styles.educationBlock}>
-              <span className={styles.educationSchool}>
+            <div className={styles.commonSectionBlock}>
+              <span className={styles.commonSectionSchool}>
                 Британская высшая школа дизайна
               </span>
-              <span className={styles.educationName}>«Годовой курс UX/UI»</span>
-              <span className={styles.educationDate}>2023 — 2024</span>
+              <span className={styles.commonSectionName}>
+                «Годовой курс UX/UI»
+              </span>
+              <span className={styles.commonSectionDate}>2023 — 2024</span>
             </div>
-            <div className={styles.educationBlock}>
-              <span className={styles.educationSchool}>
+            <div className={styles.commonSectionBlock}>
+              <span className={styles.commonSectionSchool}>
                 Британская высшая школа дизайна
               </span>
-              <span className={styles.educationName}>
+              <span className={styles.commonSectionName}>
                 «Основы коммуникационного дизайна»
               </span>
-              <span className={styles.educationDate}>2021 — 2022</span>
+              <span className={styles.commonSectionDate}>2021 — 2022</span>
             </div>
-            <div className={styles.educationBlock}>
-              <span className={styles.educationSchool}>Сергей Гуров</span>
-              <span className={styles.educationName}>
+            <div className={styles.commonSectionBlock}>
+              <span className={styles.commonSectionSchool}>Сергей Гуров</span>
+              <span className={styles.commonSectionName}>
                 «Алгоритмические сетки»
               </span>
-              <span className={styles.educationName}>
+              <span className={styles.commonSectionName}>
                 «Игра в типографику. Композиция, декомпозиция»
               </span>
-              <span className={styles.educationDate}>2022</span>
+              <span className={styles.commonSectionDate}>2022</span>
             </div>
-            <div className={styles.educationBlock}>
-              <span className={styles.educationSchool}>МГТА</span>
-              <span className={styles.educationName}>
+            <div className={styles.commonSectionBlock}>
+              <span className={styles.commonSectionSchool}>МГТА</span>
+              <span className={styles.commonSectionName}>
                 «Бухгалтерский учёт, анализ и аудит»
               </span>
-              <span className={styles.educationDate}>2012</span>
+              <span className={styles.commonSectionDate}>2012</span>
             </div>
-            <div className={styles.educationBlock}>
-              <span className={styles.educationSchool}>МГИУ</span>
-              <span className={styles.educationName}>«Юриспруденция»</span>
-              <span className={styles.educationDate}>2004</span>
+            <div className={styles.commonSectionBlock}>
+              <span className={styles.commonSectionSchool}>МГИУ</span>
+              <span className={styles.commonSectionName}>«Юриспруденция»</span>
+              <span className={styles.commonSectionDate}>2004</span>
             </div>
           </div>
         </div>
@@ -620,16 +623,16 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className={clsx(styles.pageGrid, styles.education)}>
+        <div className={clsx(styles.pageGrid, styles.commonSection)}>
           <div className={styles.grid5} />
           <div className={styles.grid6}>Hard skills:</div>
           <div className={styles.grid7} style={{ marginBottom: "6vh" }}>
-            <div className={styles.educationBlock}>
-              <span className={styles.educationName}>
+            <div className={styles.commonSectionBlock}>
+              <span className={styles.commonSectionName}>
                 Adobe Illustrator, Photoshop, After Effects
               </span>
-              <span className={styles.educationName}>Figma</span>
-              <span className={styles.educationName}>Spline</span>
+              <span className={styles.commonSectionName}>Figma</span>
+              <span className={styles.commonSectionName}>Spline</span>
             </div>
           </div>
         </div>
@@ -644,14 +647,14 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className={clsx(styles.pageGrid, styles.education)}>
+        <div className={clsx(styles.pageGrid, styles.commonSection)}>
           <div className={styles.grid11} />
           <div className={styles.grid4}>Frameworks:</div>
           <div className={styles.grid8} style={{ marginBottom: "6vh" }}>
-            <div className={styles.educationBlock}>
-              <span className={styles.educationName}>JTBD</span>
-              <span className={styles.educationName}>MindSet</span>
-              <span className={styles.educationName}>Userflow</span>
+            <div className={styles.commonSectionBlock}>
+              <span className={styles.commonSectionName}>JTBD</span>
+              <span className={styles.commonSectionName}>MindSet</span>
+              <span className={styles.commonSectionName}>Userflow</span>
             </div>
           </div>
         </div>
@@ -666,35 +669,40 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className={clsx(styles.pageGrid, styles.education)}>
+        <div
+          className={clsx(styles.pageGrid, styles.commonSection)}
+          style={{ marginBottom: "10vh" }}
+        >
           <div className={styles.grid7} />
-          <div className={styles.grid4}>Frameworks:</div>
+          <div className={styles.grid4}>Опыт работы:</div>
           <div className={styles.grid4}>
-            <div className={styles.educationBlock}>
-              <span className={styles.educationSchool}>UncleVPN</span>
-              <span className={styles.educationName}>Product Designer</span>
-              <span className={styles.educationDate}>2023 — 2024</span>
+            <div className={styles.commonSectionBlock}>
+              <span className={styles.commonSectionSchool}>UncleVPN</span>
+              <span className={styles.commonSectionName}>Product Designer</span>
+              <span className={styles.commonSectionDate}>2023 — 2024</span>
             </div>
-            <div className={styles.educationBlock}>
-              <span className={styles.educationSchool}>Kalitniki</span>
-              <span className={styles.educationName}>Product Designer</span>
-              <span className={styles.educationDate}>2023 — 2025</span>
+            <div className={styles.commonSectionBlock}>
+              <span className={styles.commonSectionSchool}>Kalitniki</span>
+              <span className={styles.commonSectionName}>Product Designer</span>
+              <span className={styles.commonSectionDate}>2023 — 2025</span>
             </div>
-            <div className={styles.educationBlock}>
-              <span className={styles.educationSchool}>UVENT</span>
-              <span className={styles.educationName}>UX/UI Designer</span>
-              <span className={styles.educationDate}>2021 — 2023</span>
+            <div className={styles.commonSectionBlock}>
+              <span className={styles.commonSectionSchool}>UVENT</span>
+              <span className={styles.commonSectionName}>UX/UI Designer</span>
+              <span className={styles.commonSectionDate}>2021 — 2023</span>
             </div>
-            <div className={styles.educationBlock}>
-              <span className={styles.educationSchool}>Центр Красоты</span>
-              <span className={styles.educationName}>Founder / управление</span>
-              <span className={styles.educationDate}>2000 — 2021</span>
+            <div className={styles.commonSectionBlock}>
+              <span className={styles.commonSectionSchool}>Центр Красоты</span>
+              <span className={styles.commonSectionName}>
+                Founder / управление
+              </span>
+              <span className={styles.commonSectionDate}>2000 — 2021</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contacts" className={styles.section}>
+      <section id="summary" className={styles.section}>
         <div className={styles.pageGrid}>
           <div className={styles.grid5} />
           <div className={styles.grid19}>
@@ -706,17 +714,204 @@ export default function Home() {
             </h2>
           </div>
         </div>
+        <div
+          className={clsx(
+            styles.pageGrid,
+            styles.commonSection,
+            styles.summaryStages
+          )}
+        >
+          <div className={styles.grid5} />
+          <div className={clsx(styles.grid6, styles.summaryDigits)}>120+</div>
+          <div className={styles.grid6}>
+            <div className={styles.commonSectionBlock}>
+              <span className={styles.commonSectionSchool}>
+                <Typograph>
+                  Экранов для веба и арр задизайнено. Много флоу и функций
+                </Typograph>
+              </span>
+              <span className={styles.commonSectionName}>[Web]</span>
+              <span className={styles.commonSectionDate}>24 экрана</span>
+              <span className={styles.commonSectionName}>[Mobile]</span>
+              <span className={styles.commonSectionDate}>124 экрана</span>
+            </div>
+          </div>
+          <div className={styles.grid7}>
+            <img
+              src="/images/me_small.webp"
+              width="100%"
+              alt="Наталья, продуктовый дизайнер"
+            />
+          </div>
+        </div>
+        <div
+          className={clsx(
+            styles.pageGrid,
+            styles.commonSection,
+            styles.summaryStages
+          )}
+        >
+          <div className={styles.grid5} />
+          <div className={clsx(styles.grid6, styles.summaryDigits)}>10</div>
+          <div className={styles.grid6}>
+            <div className={styles.commonSectionBlock}>
+              <span className={styles.commonSectionSchool}>
+                <Typograph>Дизайн-систем разработано, из них:</Typograph>
+              </span>
+              <span className={styles.commonSectionName}>[Лого]</span>
+              <span className={styles.commonSectionDate}>15 iner</span>
+              <span className={styles.commonSectionName}>[Ui-kit]</span>
+              <span className={styles.commonSectionDate}>124 экрана</span>
+            </div>
+          </div>
+          <div className={styles.grid7}>
+            <img
+              src="/images/me_small.webp"
+              width="100%"
+              alt="Наталья, продуктовый дизайнер"
+            />
+          </div>
+        </div>
+        <div
+          className={clsx(
+            styles.pageGrid,
+            styles.commonSection,
+            styles.summaryStages
+          )}
+        >
+          <div className={styles.grid5} />
+          <div className={clsx(styles.grid6, styles.summaryDigits)}>68+</div>
+          <div className={styles.grid6}>
+            <div className={styles.commonSectionBlock}>
+              <span className={styles.commonSectionSchool}>
+                <Typograph>Качественных исследований проведено:</Typograph>
+              </span>
+              <span className={styles.commonSectionName}>
+                [Юзабилити-тесты]
+              </span>
+              <span className={styles.commonSectionDate}>38</span>
+              <span className={styles.commonSectionName}>
+                [Глубинные интервью]
+              </span>
+              <span className={styles.commonSectionDate}>78</span>
+              <span className={styles.commonSectionName}>[Бенчмарки]</span>
+              <span className={styles.commonSectionDate}>
+                68 сервисов и флоу
+              </span>
+            </div>
+          </div>
+          <div className={styles.grid7}>
+            <img
+              src="/images/me_small.webp"
+              width="100%"
+              alt="Наталья, продуктовый дизайнер"
+            />
+          </div>
+        </div>
       </section>
+
+      <section id="contacts" className={styles.section}>
+        <div className={styles.pageGrid}>
+          <div className={styles.grid5} />
+          <div className={styles.grid19}>
+            <h2 className={clsx(styles.h2, styles.divider)}>
+              <Typograph>
+                До скорой встречи! Обсудим предложения и проекты!
+              </Typograph>
+            </h2>
+          </div>
+        </div>
+        <div className={styles.pageGrid}>
+          <div className={styles.grid11} />
+          <div className={styles.grid5}>
+            <img
+              src="/images/me_small.webp"
+              width="100%"
+              alt="Наталья, продуктовый дизайнер"
+            />
+          </div>
+        </div>
+        <div className={styles.pageGrid}>
+          <div className={styles.grid11} />
+          <div className={clsx(styles.grid9, styles.contactText)}>
+            <Typograph>
+              Улучшала системы навигации в продуктах в несколько итераций,
+              применяя исслентервью и юзабилити-тестов Улучшала системы
+              навигации в продуктах в несколько итераций, применяя исслентервью
+              и юзабилити-тестов применяя исслентервью и юзабилити-тестов
+            </Typograph>
+          </div>
+        </div>
+        <div className={styles.pageGrid}>
+          <div className={styles.grid13} />
+          <div className={clsx(styles.grid9, styles.contactText)}>
+            <Typograph>
+              Улучшала системы навигации в продуктах в несколько итераций,
+              применяя исслентервью и юзабилити-тестов Улучшала системы
+              навигации в продуктах в несколько итераций, применяя исслентервью
+              и юзабилити-тестов применяя исслентервью и юзабилити-тестов
+              Улучшала системы навигации в продуктах в несколько итераций,
+              применяя исслентервью и юзабилити-тестов
+            </Typograph>
+          </div>
+        </div>
+        <div className={styles.pageGrid}>
+          <div className={styles.grid11} />
+          <div className={styles.grid13}>
+            <h2 className={clsx(styles.h2, styles.divider)}>
+              <Typograph>
+                Остаемся на связи ьдьэлэ .ьэ и поддерживаем юлоржшоэ оэээк
+                оммуникацию
+              </Typograph>
+            </h2>
+          </div>
+        </div>
+        <div className={clsx(styles.pageGrid, styles.commonSection)}>
+          <div className={styles.grid11} />
+          <div className={styles.grid13}>
+            <div className={styles.commonSectionBlock}>
+              <span className={styles.contactSections}>[Разработка]</span>
+              <span>Андрей Едунов</span>
+            </div>
+            <div
+              className={styles.commonSectionBlock}
+              onClick={() => copyToClipboard("https://mane.gallery")}
+              style={{ cursor: "pointer", width: "min-content" }}
+              title="Скопировать адрес сайта в буфер обмена"
+            >
+              <span className={styles.contactSections}>[Скопировать]</span>
+              <span>www.mane.gallery</span>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.pageGrid}>
+          <div className={styles.grid5} />
+          <div className={clsx(styles.grid19, styles.footerLine)} />
+        </div>
+
+        <div className={clsx(styles.pageGrid, styles.footerText)}>
+          <div className={styles.grid5} />
+          <div className={clsx(styles.grid6)}>©2025 Манаткина Наталья</div>
+          <div className={clsx(styles.grid13)}>
+            <Typograph>
+              Контент предназначен исключительно для личного использования и
+              некоммерческих целей
+            </Typograph>
+          </div>
+        </div>
+      </section>
+
       <BottomNav sections={sections} />
     </>
   );
 }
 
 const sections = [
-  { id: "content", title: "Привет!" },
   { id: "projects", title: "Проекты" },
   { id: "feedback", title: "Отзывы" },
   { id: "education", title: "Образование" },
-  { id: "job", title: "Работа" },
+  { id: "job", title: "Опыт" },
+  { id: "summary", title: "Summary" },
   { id: "contacts", title: "Контакты" },
 ];

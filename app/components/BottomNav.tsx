@@ -1,6 +1,7 @@
 "use client";
 
 import { clsx } from "clsx";
+import Link from "next/link";
 import { FC, useEffect, useState } from "react";
 import { Section } from "../types";
 import { checkIsMobile, scrollToSection, useScrollDirection } from "../utils";
@@ -21,7 +22,7 @@ export const BottomNav: FC<{ sections: Array<Section> }> = ({ sections }) => {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.01 }
     );
 
     sections.forEach(({ id }) => {
@@ -42,15 +43,19 @@ export const BottomNav: FC<{ sections: Array<Section> }> = ({ sections }) => {
       )}
     >
       {sections.map(({ id, title }) => (
-        <button
+        <Link
+          href={`#${id}`}
           key={id}
           className={`${styles.navItem} ${
             activeSection === id ? styles.active : ""
           }`}
-          onClick={() => scrollToSection(id)}
+          onClick={() => {
+            scrollToSection(id);
+            setActiveSection(id);
+          }}
         >
           {title}
-        </button>
+        </Link>
       ))}
     </nav>
   );

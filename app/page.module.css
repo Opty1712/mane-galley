@@ -5,7 +5,7 @@
 .h1 {
   font-size: clamp(40px, 6.5vw, 150px);
   font-weight: 900;
-  color: #101828;
+  color: var(--main-color);
   width: min-content;
   white-space: nowrap;
   line-height: 100%;
@@ -15,7 +15,7 @@
 .h2 {
   font-size: clamp(30px, 8vw, 48px);
   font-weight: 600;
-  color: #413d3e;
+  color: var(--main-color);
   margin: 0;
   text-wrap: balance;
 
@@ -302,26 +302,65 @@
   }
 }
 
-.education {
+.commonSection {
   font-size: clamp(16px, 4vw, 18px);
   line-height: 130%;
 
-  .educationBlock {
+  .commonSectionBlock {
     display: flex;
     gap: 0.5vh;
     margin-bottom: 2vh;
     flex-direction: column;
   }
 
-  .educationSchool {
+  .commonSectionSchool {
     font-weight: 500;
   }
 
-  .educationName {
+  .commonSectionName {
     color: var(--second-color);
   }
 
-  .educationDate {
+  .commonSectionDate {
     color: var(--accent-color);
   }
+}
+
+.summaryDigits {
+  font-size: clamp(80px, 6vw, 120px);
+  font-weight: 900;
+  color: var(--main-color);
+  line-height: 130%;
+
+  @media (max-width: 1000px) {
+    line-height: 100%;
+  }
+}
+
+.summaryStages {
+  margin: 6vh 0;
+
+  @media (max-width: 1000px) {
+    margin: 4vh 0 0 0;
+  }
+}
+
+.contactText {
+  font-size: clamp(16px, 1.3vw, 20px);
+  color: var(--main-color);
+  margin: 2vh 0;
+}
+
+.contactSections {
+  color: var(--tertiary-color);
+}
+
+.footerLine {
+  border-top: 1px solid #ddd;
+  margin: 4vh 0 1vh 0;
+}
+
+.footerText {
+  color: var(--second-color);
+  font-size: clamp(16px, 4vw, 18px);
 }
