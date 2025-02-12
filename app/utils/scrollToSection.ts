@@ -1,5 +1,7 @@
 "use client";
 
+import { isClientSide } from "./isClientSide";
+
 export const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
   if (element) {
@@ -11,7 +13,7 @@ export const scrollToSection = (id: string) => {
   }
 };
 
-const isChromium = "chrome" in window;
+const isChromium = isClientSide && "chrome" in window;
 
 /** for non chromium browsers */
 function smoothScrollTo(element: HTMLElement, duration = 1000) {
