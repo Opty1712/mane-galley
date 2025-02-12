@@ -3,8 +3,8 @@ import { clsx } from "clsx";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { BottomNav, PortfolioLink, Typograph } from "../components";
+import styles from "../styles.module.css";
 import { copyToClipboard } from "../utils";
-import styles from "./page.module.css";
 
 export default function Home() {
   const { push } = useRouter();

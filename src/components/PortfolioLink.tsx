@@ -1,5 +1,5 @@
 "use client";
-import styles from "../app/page.module.css";
+import styles from "../styles.module.css";
 import { scrollToSection } from "../utils";
 
 export const PortfolioLink = () => (

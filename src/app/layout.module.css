@@ -1,9 +1,0 @@
-.main {
-  margin: 0 2vw;
-  will-change: margin;
-  transition: margin 0.3s;
-
-  @media (max-width: 1000px) {
-    margin: 1rem;
-  }
-}
