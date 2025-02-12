@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Head from "next/head";
 import { FC } from "react";
-import { ScrollToTop, Sidebar } from "./components";
+import { ScrollToTop, Sidebar } from "../components";
 import "./globals.css";
 import styles from "./layout.module.css";
 

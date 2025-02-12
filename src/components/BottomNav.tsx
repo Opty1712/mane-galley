@@ -3,7 +3,7 @@
 import { clsx } from "clsx";
 import Link from "next/link";
 import { FC, useEffect, useState } from "react";
-import { Section } from "../types";
+import { Section } from "../app/types";
 import { checkIsMobile, scrollToSection, useScrollDirection } from "../utils";
 import styles from "./BottomNav.module.css";
 

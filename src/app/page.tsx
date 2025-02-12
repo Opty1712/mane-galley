@@ -2,9 +2,9 @@
 import { clsx } from "clsx";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { BottomNav, PortfolioLink, Typograph } from "./components";
+import { BottomNav, PortfolioLink, Typograph } from "../components";
+import { copyToClipboard } from "../utils";
 import styles from "./page.module.css";
-import { copyToClipboard } from "./utils";
 
 export default function Home() {
   const { push } = useRouter();
@@ -860,7 +860,7 @@ export default function Home() {
           <div className={styles.grid13}>
             <h2 className={clsx(styles.h2, styles.divider)}>
               <Typograph>
-                Остаемся на связи ьдьэлэ .ьэ и поддерживаем юлоржшоэ оэээк
+                Остаемся на связи ьдьэлэ .ьэи поддерживаем юлоржшоэ оэээк
                 оммуникацию
               </Typograph>
             </h2>
