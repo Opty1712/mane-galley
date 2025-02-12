@@ -73,7 +73,7 @@ export default function Home() {
       <section id="projects" className={styles.section}>
         {/** UNCLE VPN */}
         <div
-          className={clsx(styles.pageGrid, styles.project)}
+          className={clsx(styles.pageGrid, styles.project, styles.interactive)}
           title="Смотреть кейс"
           onClick={() => push("/projects/uncle-vpn")}
         >
@@ -137,7 +137,7 @@ export default function Home() {
 
         {/** Xcore Vpn  */}
         <div
-          className={clsx(styles.pageGrid, styles.project)}
+          className={clsx(styles.pageGrid, styles.project, styles.interactive)}
           title="Смотреть кейс"
           onClick={() => push("/projects/x-core-vpn")}
         >
@@ -195,7 +195,7 @@ export default function Home() {
 
         {/** Mos.ru */}
         <div
-          className={clsx(styles.pageGrid, styles.project)}
+          className={clsx(styles.pageGrid, styles.project, styles.interactive)}
           title="Смотреть кейс"
           onClick={() => push("/projects/mos-ru-sport")}
         >
@@ -252,7 +252,7 @@ export default function Home() {
 
         {/** Supra */}
         <div
-          className={clsx(styles.pageGrid, styles.project)}
+          className={clsx(styles.pageGrid, styles.project, styles.interactive)}
           title="Смотреть кейс"
           onClick={() => push("/projects/supra")}
         >
@@ -314,7 +314,7 @@ export default function Home() {
 
         {/** Kalitniki */}
         <div
-          className={clsx(styles.pageGrid, styles.project)}
+          className={clsx(styles.pageGrid, styles.project, styles.interactive)}
           title="Смотреть кейс"
           onClick={() => push("/projects/kalitniki")}
         >
@@ -372,7 +372,7 @@ export default function Home() {
 
         {/** SberJazz */}
         <div
-          className={clsx(styles.pageGrid, styles.project)}
+          className={clsx(styles.pageGrid, styles.project, styles.interactive)}
           title="Смотреть кейс"
           onClick={() => push("/projects/sber-jazz")}
         >
@@ -902,16 +902,16 @@ export default function Home() {
         </div>
       </section>
 
-      <BottomNav sections={sections} />
+      <BottomNav
+        sections={[
+          { id: "projects", title: "Проекты" },
+          { id: "feedback", title: "Отзывы" },
+          { id: "education", title: "Образование" },
+          { id: "job", title: "Опыт" },
+          { id: "summary", title: "Summary" },
+          { id: "contacts", title: "Контакты" },
+        ]}
+      />
     </>
   );
 }
-
-const sections = [
-  { id: "projects", title: "Проекты" },
-  { id: "feedback", title: "Отзывы" },
-  { id: "education", title: "Образование" },
-  { id: "job", title: "Опыт" },
-  { id: "summary", title: "Summary" },
-  { id: "contacts", title: "Контакты" },
-];

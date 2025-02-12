@@ -170,11 +170,15 @@
 }
 
 .project {
-  margin-bottom: 20vh;
+  margin-bottom: 6vh;
   padding: 2vw 0;
-  cursor: pointer;
   will-change: background-color;
   transition: background-color 0.3s;
+
+  &.interactive {
+    cursor: pointer;
+    margin-bottom: 20vh;
+  }
 
   @media (max-width: 1000px) {
     margin-top: 4vh;
@@ -182,7 +186,7 @@
   }
 
   @media (min-width: 1000px) {
-    &:hover {
+    &.interactive:hover {
       background-color: var(--main-color);
       padding-right: 2vw;
       padding-left: 2vw;
@@ -249,11 +253,11 @@
   .projectNumber {
     margin: 0 0 0 15px;
     padding: 0;
-    line-height: 150%;
     list-style-type: none;
 
     & li {
       position: relative;
+      margin: 0.8vh 0;
     }
 
     & li::before {
@@ -373,4 +377,21 @@
 .footerText {
   color: var(--second-color);
   font-size: clamp(16px, 4vw, 18px);
+}
+
+.stores {
+  display: flex;
+  gap: 1vh;
+  flex-direction: column;
+
+  @media (max-width: 1000px) {
+    flex-direction: row;
+    margin-bottom: 2vh;
+  }
+}
+
+.photoBlocks {
+  display: flex;
+  gap: 1vh;
+  flex-direction: column;
 }
