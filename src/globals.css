@@ -38,6 +38,10 @@ body {
   position: relative;
   z-index: 1;
   color: var(--main-color);
+
+  @media (max-width: 1000px) {
+    padding-bottom: 20vh;
+  }
 }
 
 body::before {

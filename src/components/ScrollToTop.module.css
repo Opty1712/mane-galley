@@ -26,7 +26,7 @@
   animation-timeline: scroll();
   padding: 5px;
   position: fixed;
-  bottom: calc((100% - 45px) / 2);
+  bottom: calc((100% - 43px) / 2);
   right: 2vw;
 
   @media (max-width: 1000px) {
