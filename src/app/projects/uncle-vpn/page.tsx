@@ -533,6 +533,15 @@ export default function Page() {
         </div>
       </section>
 
+      <section style={{ marginBottom: "2vh" }}>
+        <div className={styles.pageGrid}>
+          <div className={styles.grid11} />
+          <div className={styles.grid8}>
+            <img src="/images/uncle/outro.webp" width="100%" alt="VPN мем" />
+          </div>
+        </div>
+      </section>
+
       <BottomNav
         sections={[
           { id: "intro", title: "Интро" },
@@ -559,4 +568,6 @@ export default function Page() {
  * контакты
  * сторителлинг
  * фишки
+ *
+ * не хватает опросов и результатов с инсайтами
  */
