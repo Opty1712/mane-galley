@@ -76,7 +76,7 @@ export default function Home() {
           <div className={styles.grid5} />
           <div className={clsx(styles.grid6)}>
             <div className={styles.projectHeader}>Uncle VPN</div>
-            <div className={styles.projectDate}>Март 2023 — Ноябрь 2024</div>
+            <div className={styles.projectDate}>Март 2023 — ноябрь 2024</div>
             <div>
               <span className={styles.projectBadge}>UX/UI</span>
               <span className={styles.projectBadge}>Mobile</span>
@@ -197,8 +197,8 @@ export default function Home() {
         >
           <div className={styles.grid5} />
           <div className={clsx(styles.grid6)}>
-            <div className={styles.projectHeader}>Mos.ru</div>
-            <div className={styles.projectDate}>Февраль 2024 — Март 2024</div>
+            <div className={styles.projectHeader}>Спорт на mos.ru</div>
+            <div className={styles.projectDate}>Февраль — март 2024</div>
             <div>
               <span className={styles.projectBadge}>UX/UI</span>
               <span className={styles.projectBadge}>Web</span>
@@ -215,7 +215,6 @@ export default function Home() {
             <span className={styles.projectLine}>
               <Typograph>
                 Mos.ru — государственный сервис по оказанию услуг населению
-                Проект связан со спортом дописать
               </Typograph>
             </span>
             <span>
@@ -235,11 +234,7 @@ export default function Home() {
             </span>
           </div>
           <div className={styles.grid7}>
-            <img
-              src="/images/me_small.webp"
-              width="100%"
-              alt="Наталья, продуктовый дизайнер"
-            />
+            <img src="/images/mos/mos1.webp" width="100%" alt="Макет Mos.ru" />
             <Link href="/projects/mos-ru-sport" className={styles.projectLink}>
               Подробнее
             </Link>
@@ -255,7 +250,7 @@ export default function Home() {
           <div className={styles.grid5} />
           <div className={clsx(styles.grid6)}>
             <div className={styles.projectHeader}>Supra</div>
-            <div className={styles.projectDate}>Апрель 2024 — Июль 2024</div>
+            <div className={styles.projectDate}>Апрель — июль 2024</div>
             <div>
               <span className={styles.projectBadge}>UX/UI</span>
               <span className={styles.projectBadge}>Web</span>
@@ -317,7 +312,7 @@ export default function Home() {
           <div className={styles.grid5} />
           <div className={clsx(styles.grid6)}>
             <div className={styles.projectHeader}>Kalitniki</div>
-            <div className={styles.projectDate}>Апрель 2023 — Февраль 2025</div>
+            <div className={styles.projectDate}>Апрель 2023 — февраль 2025</div>
             <div>
               <span className={styles.projectBadge}>UX/UI</span>
               <span className={styles.projectBadge}>Web</span>
@@ -673,19 +668,14 @@ export default function Home() {
           <div className={styles.grid4}>Опыт работы:</div>
           <div className={styles.grid4}>
             <div className={styles.commonSectionBlock}>
-              <span className={styles.commonSectionSchool}>UncleVPN</span>
-              <span className={styles.commonSectionName}>Product Designer</span>
-              <span className={styles.commonSectionDate}>2023 — 2024</span>
-            </div>
-            <div className={styles.commonSectionBlock}>
               <span className={styles.commonSectionSchool}>Kalitniki</span>
               <span className={styles.commonSectionName}>Product Designer</span>
               <span className={styles.commonSectionDate}>2023 — 2025</span>
             </div>
             <div className={styles.commonSectionBlock}>
-              <span className={styles.commonSectionSchool}>UVENT</span>
+              <span className={styles.commonSectionSchool}>Студия MaxT</span>
               <span className={styles.commonSectionName}>UX/UI Designer</span>
-              <span className={styles.commonSectionDate}>2021 — 2023</span>
+              <span className={styles.commonSectionDate}>2022 — 2024</span>
             </div>
             <div className={styles.commonSectionBlock}>
               <span className={styles.commonSectionSchool}>Центр Красоты</span>
@@ -811,9 +801,7 @@ export default function Home() {
           <div className={styles.grid5} />
           <div className={styles.grid19}>
             <h2 className={clsx(styles.h2, styles.divider)}>
-              <Typograph>
-                До скорой встречи! Обсудим предложения и проекты!
-              </Typograph>
+              <Typograph>Обсудим предложения и проекты?</Typograph>
             </h2>
           </div>
         </div>
@@ -855,10 +843,7 @@ export default function Home() {
           <div className={styles.grid11} />
           <div className={styles.grid13}>
             <h2 className={clsx(styles.h2, styles.divider)}>
-              <Typograph>
-                Остаемся на связи ьдьэлэ .ьэи поддерживаем юлоржшоэ оэээк
-                оммуникацию
-              </Typograph>
+              <Typograph>До скорой встречи, остаемся на связи!</Typograph>
             </h2>
           </div>
         </div>
@@ -866,17 +851,25 @@ export default function Home() {
           <div className={styles.grid11} />
           <div className={styles.grid13}>
             <div className={styles.commonSectionBlock}>
-              <span className={styles.contactSections}>[Разработка]</span>
-              <span>Андрей Едунов</span>
+              <span className={styles.contactSections}>[Telegram]</span>
+              <span>
+                <a
+                  href="https://t.me/NatalyMane"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.link}
+                >
+                  @NatalyMane
+                </a>
+              </span>
             </div>
-            <div
-              className={styles.commonSectionBlock}
-              onClick={() => copyToClipboard("https://mane.gallery")}
-              style={{ cursor: "pointer", width: "min-content" }}
-              title="Скопировать адрес сайта в буфер обмена"
-            >
-              <span className={styles.contactSections}>[Скопировать]</span>
-              <span>www.mane.gallery</span>
+            <div className={styles.commonSectionBlock}>
+              <span className={styles.contactSections}>[Email]</span>
+              <span>
+                <a href="mailto:manatkina@mail.ru" className={styles.link}>
+                  manatkina@mail.ru
+                </a>
+              </span>
             </div>
           </div>
         </div>
@@ -886,14 +879,44 @@ export default function Home() {
           <div className={clsx(styles.grid19, styles.footerLine)} />
         </div>
 
-        <div className={clsx(styles.pageGrid, styles.footerText)}>
+        <div
+          className={clsx(
+            styles.pageGrid,
+            styles.footerText,
+            styles.commonSection
+          )}
+        >
           <div className={styles.grid5} />
-          <div className={clsx(styles.grid6)}>©2025 Манаткина Наталья</div>
+          <div className={clsx(styles.grid6)}>
+            ©2025 Манаткина Наталья
+            <div
+              className={styles.commonSectionBlock}
+              onClick={() => copyToClipboard("https://mane.gallery")}
+              style={{
+                cursor: "pointer",
+                width: "min-content",
+                marginTop: "2vh",
+              }}
+              title="Скопировать адрес сайта в буфер обмена"
+            >
+              <span className={styles.contactSections}>[Скопировать]</span>
+              <span>www.mane.gallery</span>
+            </div>
+          </div>
           <div className={clsx(styles.grid13)}>
             <Typograph>
               Контент предназначен исключительно для личного использования и
               некоммерческих целей
             </Typograph>
+            <div
+              className={styles.commonSectionBlock}
+              style={{
+                marginTop: "2vh",
+              }}
+            >
+              <span className={styles.contactSections}>[Разработка]</span>
+              <span>Андрей Едунов</span>
+            </div>
           </div>
         </div>
       </section>
