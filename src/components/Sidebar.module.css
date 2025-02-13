@@ -90,7 +90,7 @@
 
 .menuTitle {
   display: block;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   font-weight: 500;
   color: var(--main-color);
   margin-bottom: 0.5rem;
@@ -116,7 +116,7 @@ a.menuTitle:hover {
 
 .menuItem {
   display: block;
-  padding: 0.1rem 0.5rem;
+  padding: 0.1rem 0;
   cursor: pointer;
   transition: color 0.3s ease;
   color: var(--tertiary-color);

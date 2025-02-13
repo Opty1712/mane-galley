@@ -67,8 +67,8 @@ export const Sidebar = () => {
         <Link href={mainHref} className={styles.logoMobile}>
           <img
             src="/images/logo.svg"
-            width={30}
-            height={30}
+            width={31}
+            height={26}
             alt="Лого Манаткина Наталья"
           />
         </Link>
@@ -115,7 +115,7 @@ export const Sidebar = () => {
           >
             <img
               src="/images/logo.svg"
-              width={70}
+              width={77}
               height={70}
               alt="Лого Манаткина Наталья"
             />
@@ -148,7 +148,7 @@ export const Sidebar = () => {
               width={20}
               height={20}
               alt="Telegram"
-              style={{ marginTop: "20px", padding: "10px" }}
+              style={{ marginTop: "20px", padding: "10px 10px 10px 0" }}
             />
           </a>
         </span>
