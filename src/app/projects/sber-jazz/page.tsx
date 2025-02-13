@@ -11,7 +11,7 @@ export default function Page() {
           <div className={styles.grid5} />
           <div className={styles.grid14}>
             <h1 className={styles.h1}>SberJazz</h1>
-            <div className={styles.date}>Октябрь 2023 — январь 2024</div>
+            <div className={styles.date}>Октябрь 2023 — Январь 2024</div>
           </div>
           <div className={styles.grid5} />
         </div>
@@ -22,7 +22,13 @@ export default function Page() {
               SberJazz — это сервис видеовстреч, мессенджер для работы и личных
               дел с искусственным интеллектом
             </Typograph>
-            <img src="/images/sber/teaser.webp" width="100%" alt="Созвон мем" />
+            <p>
+              <img
+                src="/images/sber/teaser.webp"
+                width="100%"
+                alt="Созвон мем"
+              />
+            </p>
           </div>
           <div className={styles.grid1} />
           <div className={styles.grid4}></div>

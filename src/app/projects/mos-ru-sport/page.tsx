@@ -11,7 +11,7 @@ export default function Page() {
           <div className={styles.grid5} />
           <div className={styles.grid14}>
             <h1 className={styles.h1}>Спорт на mos.ru</h1>
-            <div className={styles.date}>Февраль — март 2024</div>
+            <div className={styles.date}>Февраль — Март 2024</div>
           </div>
           <div className={styles.grid3} />
           <div className={styles.grid2} />
@@ -23,7 +23,9 @@ export default function Page() {
               Интеграция сервисов Департамента спорта города Москвы в платформу
               MOS.RU
             </Typograph>
-            <img src="/images/mos/teaser.webp" width="100%" alt="Спорт мем" />
+            <p>
+              <img src="/images/mos/teaser.webp" width="100%" alt="Спорт мем" />
+            </p>
           </div>
           <div className={styles.grid1} />
           <div className={styles.grid4}></div>

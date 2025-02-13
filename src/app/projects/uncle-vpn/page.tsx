@@ -48,7 +48,9 @@ export default function Page() {
               Сервис по предоставлению безопасного подключения к сети интернет
               через VPN
             </Typograph>
-            <img src="/images/uncle/teaser.webp" width="100%" alt="VPN мем" />
+            <p>
+              <img src="/images/uncle/teaser.webp" width="100%" alt="VPN мем" />
+            </p>
           </div>
           <div className={styles.grid1} />
           <div className={styles.grid4}></div>

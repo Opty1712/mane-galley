@@ -76,7 +76,7 @@ export default function Home() {
           <div className={styles.grid5} />
           <div className={clsx(styles.grid6)}>
             <div className={styles.projectHeader}>Uncle VPN</div>
-            <div className={styles.projectDate}>Март 2023 — ноябрь 2024</div>
+            <div className={styles.projectDate}>Март 2023 — Ноябрь 2024</div>
             <div>
               <span className={styles.projectBadge}>UX/UI</span>
               <span className={styles.projectBadge}>Mobile</span>
@@ -140,7 +140,7 @@ export default function Home() {
           <div className={styles.grid5} />
           <div className={clsx(styles.grid6)}>
             <div className={styles.projectHeader}>xCore Client for X-Ray</div>
-            <div className={styles.projectDate}>14 — 21 августа 2024</div>
+            <div className={styles.projectDate}>14 — 21 Августа 2024</div>
             <div>
               <span className={styles.projectBadge}>UX/UI</span>
               <span className={styles.projectBadge}>Mobile</span>
@@ -198,7 +198,7 @@ export default function Home() {
           <div className={styles.grid5} />
           <div className={clsx(styles.grid6)}>
             <div className={styles.projectHeader}>Спорт на mos.ru</div>
-            <div className={styles.projectDate}>Февраль — март 2024</div>
+            <div className={styles.projectDate}>Февраль — Март 2024</div>
             <div>
               <span className={styles.projectBadge}>UX/UI</span>
               <span className={styles.projectBadge}>Web</span>
@@ -250,7 +250,7 @@ export default function Home() {
           <div className={styles.grid5} />
           <div className={clsx(styles.grid6)}>
             <div className={styles.projectHeader}>Supra</div>
-            <div className={styles.projectDate}>Апрель — июль 2024</div>
+            <div className={styles.projectDate}>Апрель — Июль 2024</div>
             <div>
               <span className={styles.projectBadge}>UX/UI</span>
               <span className={styles.projectBadge}>Web</span>
@@ -307,8 +307,8 @@ export default function Home() {
         >
           <div className={styles.grid5} />
           <div className={clsx(styles.grid6)}>
-            <div className={styles.projectHeader}>Kalitniki</div>
-            <div className={styles.projectDate}>Апрель 2023 — февраль 2025</div>
+            <div className={styles.projectHeader}>Калитники</div>
+            <div className={styles.projectDate}>Апрель 2023 — Февраль 2025</div>
             <div>
               <span className={styles.projectBadge}>UX/UI</span>
               <span className={styles.projectBadge}>Web</span>
@@ -324,13 +324,14 @@ export default function Home() {
           >
             <span className={styles.projectLine}>
               <Typograph>
-                Kalitniki — это банный комплекс в центре москвы
+                Калитниковские бани — один из старейших банных комплексов в
+                центре Москвы
               </Typograph>
             </span>
             <span>
               <div className={styles.projectSubHeader}>[Бизнес-задача]</div>
               <Typograph>
-                Усиленная итеррационная цифровизация бизнеса с увеличением
+                Усиленная итерационная цифровизация бизнеса с увеличением
                 конверсии в покупку на сайте. Обновление визуальной
                 коммуникации, улучшение клиентского опыта в вебе
               </Typograph>
@@ -366,7 +367,7 @@ export default function Home() {
           <div className={styles.grid5} />
           <div className={clsx(styles.grid6)}>
             <div className={styles.projectHeader}>SberJazz</div>
-            <div className={styles.projectDate}>Октябрь 2023 — январь 2024</div>
+            <div className={styles.projectDate}>Октябрь 2023 — Январь 2024</div>
             <div>
               <span className={styles.projectBadge}>UX/UI</span>
               <span className={styles.projectBadge}>Web</span>
