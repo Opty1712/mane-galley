@@ -212,9 +212,22 @@ export default function Page() {
                 </li>
                 <li>
                   <Typograph>
-                    Дизайню баннеры для App Store и Google Play, создала 3D
-                    макет телефона для этого
-                  </Typograph>
+                    Дизайню баннеры для App Store и Google Play, создала
+                  </Typograph>{" "}
+                  <a
+                    href="https://app.spline.design/file/538e74fd-a3d2-4112-aeaf-992db0f8ec53"
+                    rel="noopener noreferrer"
+                    className={styles.link}
+                    title="Посмотреть макет в Spline"
+                  >
+                    <Typograph>3D макет планшета для этого в Spline</Typograph>{" "}
+                    <img
+                      src="/icons/link.svg"
+                      width={13}
+                      height={13}
+                      alt="Ссылка на макет"
+                    />
+                  </a>
                 </li>
                 <li>
                   <Typograph>

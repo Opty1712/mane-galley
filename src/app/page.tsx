@@ -120,9 +120,9 @@ export default function Home() {
           <div className={styles.grid7}>
             <span>
               <img
-                src="/images/me_small.webp"
+                src="/images/uncle/vpn_home.webp"
                 width="100%"
-                alt="Наталья, продуктовый дизайнер"
+                alt="макет Uncle VPN"
               />
               <Link href="/projects/uncle-vpn" className={styles.projectLink}>
                 Подробнее

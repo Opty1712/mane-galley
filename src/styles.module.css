@@ -284,6 +284,8 @@
     text-decoration: none;
     will-change: background-color;
     transition: background-color 0.3s;
+    margin-top: 2vh;
+    display: inline-block;
 
     &:hover {
       background-color: var(--accent-color);
@@ -394,4 +396,11 @@
   display: flex;
   gap: 1vh;
   flex-direction: column;
+}
+
+.link:visited,
+.link {
+  color: var(--accent-color);
+  text-decoration: none;
+  border-bottom: 1px solid #f9132e;
 }
