@@ -148,7 +148,7 @@ export default function Page() {
                     сервисов Москомспорта с платформой mos.ru уже существует и
                     будет проще перевести на mos.ru другие разделы с точки
                     зрения разработки. Все это привело к идее создания
-                    полноценного спортивного раздела на mos.ru.{" "}
+                    полноценного спортивного раздела на mos.ru.
                   </Typograph>
                 </li>
                 <li>
@@ -299,11 +299,6 @@ export default function Page() {
           >
             <h2 className={styles.h2}>Результат</h2>
             <span>
-              <img
-                src="/images/mos/mos10.webp"
-                width="100%"
-                alt="Наша команда"
-              />
               <p>
                 <Typograph>
                   На защите проектов наша команда заняла 2-ое место, после этого
@@ -311,16 +306,12 @@ export default function Page() {
                   взяты в работу!
                 </Typograph>
               </p>
+              <img
+                src="/images/mos/mos10.webp"
+                width="100%"
+                alt="Наша команда"
+              />
             </span>
-          </div>
-        </div>
-      </section>
-
-      <section style={{ marginBottom: "2vh" }}>
-        <div className={styles.pageGrid}>
-          <div className={styles.grid11} />
-          <div className={styles.grid8}>
-            <img src="/images/mos/outro.webp" width="100%" alt="Спорт мем" />
           </div>
         </div>
       </section>
@@ -339,18 +330,3 @@ export default function Page() {
     </>
   );
 }
-
-/**
- * обложка
- * задача-проблема
- * этапы работы
- * обоснование - общение с юзерами
- * гипотезы
- * флоу
- * макеты
- * юкс-тесты
- * финальные макеты
- * контакты
- *
- * не хватает опросов и результатов с инсайтами
- */

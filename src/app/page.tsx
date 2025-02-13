@@ -370,7 +370,7 @@ export default function Home() {
           <div className={styles.grid5} />
           <div className={clsx(styles.grid6)}>
             <div className={styles.projectHeader}>SberJazz</div>
-            <div className={styles.projectDate}>Октябрь 2023 — Январь 2024</div>
+            <div className={styles.projectDate}>Октябрь 2023 — январь 2024</div>
             <div>
               <span className={styles.projectBadge}>UX/UI</span>
               <span className={styles.projectBadge}>Web</span>
@@ -388,7 +388,7 @@ export default function Home() {
             <span className={styles.projectLine}>
               <Typograph>
                 SberJazz — это сервис видеовстреч, мессенджер для работы и
-                личных делс искусственным интеллектом
+                личных дел с искусственным интеллектом
               </Typograph>
             </span>
             <span>
@@ -409,11 +409,7 @@ export default function Home() {
             </span>
           </div>
           <div className={styles.grid7}>
-            <img
-              src="/images/me_small.webp"
-              width="100%"
-              alt="Наталья, продуктовый дизайнер"
-            />
+            <img src="/images/sber/sber1.webp" width="100%" alt="SberJazz" />
             <Link href="/projects/sber-jazz" className={styles.projectLink}>
               Подробнее
             </Link>
@@ -498,7 +494,7 @@ export default function Home() {
           <div className={styles.grid8}>
             <div className={styles.opinionBlock}>
               <img
-                src="/images/home/Nadya.webp"
+                src="/images/home/Konstantin.webp"
                 width="107"
                 alt="Backend Developer"
               />
