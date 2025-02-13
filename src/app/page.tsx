@@ -29,14 +29,6 @@ export default function Home() {
               width="100%"
               alt="Наталья, продуктовый дизайнер"
             />
-            <a
-              href="https://t.me/NatalyMane"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Telegram
-            </a>
-            <a href="mailto:manatkina@mail.ru">Email</a>
           </div>
         </div>
 

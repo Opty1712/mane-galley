@@ -89,9 +89,10 @@ export const Sidebar = () => {
       </div>
 
       <div
-        className={`${styles.overlay} ${
-          isMobileMenuOpen ? styles.overlayVisible : ""
-        }`}
+        className={clsx(
+          styles.overlay,
+          isMobileMenuOpen && styles.overlayVisible
+        )}
         onClick={toggleMobileMenu}
       />
 
@@ -102,7 +103,11 @@ export const Sidebar = () => {
         }`}
       >
         <span className={styles.sidebarContent}>
-          <Link href={mainHref} className={styles.logo}>
+          <Link
+            href={mainHref}
+            className={styles.logo}
+            title="Вернуться на главную страницу"
+          >
             M
           </Link>
           <nav className={styles.nav}>
@@ -112,7 +117,10 @@ export const Sidebar = () => {
               <Link
                 key={project.slug}
                 href={`/projects/${project.slug}`}
-                className={styles.menuItem}
+                className={clsx(
+                  styles.menuItem,
+                  pathname.includes(project.slug) && styles.active
+                )}
                 onClick={toggleMobileMenu}
               >
                 {project.title}
@@ -123,6 +131,7 @@ export const Sidebar = () => {
             href="https://t.me/NatalyMane"
             target="_blank"
             rel="noopener noreferrer"
+            title="Написать мне в telegram @NatalyMane"
           >
             <img
               src="/icons/telegram.svg"

@@ -34,14 +34,15 @@
   color: var(--accent-color);
   text-decoration: none;
   transition: transform 0.3s ease;
+  display: inline-block;
 
   @media (max-width: 1000px) {
     display: none;
   }
-}
 
-.logo:hover {
-  transform: scale(1.1);
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .mobileHeader {
@@ -117,12 +118,16 @@ a.menuTitle:hover {
   padding: 0.1rem 0.5rem;
   cursor: pointer;
   transition: color 0.3s ease;
-  color: #7b7b7b;
+  color: var(--tertiary-color);
   text-decoration: none;
-}
 
-.menuItem:hover {
-  color: var(--accent-color);
+  &:hover {
+    color: var(--accent-color);
+  }
+
+  &.active {
+    color: var(--accent-color);
+  }
 }
 
 .menuButton {
