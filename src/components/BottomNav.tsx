@@ -6,9 +6,10 @@ import { FC, useEffect, useState } from "react";
 import { Section } from "../app/types";
 import { checkIsMobile, scrollToSection, useScrollDirection } from "../utils";
 import styles from "./BottomNav.module.css";
+import { ScrollToTop } from "./ScrollToTop";
 
 export const BottomNav: FC<{ sections: Array<Section> }> = ({ sections }) => {
-  const { isScrollDown } = useScrollDirection();
+  const { isScrollDown, isBottom } = useScrollDirection();
   const [activeSection, setActiveSection] = useState("");
 
   const isMobile = checkIsMobile();
@@ -39,9 +40,10 @@ export const BottomNav: FC<{ sections: Array<Section> }> = ({ sections }) => {
     <nav
       className={clsx(
         styles.bottomNav,
-        !isScrollDown && isMobile && styles.hidden
+        !isScrollDown && isMobile && !isBottom && styles.hidden
       )}
     >
+      <ScrollToTop />
       {sections.map(({ id, title }) => (
         <Link
           href={`#${id}`}

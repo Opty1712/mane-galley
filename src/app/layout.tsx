@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Head from "next/head";
 import { FC } from "react";
-import { ScrollToTop, Sidebar } from "../components";
+import { Sidebar } from "../components";
 import "../globals.css";
 import styles from "../styles.module.css";
 
@@ -59,7 +59,6 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => {
         <Sidebar />
         <main className={styles.main} id="content">
           {children}
-          <ScrollToTop />
         </main>
       </body>
     </html>

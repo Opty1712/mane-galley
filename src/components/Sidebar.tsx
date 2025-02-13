@@ -38,7 +38,7 @@ export const Sidebar = () => {
 
       ref.current.style.paddingTop = isScrolled
         ? smallPadding
-        : "calc(118 / 1440 * 100vw + 6vw - 30px)";
+        : "calc(118 / 1440 * 100vw + 7vw - 30px)";
     }
   }, []);
 
