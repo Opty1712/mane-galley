@@ -139,7 +139,7 @@ export default function Home() {
         >
           <div className={styles.grid5} />
           <div className={clsx(styles.grid6)}>
-            <div className={styles.projectHeader}>xCore VPN </div>
+            <div className={styles.projectHeader}>xCore Client for X-Ray</div>
             <div className={styles.projectDate}>14 — 21 августа 2024</div>
             <div>
               <span className={styles.projectBadge}>UX/UI</span>
@@ -171,7 +171,7 @@ export default function Home() {
               <div className={styles.projectSubHeader}>[Результат]</div>
               <ul className={styles.projectNumber}>
                 <li>27 исследований</li>
-                <li>Фирменный стильФирменный стильФирменный стиль</li>
+                <li>Фирменный стиль</li>
                 <li>Дизайн-система</li>
                 <li>MVP за 7 дней</li>
               </ul>
@@ -179,9 +179,9 @@ export default function Home() {
           </div>
           <div className={styles.grid7}>
             <img
-              src="/images/me_small.webp"
+              src="/images/xcore/xcore_home.webp"
               width="100%"
-              alt="Наталья, продуктовый дизайнер"
+              alt="макет xCore VPN"
             />
             <Link href="/projects/x-core-vpn" className={styles.projectLink}>
               Подробнее
