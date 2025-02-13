@@ -79,6 +79,7 @@
   text-align: center;
   color: var(--accent-color);
   text-decoration: none;
+  transform: translateY(2px);
 }
 
 .nav {

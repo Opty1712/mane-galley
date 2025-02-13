@@ -65,7 +65,12 @@ export const Sidebar = () => {
         )}
       >
         <Link href={mainHref} className={styles.logoMobile}>
-          M
+          <img
+            src="/images/logo.svg"
+            width={30}
+            height={30}
+            alt="Лого Манаткина Наталья"
+          />
         </Link>
 
         <span>
@@ -108,7 +113,12 @@ export const Sidebar = () => {
             className={styles.logo}
             title="Вернуться на главную страницу"
           >
-            M
+            <img
+              src="/images/logo.svg"
+              width={70}
+              height={70}
+              alt="Лого Манаткина Наталья"
+            />
           </Link>
           <nav className={styles.nav}>
             <div className={styles.menuTitle}>Проекты [06]</div>

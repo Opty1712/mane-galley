@@ -36,7 +36,7 @@
 
 @supports not (animation-timeline: scroll()) {
   .backToTop {
-    background: var(--accent-color);
+    background-image: none;
   }
 }
 
