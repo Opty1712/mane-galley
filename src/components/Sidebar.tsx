@@ -43,6 +43,12 @@ export const Sidebar = () => {
   }, []);
 
   useEffect(() => {
+    if (!window.location.hash) {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname]);
+
+  useEffect(() => {
     window.addEventListener("scroll", animate);
 
     return () => window.removeEventListener("scroll", animate);

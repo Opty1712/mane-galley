@@ -1,14 +1,9 @@
 "use client";
 import { clsx } from "clsx";
-import { useEffect } from "react";
 import { BottomNav, Typograph } from "../../../components";
 import styles from "../../../styles.module.css";
 
 export default function Page() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <>
       <section id="intro" className={styles.section}>
