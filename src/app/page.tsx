@@ -292,11 +292,7 @@ export default function Home() {
             </span>
           </div>
           <div className={styles.grid7}>
-            <img
-              src="/images/me_small.webp"
-              width="100%"
-              alt="Наталья, продуктовый дизайнер"
-            />
+            <img src="/images/supra/supra1.webp" width="100%" alt="Супра" />
             <Link href="/projects/supra" className={styles.projectLink}>
               Подробнее
             </Link>
