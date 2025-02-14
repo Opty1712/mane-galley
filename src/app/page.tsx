@@ -543,11 +543,7 @@ export default function Home() {
         <div className={styles.pageGrid} style={{ marginBottom: "1vh" }}>
           <div className={styles.grid5} />
           <div className={styles.grid13}>
-            <img
-              src="/images/me_small.webp"
-              width="100%"
-              alt="Наталья, продуктовый дизайнер"
-            />
+            <img src="/images/home/bri1.webp" width="100%" alt="Британка" />
           </div>
         </div>
         <div className={clsx(styles.pageGrid, styles.commonSection)}>
@@ -614,9 +610,9 @@ export default function Home() {
           <div className={styles.grid5} />
           <div className={styles.grid13}>
             <img
-              src="/images/me_small.webp"
+              src="/images/home/bri2.webp"
               width="100%"
-              alt="Наталья, продуктовый дизайнер"
+              alt="Британка, команда"
             />
           </div>
         </div>
@@ -638,9 +634,9 @@ export default function Home() {
           <div className={styles.grid11} />
           <div className={styles.grid8}>
             <img
-              src="/images/me_small.webp"
+              src="/images/home/bri2.webp"
               width="100%"
-              alt="Наталья, продуктовый дизайнер"
+              alt="Британка, команда"
             />
           </div>
         </div>
@@ -650,6 +646,7 @@ export default function Home() {
           <div className={styles.grid8} style={{ marginBottom: "6vh" }}>
             <div className={styles.commonSectionBlock}>
               <span className={styles.commonSectionName}>JTBD</span>
+              <span className={styles.commonSectionName}>CJM</span>
               <span className={styles.commonSectionName}>MindSet</span>
               <span className={styles.commonSectionName}>Userflow</span>
             </div>
@@ -660,9 +657,9 @@ export default function Home() {
           <div className={styles.grid7} />
           <div className={styles.grid8}>
             <img
-              src="/images/me_small.webp"
+              src="/images/home/bri2.webp"
               width="100%"
-              alt="Наталья, продуктовый дизайнер"
+              alt="Британка, команда"
             />
           </div>
         </div>
@@ -729,11 +726,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.grid7}>
-            <img
-              src="/images/me_small.webp"
-              width="100%"
-              alt="Наталья, продуктовый дизайнер"
-            />
+            <img src="/images/home/design.webp" width="100%" alt="Дизайн" />
           </div>
         </div>
         <div
@@ -757,11 +750,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.grid7}>
-            <img
-              src="/images/me_small.webp"
-              width="100%"
-              alt="Наталья, продуктовый дизайнер"
-            />
+            <img src="/images/home/ds.webp" width="100%" alt="Дизайн системы" />
           </div>
         </div>
         <div
@@ -794,9 +783,9 @@ export default function Home() {
           </div>
           <div className={styles.grid7}>
             <img
-              src="/images/me_small.webp"
+              src="/images/home/research.webp"
               width="100%"
-              alt="Наталья, продуктовый дизайнер"
+              alt="Исследования"
             />
           </div>
         </div>
