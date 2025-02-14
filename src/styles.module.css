@@ -188,6 +188,7 @@
     &.interactive {
       cursor: pointer;
     }
+
     &.interactive:hover {
       background-color: var(--main-color);
       padding-right: 2vw;
@@ -200,8 +201,9 @@
         background-color: var(--link);
       }
 
-      .projectHeader,
-      .projectLine {
+      .projectHeader a,
+      .projectLine,
+      .projectDescription {
         color: var(--opposite-color);
       }
     }
