@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { BottomNav, PortfolioLink, Typograph } from "../components";
 import styles from "../styles.module.css";
-import { copyToClipboard } from "../utils";
 
 export default function Home() {
   const { push } = useRouter();
@@ -348,9 +347,9 @@ export default function Home() {
           </div>
           <div className={styles.grid7}>
             <img
-              src="/images/me_small.webp"
+              src="/images/kalitniki/kalitniki_home.webp"
               width="100%"
-              alt="Наталья, продуктовый дизайнер"
+              alt="Калитники"
             />
             <Link href="/projects/kalitniki" className={styles.projectLink}>
               Подробнее
@@ -863,52 +862,6 @@ export default function Home() {
                   manatkina@mail.ru
                 </a>
               </span>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.pageGrid}>
-          <div className={styles.grid5} />
-          <div className={clsx(styles.grid19, styles.footerLine)} />
-        </div>
-
-        <div
-          className={clsx(
-            styles.pageGrid,
-            styles.footerText,
-            styles.commonSection
-          )}
-        >
-          <div className={styles.grid5} />
-          <div className={clsx(styles.grid6)}>
-            ©2025 Манаткина Наталья
-            <div
-              className={styles.commonSectionBlock}
-              onClick={() => copyToClipboard("https://mane.gallery")}
-              style={{
-                cursor: "pointer",
-                width: "min-content",
-                marginTop: "2vh",
-              }}
-              title="Скопировать адрес сайта в буфер обмена"
-            >
-              <span className={styles.contactSections}>[Скопировать]</span>
-              <span>www.mane.gallery</span>
-            </div>
-          </div>
-          <div className={clsx(styles.grid13)}>
-            <Typograph>
-              Контент предназначен исключительно для личного использования и
-              некоммерческих целей
-            </Typograph>
-            <div
-              className={styles.commonSectionBlock}
-              style={{
-                marginTop: "2vh",
-              }}
-            >
-              <span className={styles.contactSections}>[Разработка]</span>
-              <span>Андрей Едунов</span>
             </div>
           </div>
         </div>

@@ -32,9 +32,25 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="task" className={styles.section}>
+      <section id="pictures" className={styles.section}>
         <div className={clsx(styles.pageGrid, styles.project)}>
           <div className={styles.grid5} />
+          <div className={styles.grid19}>
+            <h2 className={styles.h2}>Макеты</h2>
+            <p>
+              <img
+                src="/images/kalitniki/kalitniki1.webp"
+                width="100%"
+                alt="Макет Калитников"
+              />
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="task" className={styles.section}>
+        <div className={clsx(styles.pageGrid, styles.project)}>
+          <div className={styles.grid11} />
           <div
             className={clsx(
               styles.grid8,
@@ -54,7 +70,7 @@ export default function Page() {
       <BottomNav
         sections={[
           { id: "intro", title: "Интро" },
-          { id: "task", title: "Задача" },
+          { id: "pictures", title: "Макеты" },
         ]}
       />
     </>
