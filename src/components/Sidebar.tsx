@@ -79,14 +79,24 @@ export const Sidebar = () => {
           />
         </Link>
 
-        <span>
-          Наталья{" "}
-          <img
-            src="/icons/telegram.svg"
-            width={20}
-            height={20}
-            alt="Telegram"
-          />
+        <span className={styles.headerIcon}>
+          <Link href={mainHref} className={styles.headerName}>
+            Наталья
+          </Link>
+          <a
+            href="https://t.me/NatalyMane"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Написать мне в telegram @NatalyMane"
+          >
+            <img
+              src="/icons/telegram.svg"
+              width={20}
+              height={20}
+              alt="Telegram"
+              className={styles.telegram}
+            />
+          </a>
         </span>
         <button
           className={`${styles.menuButton} ${

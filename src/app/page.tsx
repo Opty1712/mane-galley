@@ -4,9 +4,11 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { BottomNav, PortfolioLink, Typograph } from "../components";
 import styles from "../styles.module.css";
+import { checkIsMobile } from "../utils";
 
 export default function Home() {
   const { push } = useRouter();
+  const isMobile = checkIsMobile();
 
   return (
     <>
@@ -70,11 +72,13 @@ export default function Home() {
         <div
           className={clsx(styles.pageGrid, styles.project, styles.interactive)}
           title="Смотреть кейс"
-          onClick={() => push("/projects/uncle-vpn")}
+          onClick={() => !isMobile && push("/projects/uncle-vpn")}
         >
           <div className={styles.grid5} />
           <div className={clsx(styles.grid6)}>
-            <div className={styles.projectHeader}>Uncle VPN</div>
+            <div className={styles.projectHeader}>
+              <Link href="/projects/uncle-vpn">Uncle VPN</Link>
+            </div>
             <div className={styles.projectDate}>Март 2023 — Ноябрь 2024</div>
             <div>
               <span className={styles.projectBadge}>UX/UI</span>
@@ -134,11 +138,13 @@ export default function Home() {
         <div
           className={clsx(styles.pageGrid, styles.project, styles.interactive)}
           title="Смотреть кейс"
-          onClick={() => push("/projects/x-core-vpn")}
+          onClick={() => !isMobile && push("/projects/x-core-vpn")}
         >
           <div className={styles.grid5} />
           <div className={clsx(styles.grid6)}>
-            <div className={styles.projectHeader}>xCore Client for X-Ray</div>
+            <div className={styles.projectHeader}>
+              <Link href="/projects/x-core-vpn">xCore Client for X-Ray</Link>
+            </div>
             <div className={styles.projectDate}>14 — 21 Августа 2024</div>
             <div>
               <span className={styles.projectBadge}>UX/UI</span>
@@ -192,11 +198,13 @@ export default function Home() {
         <div
           className={clsx(styles.pageGrid, styles.project, styles.interactive)}
           title="Смотреть кейс"
-          onClick={() => push("/projects/mos-ru-sport")}
+          onClick={() => !isMobile && push("/projects/mos-ru-sport")}
         >
           <div className={styles.grid5} />
           <div className={clsx(styles.grid6)}>
-            <div className={styles.projectHeader}>Спорт на mos.ru</div>
+            <div className={styles.projectHeader}>
+              <Link href="/projects/mos-ru-sport">Спорт на mos.ru</Link>
+            </div>
             <div className={styles.projectDate}>Февраль — Март 2024</div>
             <div>
               <span className={styles.projectBadge}>UX/UI</span>
@@ -244,11 +252,13 @@ export default function Home() {
         <div
           className={clsx(styles.pageGrid, styles.project, styles.interactive)}
           title="Смотреть кейс"
-          onClick={() => push("/projects/supra")}
+          onClick={() => !isMobile && push("/projects/supra")}
         >
           <div className={styles.grid5} />
           <div className={clsx(styles.grid6)}>
-            <div className={styles.projectHeader}>Supra</div>
+            <div className={styles.projectHeader}>
+              <Link href="/projects/supra">Supra</Link>
+            </div>
             <div className={styles.projectDate}>Апрель — Июль 2024</div>
             <div>
               <span className={styles.projectBadge}>UX/UI</span>
@@ -302,11 +312,13 @@ export default function Home() {
         <div
           className={clsx(styles.pageGrid, styles.project, styles.interactive)}
           title="Смотреть кейс"
-          onClick={() => push("/projects/kalitniki")}
+          onClick={() => !isMobile && push("/projects/kalitniki")}
         >
           <div className={styles.grid5} />
           <div className={clsx(styles.grid6)}>
-            <div className={styles.projectHeader}>Калитники</div>
+            <div className={styles.projectHeader}>
+              <Link href="/projects/kalitniki">Калитники</Link>
+            </div>
             <div className={styles.projectDate}>Апрель 2023 — Февраль 2025</div>
             <div>
               <span className={styles.projectBadge}>UX/UI</span>
@@ -361,11 +373,13 @@ export default function Home() {
         <div
           className={clsx(styles.pageGrid, styles.project, styles.interactive)}
           title="Смотреть кейс"
-          onClick={() => push("/projects/sber-jazz")}
+          onClick={() => !isMobile && push("/projects/sber-jazz")}
         >
           <div className={styles.grid5} />
           <div className={clsx(styles.grid6)}>
-            <div className={styles.projectHeader}>SberJazz</div>
+            <div className={styles.projectHeader}>
+              <Link href="/projects/sber-jazz">SberJazz</Link>
+            </div>
             <div className={styles.projectDate}>Октябрь 2023 — Январь 2024</div>
             <div>
               <span className={styles.projectBadge}>UX/UI</span>

@@ -38,7 +38,7 @@ export const ScrollToTop = () => {
 
   return (
     <a
-      href="#content"
+      href="#top"
       className={styles.backToTop}
       title="Прокрутить наверх"
       ref={ref}

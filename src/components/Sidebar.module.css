@@ -143,6 +143,60 @@ a.menuTitle:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   will-change: transform, opacity, margin;
   transition: opacity 0.5s, transform 0.5s;
+
+  &:hover,
+  &.active {
+    & .menuButton__inner,
+    & .menuButton__inner::before,
+    & .menuButton__inner::after {
+      background-color: var(--accent-color);
+    }
+  }
+
+  @media (max-width: 1000px) {
+    & .menuButton__inner {
+      width: 24px;
+      height: 2px;
+      background-color: var(--main-color);
+      position: relative;
+      will-change: transform, opacity background-color;
+      transition: transform 0.3s ease, opacity 0.3s ease,
+        background-color 0.3s ease;
+    }
+
+    & .menuButton__inner::before,
+    & .menuButton__inner::after {
+      content: "";
+      width: 24px;
+      height: 2px;
+      background-color: var(--main-color);
+      position: absolute;
+      left: 0;
+      will-change: transform, opacity background-color;
+      transition: transform 0.3s ease, opacity 0.3s ease,
+        background-color 0.3s ease;
+    }
+
+    & .menuButton__inner::before {
+      transform: translateY(-8px);
+    }
+
+    & .menuButton__inner::after {
+      transform: translateY(8px);
+    }
+
+    &.active .menuButton__inner {
+      transform: rotate(45deg);
+    }
+
+    &.active .menuButton__inner::before {
+      transform: rotate(90deg);
+    }
+
+    &.active .menuButton__inner::after {
+      opacity: 0;
+    }
+  }
 }
 
 @media (max-width: 1000px) {
@@ -165,47 +219,6 @@ a.menuTitle:hover {
     pointer-events: all;
   }
 
-  .menuButton__inner {
-    width: 24px;
-    height: 2px;
-    background-color: currentColor;
-    position: relative;
-    will-change: transform, opacity;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-
-  .menuButton__inner::before,
-  .menuButton__inner::after {
-    content: "";
-    width: 24px;
-    height: 2px;
-    background-color: currentColor;
-    position: absolute;
-    left: 0;
-    will-change: transform, opacity;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-
-  .menuButton__inner::before {
-    transform: translateY(-8px);
-  }
-
-  .menuButton__inner::after {
-    transform: translateY(8px);
-  }
-
-  .menuButton.active .menuButton__inner {
-    transform: rotate(45deg);
-  }
-
-  .menuButton.active .menuButton__inner::before {
-    transform: rotate(90deg);
-  }
-
-  .menuButton.active .menuButton__inner::after {
-    opacity: 0;
-  }
-
   .overlay {
     position: fixed;
     top: 0;
@@ -224,4 +237,19 @@ a.menuTitle:hover {
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+.headerIcon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .telegram {
+    filter: brightness(0) invert(1);
+  }
+}
+
+.headerName {
+  color: var(--opposite-color);
+  text-decoration: none;
 }

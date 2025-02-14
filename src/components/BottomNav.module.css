@@ -10,15 +10,14 @@
   z-index: 40;
   display: flex;
   flex-wrap: wrap;
-  width: max-content;
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
   text-wrap: balance;
   will-change: transition;
   transition: transform 0.5s;
   gap: 1rem;
-  padding: 0.75rem calc(1rem + 50px) 0.75rem 0.75rem;
-  width: calc(100vw - 1px);
+  padding: 0.75rem calc(1rem + 50px) 0.75rem 1rem;
+  width: fit-content;
   box-sizing: border-box;
 
   &.hidden {
@@ -26,7 +25,7 @@
   }
 
   @media (max-width: 1000px) {
-    gap: 10px;
+    gap: 0;
   }
 }
 
@@ -41,6 +40,11 @@
   transition: color 0.3s ease, width 0.3s ease;
   position: relative;
   text-decoration: none;
+
+  @media (max-width: 1000px) {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.8rem;
+  }
 }
 
 .navItem::after {
@@ -54,6 +58,10 @@
   will-change: color, transform;
   transition: color 0.3s ease, width 0.3s ease;
   transform: translateX(-50%);
+
+  @media (max-width: 1000px) {
+    bottom: 0;
+  }
 }
 
 .navItem:hover {
@@ -69,8 +77,6 @@
 }
 
 @media (max-width: 1000px) {
-  .navItem {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.8rem;
-  }
+  font-size: 0.8rem;
+  padding: 0.2rem 0.8rem;
 }

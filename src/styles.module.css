@@ -176,7 +176,6 @@
   transition: background-color 0.3s;
 
   &.interactive {
-    cursor: pointer;
     margin-bottom: 20vh;
   }
 
@@ -186,6 +185,9 @@
   }
 
   @media (min-width: 1000px) {
+    &.interactive {
+      cursor: pointer;
+    }
     &.interactive:hover {
       background-color: var(--main-color);
       padding-right: 2vw;
@@ -211,6 +213,11 @@
     color: var(--main-color);
     will-change: color;
     transition: color 0.3s;
+
+    & a {
+      color: var(--main-color);
+      text-decoration: none;
+    }
   }
 
   .projectCell {

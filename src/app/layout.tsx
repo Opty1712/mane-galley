@@ -55,7 +55,7 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => {
         />
         <meta name="apple-mobile-web-app-capable" content="yes" />
       </Head>
-      <body>
+      <body id="top">
         <Sidebar />
         <main className={styles.main} id="content">
           {children}
