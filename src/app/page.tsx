@@ -45,13 +45,15 @@ export default function Home() {
             </p>
             <p>
               <Typograph>
-                Кроме того, я помогаю новичкам в дизайне в роли ментора в
-                Британке, где сама ранее успешно окончила два годовых курса.
+                Спроектировала решения для mos.ru и Сбера. Создала новые
+                продукты с нуля, цифровизовала оффлайн-бизнес. Занималась
+                брендингом и ребрендингом, ресерчем, защищала решения перед
+                стейкхолдерами.
               </Typograph>
             </p>
             <p>
               <Typograph>
-                Помогаю новичкам в Британке в роли ментора, а до этого там же
+                Помогаю новичкам в Британке как ментор, а до этого там же
                 успешно закончила два годовых курса.
               </Typograph>
             </p>
@@ -560,15 +562,6 @@ export default function Home() {
               <span className={styles.commonSectionDate}>2023 — 2024</span>
             </div>
             <div className={styles.commonSectionBlock}>
-              <span className={styles.commonSectionSchool}>
-                Британская высшая школа дизайна
-              </span>
-              <span className={styles.commonSectionName}>
-                «Основы коммуникационного дизайна»
-              </span>
-              <span className={styles.commonSectionDate}>2021 — 2022</span>
-            </div>
-            <div className={styles.commonSectionBlock}>
               <span className={styles.commonSectionSchool}>Сергей Гуров</span>
               <span className={styles.commonSectionName}>
                 «Алгоритмические сетки»
@@ -577,6 +570,15 @@ export default function Home() {
                 «Игра в типографику. Композиция, декомпозиция»
               </span>
               <span className={styles.commonSectionDate}>2022</span>
+            </div>
+            <div className={styles.commonSectionBlock}>
+              <span className={styles.commonSectionSchool}>
+                Британская высшая школа дизайна
+              </span>
+              <span className={styles.commonSectionName}>
+                «Основы коммуникационного дизайна»
+              </span>
+              <span className={styles.commonSectionDate}>2021 — 2022</span>
             </div>
             <div className={styles.commonSectionBlock}>
               <span className={styles.commonSectionSchool}>МГТА</span>
@@ -596,7 +598,7 @@ export default function Home() {
             <h2 className={clsx(styles.h2, styles.divider)}>
               <Typograph>
                 Мой опыт работы в UX/UI — 3 года. Ранее управляла командами и
-                процессами в сфере бьюти-индустрии
+                процессами и развивала продукты в сфере бьюти-индустрии
               </Typograph>
             </h2>
           </div>
@@ -706,18 +708,16 @@ export default function Home() {
           )}
         >
           <div className={styles.grid5} />
-          <div className={clsx(styles.grid6, styles.summaryDigits)}>120+</div>
+          <div className={clsx(styles.grid6, styles.summaryDigits)}>130+</div>
           <div className={styles.grid6}>
             <div className={styles.commonSectionBlock}>
               <span className={styles.commonSectionSchool}>
-                <Typograph>
-                  Экранов для веба и арр задизайнено. Много флоу и функций
-                </Typograph>
+                <Typograph>Экранов задизайнено, плюс различные флоу:</Typograph>
               </span>
               <span className={styles.commonSectionName}>[Web]</span>
-              <span className={styles.commonSectionDate}>24 экрана</span>
+              <span className={styles.commonSectionDate}>23 экрана</span>
               <span className={styles.commonSectionName}>[Mobile]</span>
-              <span className={styles.commonSectionDate}>124 экрана</span>
+              <span className={styles.commonSectionDate}>114 экранов</span>
             </div>
           </div>
           <div className={styles.grid7}>
@@ -732,16 +732,16 @@ export default function Home() {
           )}
         >
           <div className={styles.grid5} />
-          <div className={clsx(styles.grid6, styles.summaryDigits)}>10</div>
+          <div className={clsx(styles.grid6, styles.summaryDigits)}>3</div>
           <div className={styles.grid6}>
             <div className={styles.commonSectionBlock}>
               <span className={styles.commonSectionSchool}>
-                <Typograph>Дизайн-систем разработано, из них:</Typograph>
+                <Typograph>Дизайн-систем разработано, среди них:</Typograph>
               </span>
               <span className={styles.commonSectionName}>[Лого]</span>
-              <span className={styles.commonSectionDate}>15 iner</span>
+              <span className={styles.commonSectionDate}>15 вариантов</span>
               <span className={styles.commonSectionName}>[Ui-kit]</span>
-              <span className={styles.commonSectionDate}>124 экрана</span>
+              <span className={styles.commonSectionDate}>87 экранов</span>
             </div>
           </div>
           <div className={styles.grid7}>
@@ -756,7 +756,7 @@ export default function Home() {
           )}
         >
           <div className={styles.grid5} />
-          <div className={clsx(styles.grid6, styles.summaryDigits)}>68+</div>
+          <div className={clsx(styles.grid6, styles.summaryDigits)}>70+</div>
           <div className={styles.grid6}>
             <div className={styles.commonSectionBlock}>
               <span className={styles.commonSectionSchool}>
@@ -769,11 +769,9 @@ export default function Home() {
               <span className={styles.commonSectionName}>
                 [Глубинные интервью]
               </span>
-              <span className={styles.commonSectionDate}>78</span>
+              <span className={styles.commonSectionDate}>18</span>
               <span className={styles.commonSectionName}>[Бенчмарки]</span>
-              <span className={styles.commonSectionDate}>
-                68 сервисов и флоу
-              </span>
+              <span className={styles.commonSectionDate}>25</span>
             </div>
           </div>
           <div className={styles.grid7}>
@@ -809,10 +807,10 @@ export default function Home() {
           <div className={styles.grid11} />
           <div className={clsx(styles.grid9, styles.contactText)}>
             <Typograph>
-              Улучшала системы навигации в продуктах в несколько итераций,
-              применяя исслентервью и юзабилити-тестов Улучшала системы
-              навигации в продуктах в несколько итераций, применяя исслентервью
-              и юзабилити-тестов применяя исслентервью и юзабилити-тестов
+              Рассматриваю предложения о работе и сотрудничестве в сфере
+              продуктового дизайна. Открыта к новым возможностям, интересным
+              проектам и командам, с которыми можно создать что-то по-настоящему
+              ценное.
             </Typograph>
           </div>
         </div>
@@ -820,12 +818,9 @@ export default function Home() {
           <div className={styles.grid13} />
           <div className={clsx(styles.grid9, styles.contactText)}>
             <Typograph>
-              Улучшала системы навигации в продуктах в несколько итераций,
-              применяя исслентервью и юзабилити-тестов Улучшала системы
-              навигации в продуктах в несколько итераций, применяя исслентервью
-              и юзабилити-тестов применяя исслентервью и юзабилити-тестов
-              Улучшала системы навигации в продуктах в несколько итераций,
-              применяя исслентервью и юзабилити-тестов
+              Готова обсуждать варианты партнерства, новые вызовы и задачи,
+              которые помогут развиваться и приносить пользу пользователям и
+              бизнесу. Буду рад диалогу и взаимовыгодному сотрудничеству!
             </Typograph>
           </div>
         </div>
@@ -833,7 +828,7 @@ export default function Home() {
           <div className={styles.grid11} />
           <div className={styles.grid13}>
             <h2 className={clsx(styles.h2, styles.divider)}>
-              <Typograph>До скорой встречи, остаемся на связи!</Typograph>
+              <Typograph>Люблю, когда удобно и красиво!</Typograph>
             </h2>
           </div>
         </div>
