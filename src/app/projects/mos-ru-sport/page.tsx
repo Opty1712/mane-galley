@@ -185,7 +185,13 @@ export default function Page() {
           <div className={styles.grid5} />
           <div className={styles.grid9}>
             <h2 className={styles.h2}>Исследования</h2>
-            <img src="/images/mos/mos2.webp" width="100%" alt="Исследования" />
+            <p>
+              <img
+                src="/images/mos/mos2.webp"
+                width="100%"
+                alt="Исследования"
+              />
+            </p>
           </div>
           <div className={styles.grid1} />
           <div
@@ -232,7 +238,13 @@ export default function Page() {
                 меропиятиях: забегах, веломарафонах, в активной лыжне. Любят
                 копить баллы за участие. Хранят экипировку на память внукам🥇
               </Typograph>
-              <img src="/images/mos/mos7.webp" width="100%" alt="Достигаторы" />
+              <p>
+                <img
+                  src="/images/mos/mos7.webp"
+                  width="100%"
+                  alt="Достигаторы"
+                />
+              </p>
             </span>
           </div>
           <div className={styles.grid5} />
@@ -249,7 +261,13 @@ export default function Page() {
                 Это люди, которые занимаются командным видом спорта. Для них
                 команда — большая семья, где все другу помогают⚽️
               </Typograph>
-              <img src="/images/mos/mos6.webp" width="100%" alt="Командники" />
+              <p>
+                <img
+                  src="/images/mos/mos6.webp"
+                  width="100%"
+                  alt="Командники"
+                />
+              </p>
             </span>
           </div>
           <div className={styles.grid6} />
@@ -268,7 +286,9 @@ export default function Page() {
                 инвалиды. Для них спорт — это спасение и возможность заработать,
                 если будешь включен в сборную по адаптивному спорту
               </Typograph>
-              <img src="/images/mos/mos8.webp" width="100%" alt="Викинги" />
+              <p>
+                <img src="/images/mos/mos8.webp" width="100%" alt="Викинги" />
+              </p>
             </span>
           </div>
         </div>
