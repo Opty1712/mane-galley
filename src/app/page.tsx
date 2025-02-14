@@ -585,11 +585,6 @@ export default function Home() {
               </span>
               <span className={styles.commonSectionDate}>2012</span>
             </div>
-            <div className={styles.commonSectionBlock}>
-              <span className={styles.commonSectionSchool}>МГИУ</span>
-              <span className={styles.commonSectionName}>«Юриспруденция»</span>
-              <span className={styles.commonSectionDate}>2004</span>
-            </div>
           </div>
         </div>
       </section>
