@@ -26,7 +26,7 @@ export const ScrollToTop = () => {
       }%`;
 
       ref.current.style.backgroundImage = `linear-gradient(
-        var(--accent-color) 0% ${scrollTopPercentWithThreshold},
+        var(main-color) 0% ${scrollTopPercentWithThreshold},
         var(--white) ${scrollTopPercentWithThreshold} 100%
       )`;
     };
