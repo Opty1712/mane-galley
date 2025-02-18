@@ -26,11 +26,15 @@
   animation-timeline: scroll();
   padding: 5px;
   position: fixed;
-  bottom: calc((100% - 43px) / 2);
+  bottom: calc((100% - 30px) / 2);
   right: 2vw;
+  clip-path: polygon(50% 0%, 100% 100%, 0 100%);
+  width: 20px;
+  height: 20px;
 
   @media (max-width: 1000px) {
     right: 1rem;
+    bottom: calc((100% - 40px) / 2);
   }
 }
 
