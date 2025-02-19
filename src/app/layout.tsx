@@ -7,11 +7,17 @@ import styles from "../styles.module.css";
 
 export const metadata: Metadata = {
   icons: {
-    icon: "/favicon.ico",
-    shortcut: {
-      url: "/favicon.png",
-      type: "image/x-icon",
-    },
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      {
+        url: "/web-app-manifest-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+    ],
+    apple: "/apple-touch-icon.png",
+    other: [{ rel: "manifest", url: "/site.webmanifest" }],
   },
   metadataBase: new URL("https://www.mane.gallery/"),
   title: "Наталья, продуктовый дизайнер, UX/UI дизайнер",
