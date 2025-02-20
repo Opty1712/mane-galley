@@ -581,7 +581,7 @@ export default function Home() {
         <div className={styles.pageGrid} style={{ marginBottom: "1vh" }}>
           <div className={styles.grid5} />
           <div className={styles.grid13}>
-            <img src="/images/home/bri1.webp" width="100%" alt="Британка" />
+            <img src="/images/home/bri3.webp" width="100%" alt="Британка" />
           </div>
         </div>
         <div className={clsx(styles.pageGrid, styles.commonSection)}>
@@ -667,7 +667,7 @@ export default function Home() {
           <div className={styles.grid11} />
           <div className={styles.grid8}>
             <img
-              src="/images/home/bri2.webp"
+              src="/images/mos/mos9.webp"
               width="100%"
               alt="Британка, команда"
             />
@@ -690,7 +690,7 @@ export default function Home() {
           <div className={styles.grid7} />
           <div className={styles.grid8}>
             <img
-              src="/images/home/bri2.webp"
+              src="images/sber/sber2.webp"
               width="100%"
               alt="Британка, команда"
             />

@@ -38,27 +38,21 @@ export const Footer = () => {
               </h2>
             </div>
           </div>
-          <div className={clsx(styles.nextProject, styles.commonSection)}>
-            <span
-              className={clsx(
-                styles.contactSections,
-                styles.commonSectionBlock
-              )}
-              style={{ marginBottom: 0 }}
-            >
-              [Следующий проект]
-            </span>
-            <span>
-              <Link
-                href={`/projects/${nextProject.slug}`}
-                className={styles.link}
-              >
-                {nextProject.title} →
-              </Link>
-            </span>
-          </div>
         </>
       )}
+      <div className={clsx(styles.nextProject, styles.commonSection)}>
+        <span
+          className={clsx(styles.contactSections, styles.commonSectionBlock)}
+          style={{ marginBottom: 0 }}
+        >
+          [Смотреть следующий проект]
+        </span>
+        <span>
+          <Link href={`/projects/${nextProject.slug}`} className={styles.link}>
+            {nextProject.title} →
+          </Link>
+        </span>
+      </div>
       <div className={styles.pageGrid}>
         <div className={styles.grid5} />
         <div className={clsx(styles.grid19, styles.footerLine)} />

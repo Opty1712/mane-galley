@@ -91,7 +91,7 @@ export default function Page() {
                 <img
                   src="/images/sber/sber2.webp"
                   width="100%"
-                  alt="Результаты"
+                  alt="Команда на защите"
                 />
               </p>
             </span>
