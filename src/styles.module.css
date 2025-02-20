@@ -417,3 +417,14 @@
   text-decoration: none;
   border-bottom: 1px solid #f9132e;
 }
+
+.telegramFooter {
+  width: clamp(30px, 8vw, 48px);
+  height: clamp(30px, 8vw, 48px);
+  transform: translateY(20%);
+}
+
+.nextProject {
+  margin: 3vh 0;
+  text-align: right;
+}

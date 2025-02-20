@@ -4,17 +4,8 @@ import { clsx } from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { checkIsMobile, useScrollDirection } from "../utils";
+import { checkIsMobile, projects, useScrollDirection } from "../utils";
 import styles from "./Sidebar.module.css";
-
-const projects = [
-  { title: "Uncle VPN", slug: "uncle-vpn" },
-  { title: "xCore VPN", slug: "x-core-vpn" },
-  { title: "Mos.ru", slug: "mos-ru-sport" },
-  { title: "Supra", slug: "supra" },
-  { title: "SberJazz", slug: "sber-jazz" },
-  { title: "Калитники", slug: "kalitniki" },
-];
 
 export const Sidebar = () => {
   const pathname = usePathname();
