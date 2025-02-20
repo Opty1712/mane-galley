@@ -198,11 +198,13 @@ export default function Page() {
             className={styles.grid9}
             style={{ marginTop: "2vh", alignSelf: "end" }}
           >
-            <img
-              src="/images/mos/mos3.webp"
-              width="100%"
-              alt="Банчмарк, конкуренты"
-            />
+            <p>
+              <img
+                src="/images/mos/mos3.webp"
+                width="100%"
+                alt="Банчмарк, конкуренты"
+              />
+            </p>
           </div>
           <div className={styles.grid5} />
           <div className={styles.grid9} style={{ marginTop: "2vh" }}>
