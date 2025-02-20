@@ -10,7 +10,7 @@ import { Typograph } from "./Typograph";
 export const Footer = () => {
   const pathname = usePathname();
   const isMainPage = pathname === "/";
-  console.log(pathname);
+  const nextProject = getNextProject(pathname);
 
   return (
     <>
@@ -38,13 +38,24 @@ export const Footer = () => {
               </h2>
             </div>
           </div>
-          <div className={styles.nextProject}>
-            <Link
-              href={`/projects/${getNextProject(pathname).slug}`}
-              className={styles.link}
+          <div className={clsx(styles.nextProject, styles.commonSection)}>
+            <span
+              className={clsx(
+                styles.contactSections,
+                styles.commonSectionBlock
+              )}
+              style={{ marginBottom: 0 }}
             >
-              Следующий проект →
-            </Link>
+              [Следующий проект]
+            </span>
+            <span>
+              <Link
+                href={`/projects/${nextProject.slug}`}
+                className={styles.link}
+              >
+                {nextProject.title} →
+              </Link>
+            </span>
           </div>
         </>
       )}
