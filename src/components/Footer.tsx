@@ -28,6 +28,7 @@ export const Footer = () => {
                   href="https://t.me/NatalyMane"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="Написать мне в telegram @NatalyMane"
                 >
                   <img
                     src="/icons/telegram.svg"

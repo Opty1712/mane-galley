@@ -15,7 +15,7 @@ export default function Page() {
               <br />
               for X-Ray
             </h1>
-            <div className={styles.date}>14 — 21 Августа 20244</div>
+            <div className={styles.date}>14 — 21 Августа 2024</div>
           </div>
           <div className={styles.grid3} />
           <div className={clsx(styles.grid2, styles.stores)}>

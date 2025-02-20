@@ -422,6 +422,8 @@
   width: clamp(30px, 8vw, 48px);
   height: clamp(30px, 8vw, 48px);
   transform: translateY(20%);
+  filter: invert(17%) sepia(101%) saturate(6159%) hue-rotate(345deg)
+    brightness(97%) contrast(83%);
 }
 
 .nextProject {
