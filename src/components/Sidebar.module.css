@@ -86,10 +86,17 @@
   flex: 1;
   overflow-y: auto;
   font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  @media (max-width: 1000px) {
+    gap: 0;
+  }
 }
 
 .menuTitle {
-  display: block;
+  display: inline;
   padding: 0.5rem 0;
   font-weight: 500;
   color: var(--main-color);
@@ -115,15 +122,38 @@ a.menuTitle:hover {
 }
 
 .menuItem {
-  display: block;
+  display: inline-block;
+  width: fit-content;
   padding: 0.1rem 0;
   cursor: pointer;
   transition: color 0.3s ease;
   color: var(--tertiary-color);
   text-decoration: none;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    will-change: width;
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+
+    @media (max-width: 1000px) {
+      bottom: 0;
+    }
+  }
 
   &:hover {
     color: var(--accent-color);
+
+    &::after {
+      width: 100%;
+    }
   }
 
   &.active {
