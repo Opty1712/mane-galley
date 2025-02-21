@@ -66,6 +66,23 @@ export default function Page() {
             </span>
           </div>
         </div>
+        <div className={styles.pageGrid}>
+          <div className={styles.grid22} />
+          <div className={clsx(styles.grid2, styles.stores)}>
+            <a
+              href="https://apps.apple.com/us/app/xcorevpn/id6642673852"
+              target="_ blank"
+              rel="noopener noreferrer"
+              title="Скачать в AppStore"
+            >
+              <img
+                src="/icons/appstore.svg"
+                width="100%"
+                alt="Скачать в AppStore"
+              />
+            </a>
+          </div>
+        </div>
       </section>
 
       <BottomNav

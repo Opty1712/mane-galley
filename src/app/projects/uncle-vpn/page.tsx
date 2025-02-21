@@ -537,6 +537,36 @@ export default function Page() {
             <img src="/images/uncle/vpn6.webp" width="100%" alt="Uncle VPN" />
           </div>
         </div>
+
+        <div className={styles.pageGrid}>
+          <div className={styles.grid22} />
+          <div className={clsx(styles.grid2, styles.stores)}>
+            <a
+              href="https://apps.apple.com/ru/app/uncle-vpn-%D0%B2%D0%BF%D0%BD-%D0%B8-%D0%BF%D1%80%D0%BE%D0%BA%D1%81%D0%B8-%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80/id6450554876"
+              target="_ blank"
+              rel="noopener noreferrer"
+              title="Скачать в AppStore"
+            >
+              <img
+                src="/icons/appstore.svg"
+                width="100%"
+                alt="Скачать в AppStore"
+              />
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=mt.vpn.android.app&hl=ru_RU"
+              target="_ blank"
+              rel="noopener noreferrer"
+              title="Скачать в Google Play"
+            >
+              <img
+                src="/icons/googleplay.svg"
+                width="100%"
+                alt="Скачать в Google Play"
+              />
+            </a>
+          </div>
+        </div>
       </section>
 
       <BottomNav
