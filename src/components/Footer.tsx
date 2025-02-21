@@ -3,7 +3,7 @@ import { clsx } from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "../styles.module.css";
-import { getNextProject } from "../utils";
+import { getNextProject, getPreviousProject } from "../utils";
 import { FooterCopy } from "./FooterCopy";
 import { Typograph } from "./Typograph";
 
@@ -11,6 +11,7 @@ export const Footer = () => {
   const pathname = usePathname();
   const isMainPage = pathname === "/";
   const nextProject = getNextProject(pathname);
+  const previousProject = getPreviousProject(pathname);
 
   return (
     <>
@@ -46,9 +47,21 @@ export const Footer = () => {
           className={clsx(styles.contactSections, styles.commonSectionBlock)}
           style={{ marginBottom: 0 }}
         >
-          [Смотреть следующий проект]
+          [Смотреть проекты]
         </span>
         <span>
+          {!isMainPage && (
+            <>
+              <Link
+                href={`/projects/${previousProject.slug}`}
+                className={styles.link}
+              >
+                ← {previousProject.title}
+              </Link>
+              {"   "}|
+            </>
+          )}
+          {"   "}
           <Link href={`/projects/${nextProject.slug}`} className={styles.link}>
             {nextProject.title} →
           </Link>

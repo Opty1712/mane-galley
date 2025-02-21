@@ -15,15 +15,24 @@ export const getProject = (title: Project["title"]) => {
   return { index, ...projects[index] };
 };
 
-export const getNextProject = (link: string) => {
+const getIndex = (link: string) => {
   const slug = link.replace("/projects/", "");
 
-  const currentProjectIndex = projects.findIndex(
-    (project) => project.slug === slug
-  );
+  return projects.findIndex((project) => project.slug === slug);
+};
 
+export const getNextProject = (link: string) => {
+  const currentProjectIndex = getIndex(link);
   const nextPossibleIndex = currentProjectIndex + 1;
   const index = nextPossibleIndex > projects.length - 1 ? 0 : nextPossibleIndex;
+
+  return { index, ...projects[index] };
+};
+
+export const getPreviousProject = (link: string) => {
+  const currentProjectIndex = getIndex(link);
+  const nextPossibleIndex = currentProjectIndex - 1;
+  const index = nextPossibleIndex < 0 ? projects.length - 1 : nextPossibleIndex;
 
   return { index, ...projects[index] };
 };
