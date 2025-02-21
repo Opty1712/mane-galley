@@ -416,6 +416,28 @@
   color: var(--accent-color);
   text-decoration: none;
   border-bottom: 1px solid #f9132e;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: var(--accent-color);
+    will-change: width;
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+
+    @media (max-width: 1000px) {
+      bottom: 0;
+    }
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
 
 .telegramFooter {
