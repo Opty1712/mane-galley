@@ -24,7 +24,7 @@ export default function Home() {
             <h1 className={styles.h1}>
               UX/UI/Product
               <br />
-              designer
+              Designer
             </h1>
             <div className={styles.date}>2021 — 2025</div>
           </div>
@@ -44,16 +44,16 @@ export default function Home() {
             <p>
               <Typograph>
                 Привет, меня зовут Наталья, я создаю веб-сайты и разрабатываю
-                мобильные приложения для стартапов, среднего и крупного бизнеса,
-                включая B2B и B2C продукты
+                мобильные приложения для стартапов, а так же среднего и крупного
+                бизнеса, включая B2B и B2C продукты
               </Typograph>
             </p>
             <p>
               <Typograph>
                 Спроектировала решения для Mos.ru и Сбера. Создала новые
                 продукты с нуля, цифровизовала оффлайн-бизнес. Занималась
-                брендингом и ребрендингом, ресерчем, защищала решения перед
-                стейкхолдерами
+                брендингом и ребрендингом, исследованиями, защищала решения
+                перед стейкхолдерами
               </Typograph>
             </p>
             <p>
@@ -113,7 +113,7 @@ export default function Home() {
             <span>
               <div className={styles.projectSubHeader}>[Бизнес-задача]</div>
               <Typograph>
-                Спроектировать и запустить MVP для нового VPN сервиса, привести
+                Спроектировать и запустить MVP для нового VPN сервиса, привлечь
                 уникальных пользователей и перевести их на платную подписку.
                 Срок — 3 месяца!
               </Typograph>
@@ -128,7 +128,7 @@ export default function Home() {
                 <li>121 экран в дизайне</li>
                 <li>MVP за 3 месяца</li>
                 <li>5 новых фичей</li>
-                <li>Конверсия в покупку до 30%</li>
+                <li>Конверсия в покупку достигла 30%</li>
               </ul>
             </span>
           </div>
@@ -187,8 +187,8 @@ export default function Home() {
             <span>
               <div className={styles.projectSubHeader}>[Бизнес-задача]</div>
               <Typograph>
-                Сохранить аудиторию приложения Uncle VPN после блокировки в
-                сторах РФ
+                Сохранить аудиторию приложения Uncle VPN после блокировки в в
+                Google Play / AppStore
               </Typograph>
             </span>
             <span>
@@ -516,7 +516,7 @@ export default function Home() {
               <Typograph>
                 «Работали с Наташей вместе над проектом в Британке. Наташа очень
                 ответственная, инициативная, всегда готова во всё включиться,
-                всё поизучать и сделать, найти хорошее решение, задать кучу
+                всё изучить и сделать, найти хорошее решение, задать кучу
                 вопросов, узнать суть задачи и найти к ней оптимальное решение.
                 В общем, было невероятно комфортно и хорошо!»
               </Typograph>
@@ -545,10 +545,10 @@ export default function Home() {
               <Typograph>
                 «С Наташей было приятно работать. Она уделяет большое внимание
                 деталям и точно следует поставленным задачам. Её работа
-                отличается профессионализмом и оперативностью. Всегда на связи,
-                быстро реагирует на правки. Дизайн получился функциональным и
-                продуманным. Рекомендую для проектов, где важны качество и
-                внимание к мелочам»
+                характеризуется высоким профессионализмом и оперативностью.
+                Всегда на связи, быстро реагирует на правки. Дизайн получился
+                функциональным и продуманным. Рекомендую для проектов, где важны
+                качество и внимание к мелочам»
               </Typograph>
             </div>
           </div>
@@ -709,7 +709,7 @@ export default function Home() {
           <div className={styles.grid2} />
           <div className={clsx(styles.grid6, styles.job)}>
             <img
-              src="/images/home/bri2.avif"
+              src="/images/home/bri4.webp"
               width="100%"
               alt="Британка, команда"
             />
@@ -760,9 +760,9 @@ export default function Home() {
           <div className={styles.grid2} />
           <div className={clsx(styles.grid6, styles.job)}>
             <img
-              src="/images/home/bri2.avif"
+              src="/images/home/salon.webp"
               width="100%"
-              alt="Британка, команда"
+              alt="Работа на выставке"
             />
             <p>
               <Typograph>
@@ -775,7 +775,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="summary" className={styles.section}>
+      <section className={styles.section}>
         <div className={styles.pageGrid}>
           <div className={styles.grid5} />
           <div className={styles.grid19}>
@@ -797,78 +797,25 @@ export default function Home() {
           )}
         >
           <div className={styles.grid5} />
-          <div className={clsx(styles.grid6, styles.summaryDigits)}>130+</div>
-          <div className={styles.grid6}>
-            <div className={styles.commonSectionBlock}>
-              <span className={styles.commonSectionSchool}>
-                <Typograph>Экранов задизайнено, плюс различные флоу:</Typograph>
-              </span>
-              <span className={styles.commonSectionName}>[Web]</span>
-              <span className={styles.commonSectionDate}>23 экрана</span>
-              <span className={styles.commonSectionName}>[Mobile]</span>
-              <span className={styles.commonSectionDate}>114 экранов</span>
-            </div>
+          <div className={styles.grid4}>
+            <div className={styles.summaryDigits}>120+</div>
+            <span className={styles.commonSectionSchool}>
+              <Typograph>Экранов в дизайне сделано</Typograph>
+            </span>
           </div>
-          <div className={styles.grid7}>
-            <img src="/images/home/design.webp" width="100%" alt="Дизайн" />
+          <div className={styles.grid4} />
+          <div className={styles.grid2}>
+            <div className={styles.summaryDigits}>5</div>
+            <span className={styles.commonSectionSchool}>
+              <Typograph>Проектов завершено</Typograph>
+            </span>
           </div>
-        </div>
-        <div
-          className={clsx(
-            styles.pageGrid,
-            styles.commonSection,
-            styles.summaryStages
-          )}
-        >
           <div className={styles.grid5} />
-          <div className={clsx(styles.grid6, styles.summaryDigits)}>3</div>
-          <div className={styles.grid6}>
-            <div className={styles.commonSectionBlock}>
-              <span className={styles.commonSectionSchool}>
-                <Typograph>Дизайн-систем разработано, среди них:</Typograph>
-              </span>
-              <span className={styles.commonSectionName}>[Лого]</span>
-              <span className={styles.commonSectionDate}>15 вариантов</span>
-              <span className={styles.commonSectionName}>[Ui-kit]</span>
-              <span className={styles.commonSectionDate}>87 экранов</span>
-            </div>
-          </div>
-          <div className={styles.grid7}>
-            <img src="/images/home/ds.webp" width="100%" alt="Дизайн системы" />
-          </div>
-        </div>
-        <div
-          className={clsx(
-            styles.pageGrid,
-            styles.commonSection,
-            styles.summaryStages
-          )}
-        >
-          <div className={styles.grid5} />
-          <div className={clsx(styles.grid6, styles.summaryDigits)}>70+</div>
-          <div className={styles.grid6}>
-            <div className={styles.commonSectionBlock}>
-              <span className={styles.commonSectionSchool}>
-                <Typograph>Качественных исследований проведено:</Typograph>
-              </span>
-              <span className={styles.commonSectionName}>
-                [Юзабилити-тесты]
-              </span>
-              <span className={styles.commonSectionDate}>38</span>
-              <span className={styles.commonSectionName}>
-                [Глубинные интервью]
-              </span>
-              <span className={styles.commonSectionDate}>18</span>
-              <span className={styles.commonSectionName}>[Бенчмарки]</span>
-              <span className={styles.commonSectionDate}>25</span>
-            </div>
-          </div>
-          <div className={styles.grid7}>
-            <img
-              src="/images/home/research.webp"
-              width="100%"
-              alt="Исследования"
-            />
+          <div className={styles.grid4}>
+            <div className={styles.summaryDigits}>5</div>
+            <span className={styles.commonSectionSchool}>
+              <Typograph>Исследований проведено</Typograph>
+            </span>
           </div>
         </div>
       </section>
@@ -957,7 +904,6 @@ export default function Home() {
           { id: "feedback", title: "Отзывы" },
           { id: "education", title: "Образование" },
           { id: "job", title: "Опыт" },
-          { id: "summary", title: "Summary" },
           { id: "contacts", title: "Контакты" },
         ]}
       />

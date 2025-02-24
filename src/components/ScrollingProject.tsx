@@ -19,8 +19,6 @@ export const ScrollingProject: FC<ScrollingProjectProps> = ({
   const [height, setHeight] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  console.log(id);
-
   useEffect(() => {
     if (!imgRef || !wrapperRef) {
       return;
