@@ -1,18 +1,25 @@
 "use client";
-import { FC, useEffect, useRef, useState } from "react";
+import { FC, useEffect, useState } from "react";
+import { checkIsMobile } from "../utils";
 import styles from "./ScrollingProject.module.css";
 
 type ScrollingProjectProps = {
   src: string;
   alt: string;
+  id: string;
 };
 
-export const ScrollingProject: FC<ScrollingProjectProps> = ({ alt, src }) => {
-  const id = useRef(getId());
+export const ScrollingProject: FC<ScrollingProjectProps> = ({
+  alt,
+  src,
+  id,
+}) => {
   const [imgRef, setImgRef] = useState<HTMLImageElement | null>(null);
   const [wrapperRef, setWrapperRef] = useState<HTMLDivElement | null>(null);
   const [height, setHeight] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
+
+  console.log(id);
 
   useEffect(() => {
     if (!imgRef || !wrapperRef) {
@@ -31,7 +38,7 @@ export const ScrollingProject: FC<ScrollingProjectProps> = ({ alt, src }) => {
           setIsAnimating(entry.isIntersecting);
         });
       },
-      { threshold: 1 }
+      { threshold: checkIsMobile() ? 0.01 : 0.5 }
     );
 
     observer.observe(wrapperRef);
@@ -48,7 +55,7 @@ export const ScrollingProject: FC<ScrollingProjectProps> = ({ alt, src }) => {
     <div className={styles.scrolledWrapper}>
       <div className={styles.scrolledProject} ref={setWrapperRef}>
         <style>
-          {`@keyframes ${id.current} {
+          {`@keyframes ${id} {
             0%,
             5% {top: 0;}
             45%,
@@ -64,7 +71,7 @@ export const ScrollingProject: FC<ScrollingProjectProps> = ({ alt, src }) => {
           alt={alt}
           className={styles.scrollMos}
           style={{
-            animation: `${id.current} 20s ease-in-out infinite alternate`,
+            animation: `${id} 20s ease-in-out infinite alternate`,
             animationPlayState: isAnimating ? "initial" : "paused",
           }}
         />
@@ -74,8 +81,3 @@ export const ScrollingProject: FC<ScrollingProjectProps> = ({ alt, src }) => {
 };
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-
-const getId = () =>
-  [...Array(5)]
-    .map(() => letters[Math.floor(Math.random() * letters.length)])
-    .join("");

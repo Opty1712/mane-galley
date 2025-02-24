@@ -269,6 +269,7 @@ export default function Home() {
             <ScrollingProject
               alt="Макет Mos.ru"
               src="/images/home/mos_home.avif"
+              id="mos"
             />
 
             <Link
@@ -402,6 +403,7 @@ export default function Home() {
             <ScrollingProject
               alt="Макет Калитники"
               src="/images/kalitniki/kalitniki1.webp"
+              id="kalitniki"
             />
 
             <Link
