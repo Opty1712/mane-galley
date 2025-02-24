@@ -34,6 +34,11 @@
     font-weight: 400;
     margin-bottom: 5vh;
   }
+
+  &.subsection {
+    font-weight: 400;
+    margin-bottom: 2vh;
+  }
 }
 
 .date {
@@ -184,10 +189,6 @@
   @media (max-width: 1000px) {
     margin-top: 4vh;
     margin-bottom: 8vh;
-
-    &.interactive {
-      margin-bottom: 2vh;
-    }
   }
 
   @media (min-width: 1000px) {
@@ -446,4 +447,12 @@
 
 .secondColor {
   color: var(--tertiary-color);
+}
+
+.job {
+  margin-bottom: 10vh;
+
+  @media (max-width: 1000px) {
+    margin-bottom: 3vh;
+  }
 }

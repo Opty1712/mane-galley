@@ -22,7 +22,7 @@ export default function Home() {
           <div className={styles.grid5} />
           <div className={styles.grid14}>
             <h1 className={styles.h1}>
-              UX/UI / Product
+              UX/UI/Product
               <br />
               designer
             </h1>
@@ -43,7 +43,7 @@ export default function Home() {
           <div className={clsx(styles.intro, styles.grid13)}>
             <p>
               <Typograph>
-                Привет, меня зовут Наталья, я создаю веб-сайтыи разрабатываю
+                Привет, меня зовут Наталья, я создаю веб-сайты и разрабатываю
                 мобильные приложения для стартапов, среднего и крупного бизнеса,
                 включая B2B и B2C продукты
               </Typograph>
@@ -58,15 +58,15 @@ export default function Home() {
             </p>
             <p>
               <Typograph>
-                Фокусируюсь на исследованиях, пользовательском опытеи задачах
+                Фокусируюсь на исследованиях, пользовательском опыте и задачах
                 бизнеса.
               </Typograph>{" "}
               <span className={styles.secondColor}>
                 <Typograph>
-                  Люблю работать с дизайн-системами, Ui-kit. Менторю в BHASD,
-                  слежу за трендами и постоянным развитием
+                  Люблю развивать дизайн-системы, UI-kit. Менторю в Британке,
+                  слежу за трендами и постоянно развиваюсь
                 </Typograph>
-              </span>
+              </span>{" "}
               ❤️
             </p>
             <PortfolioLink />
@@ -106,26 +106,27 @@ export default function Home() {
           >
             <span className={styles.projectLine}>
               <Typograph>
-                Сервис по предоставлению безопасного подключения к сети интернет
+                Cервис по предоставлению безопасного подключения к сети интернет
                 через VPN
               </Typograph>
             </span>
             <span>
               <div className={styles.projectSubHeader}>[Бизнес-задача]</div>
               <Typograph>
-                За 3 месяца спроектировать и запустить MVP для нового VPN
-                сервиса, набрать уникальных пользователей и перевести их на
-                платную подписку
+                Спроектировать и запустить MVP для нового VPN сервиса, привести
+                уникальных пользователей и перевести их на платную подписку.
+                Срок — 3 месяца!
               </Typograph>
             </span>
 
             <span>
               <div className={styles.projectSubHeader}>[Результат]</div>
               <ul className={styles.projectNumber}>
-                <li>27 исследований</li>
+                <li>14 исследований</li>
                 <li>Фирменный стиль</li>
-                <li>Дизайн-система</li>
-                <li>121 экран MVP за 3 месяца</li>
+                <li>UI-kit</li>
+                <li>121 экран в дизайне</li>
+                <li>MVP за 3 месяца</li>
                 <li>5 новых фичей</li>
                 <li>Конверсия в покупку до 30%</li>
               </ul>
@@ -186,17 +187,15 @@ export default function Home() {
             <span>
               <div className={styles.projectSubHeader}>[Бизнес-задача]</div>
               <Typograph>
-                Сохранить аудиторию приложения UncleVPN после блокировки в
+                Сохранить аудиторию приложения Uncle VPN после блокировки в
                 сторах РФ
               </Typograph>
             </span>
             <span>
               <div className={styles.projectSubHeader}>[Результат]</div>
               <ul className={styles.projectNumber}>
-                <li>27 исследований</li>
                 <li>Фирменный стиль</li>
-                <li>Дизайн-система</li>
-                <li>MVP за 7 дней</li>
+                <li>Запуск продукта за 7 дней</li>
               </ul>
             </span>
           </div>
@@ -246,7 +245,8 @@ export default function Home() {
           >
             <span className={styles.projectLine}>
               <Typograph>
-                Mos.ru — государственный сервис по оказанию услуг населению
+                Mos.ru — портал для оказания услуг жителям Москвы. Департамент
+                спорта — организация, отвечающая за всё, что связано со спортом
               </Typograph>
             </span>
             <span>
@@ -259,9 +259,10 @@ export default function Home() {
             <span>
               <div className={styles.projectSubHeader}>[Результат]</div>
               <ul className={styles.projectNumber}>
-                <li>Концепция страницы о спорте </li>
+                <li>Новый портал о спорте</li>
                 <li>Верстка в новом дизайне</li>
-                <li>Раздел о спорте для людей с ОВЗ</li>
+                <li>Раздел для людей с ОВЗ</li>
+                <li>Публичный питчинг проекта</li>
               </ul>
             </span>
           </div>
@@ -318,11 +319,11 @@ export default function Home() {
             <span>
               <div className={styles.projectSubHeader}>[Бизнес-задача]</div>
               <Typograph>
-                Спроектировать систему бронирования для хоста Супры на основе
-                поведенческих характеристик гостей с применением ИИ, которая
-                снимет временную и эмоциональную нагрузку на персонал и уменьшит
-                риск ошибки на подбор параметров бронирования. Увеличить
-                оборачиваемость столов на 10%
+                Спроектировать систему бронирования для хоста на основе
+                поведенческих характеристик гостей с применением ИИ. Система
+                бронирования должна снять нагрузку на персонал, уменьшить риск
+                ошибки на подбор параметров бронирования, увеличить скорость
+                обслуживания и оборот столов на 10%
               </Typograph>
             </span>
             <span>
@@ -377,14 +378,13 @@ export default function Home() {
           >
             <span className={styles.projectLine}>
               <Typograph>
-                Калитниковские бани — один из старейших банных комплексов в
-                центре Москвы
+                Калитниковские бани — популярный банный комплекс в центре Москвы
               </Typograph>
             </span>
             <span>
               <div className={styles.projectSubHeader}>[Бизнес-задача]</div>
               <Typograph>
-                Усиленная итерационная цифровизация бизнеса с увеличением
+                Итерационная цифровизация оффлайн-бизнеса с увеличением
                 конверсии в покупку на сайте. Обновление визуальной
                 коммуникации, улучшение клиентского опыта в вебе
               </Typograph>
@@ -393,9 +393,12 @@ export default function Home() {
               <div className={styles.projectSubHeader}>[Результат]</div>
               <ul className={styles.projectNumber}>
                 <li>Редизайн сайта</li>
-                <li>Создание новой дизайн-системы</li>
-                <li>Ui-kit и гайдлайны</li>
-                <li>Интегрирование цифровизации</li>
+                <li>Дизайн-система, UI-kit</li>
+                <li>
+                  <Typograph>
+                    Интегрирование системы бронирования в путь пользователя
+                  </Typograph>
+                </li>
               </ul>
             </span>
           </div>
@@ -456,15 +459,14 @@ export default function Home() {
               <Typograph>
                 Сделать функционал на основе AI, который поможет привлечь и
                 удержать малый и средний бизнес, повлиять на метрики: Retention,
-                MAU, увеличить виральность продукта
+                MAU. Увеличить виральность продукта
               </Typograph>
             </span>
             <span>
               <div className={styles.projectSubHeader}>[Результат]</div>
               <ul className={styles.projectNumber}>
-                <li>Концепция страницы о спорте </li>
-                <li>Верстка в новом дизайне</li>
-                <li>Раздел о спорте для людей с ОВЗ</li>
+                <li>Фичи в проде</li>
+                <li>1-ое место на защите проектов</li>
               </ul>
             </span>
           </div>
@@ -585,7 +587,7 @@ export default function Home() {
         <div className={styles.pageGrid}>
           <div className={styles.grid5} />
           <div className={styles.grid19}>
-            <h2 className={clsx(styles.h2, styles.divider)}>
+            <h2 className={clsx(styles.h2, styles.subsection)}>
               <Typograph>
                 Мне повезло учиться у лучших специалистов в дизайн-индустрии и
                 не только
@@ -593,10 +595,10 @@ export default function Home() {
             </h2>
           </div>
         </div>
-        <div className={styles.pageGrid} style={{ marginBottom: "1vh" }}>
+        <div className={styles.pageGrid}>
           <div className={styles.grid5} />
           <div className={styles.grid13}>
-            <img src="/images/home/bri3.webp" width="100%" alt="Британка" />
+            <img src="/images/home/bri1.avif" width="100%" alt="Британка" />
           </div>
         </div>
         <div className={clsx(styles.pageGrid, styles.commonSection)}>
@@ -613,6 +615,15 @@ export default function Home() {
               <span className={styles.commonSectionDate}>2023 — 2024</span>
             </div>
             <div className={styles.commonSectionBlock}>
+              <span className={styles.commonSectionSchool}>
+                Британская высшая школа дизайна
+              </span>
+              <span className={styles.commonSectionName}>
+                «Основы коммуникационного дизайна»
+              </span>
+              <span className={styles.commonSectionDate}>2021 — 2022</span>
+            </div>
+            <div className={styles.commonSectionBlock}>
               <span className={styles.commonSectionSchool}>Сергей Гуров</span>
               <span className={styles.commonSectionName}>
                 «Алгоритмические сетки»
@@ -621,15 +632,6 @@ export default function Home() {
                 «Игра в типографику. Композиция, декомпозиция»
               </span>
               <span className={styles.commonSectionDate}>2022</span>
-            </div>
-            <div className={styles.commonSectionBlock}>
-              <span className={styles.commonSectionSchool}>
-                Британская высшая школа дизайна
-              </span>
-              <span className={styles.commonSectionName}>
-                «Основы коммуникационного дизайна»
-              </span>
-              <span className={styles.commonSectionDate}>2021 — 2022</span>
             </div>
             <div className={styles.commonSectionBlock}>
               <span className={styles.commonSectionSchool}>МГТА</span>
@@ -643,98 +645,132 @@ export default function Home() {
       </section>
 
       <section id="job" className={styles.section}>
-        <div className={styles.pageGrid}>
+        <div className={styles.pageGrid} style={{ marginBottom: "6vh" }}>
           <div className={styles.grid5} />
           <div className={styles.grid19}>
             <h2 className={clsx(styles.h2, styles.divider)}>
               <Typograph>
-                Мой опыт работы в UX/UI — 3 года. Ранее управляла командами и
-                процессами и развивала продукты в сфере бьюти-индустрии
+                Мой опыт в дизайне — 3 года. Еще управляла командами и
+                процессами, питчила проекты на большую аудиторию)
               </Typograph>
             </h2>
           </div>
         </div>
-        <div className={styles.pageGrid} style={{ marginBottom: "1vh" }}>
+
+        <div className={clsx(styles.pageGrid, styles.commonSection)}>
           <div className={styles.grid5} />
-          <div className={styles.grid13}>
+          <div className={clsx(styles.grid6, styles.secondColor)}>[01]</div>
+          <div className={styles.grid5}>
+            <div className={styles.commonSectionBlock}>
+              <h2 className={clsx(styles.h2, styles.subsection)}>
+                <Typograph>Харды и навыки</Typograph>
+              </h2>
+              <span>Figma</span>
+              <span>Illustrator</span>
+              <span>Photoshop</span>
+              <span>After Effects</span>
+              <span>Spline</span>
+            </div>
+          </div>
+          <div className={styles.grid2} />
+          <div className={clsx(styles.grid6, styles.job)}>
             <img
-              src="/images/home/bri2.webp"
+              src="/images/home/bri2.avif"
               width="100%"
               alt="Британка, команда"
             />
-          </div>
-        </div>
-        <div className={clsx(styles.pageGrid, styles.commonSection)}>
-          <div className={styles.grid5} />
-          <div className={styles.grid6}>Hard skills:</div>
-          <div className={styles.grid7} style={{ marginBottom: "6vh" }}>
-            <div className={styles.commonSectionBlock}>
-              <span className={styles.commonSectionName}>
-                Adobe Illustrator, Photoshop, After Effects
-              </span>
-              <span className={styles.commonSectionName}>Figma</span>
-              <span className={styles.commonSectionName}>Spline</span>
-            </div>
+            <p>
+              <Typograph>
+                Корпоративный уровень Figma, работаю с вектором, могу немножко в
+                анимацию и 3D)
+              </Typograph>
+            </p>
           </div>
         </div>
 
-        <div className={styles.pageGrid} style={{ marginBottom: "1vh" }}>
-          <div className={styles.grid11} />
-          <div className={styles.grid8}>
+        <div className={clsx(styles.pageGrid, styles.commonSection)}>
+          <div className={styles.grid5} />
+          <div className={clsx(styles.grid6, styles.secondColor)}>[02]</div>
+          <div className={styles.grid5}>
+            <div className={styles.commonSectionBlock}>
+              <h2 className={clsx(styles.h2, styles.subsection)}>
+                UX —<br />
+                Ресерч
+              </h2>
+              <span>Бенчмаркинг</span>
+              <span>Юзабилити-тесты</span>
+              <span>Глубинные интервью</span>
+              <span>Этнография</span>
+              <span>CJM</span>
+              <span>JBTD</span>
+              <span>User Flow</span>
+            </div>
+          </div>
+          <div className={styles.grid2} />
+          <div className={clsx(styles.grid6, styles.job)}>
             <img
-              src="/images/mos/mos9.webp"
+              src="/images/home/bri2.avif"
               width="100%"
               alt="Британка, команда"
             />
-          </div>
-        </div>
-        <div className={clsx(styles.pageGrid, styles.commonSection)}>
-          <div className={styles.grid11} />
-          <div className={styles.grid4}>Frameworks:</div>
-          <div className={styles.grid8} style={{ marginBottom: "6vh" }}>
-            <div className={styles.commonSectionBlock}>
-              <span className={styles.commonSectionName}>JTBD</span>
-              <span className={styles.commonSectionName}>CJM</span>
-              <span className={styles.commonSectionName}>MindSet</span>
-              <span className={styles.commonSectionName}>Userflow</span>
-            </div>
+            <p>
+              <Typograph>
+                Проводила анализ конкурентов, глубинки, юзабилити тесты,
+                презентовала результаты. Проектировала User Flow, а JTBD — база!
+              </Typograph>
+            </p>
           </div>
         </div>
 
-        <div className={styles.pageGrid} style={{ marginBottom: "1vh" }}>
-          <div className={styles.grid7} />
-          <div className={styles.grid8}>
+        <div className={clsx(styles.pageGrid, styles.commonSection)}>
+          <div className={styles.grid5} />
+          <div className={clsx(styles.grid6, styles.secondColor)}>[03]</div>
+          <div className={styles.grid5}>
+            <div className={styles.commonSectionBlock}>
+              <h2 className={clsx(styles.h2, styles.subsection)}>
+                <Typograph>Карьерный путь</Typograph>
+              </h2>
+              <div className={styles.commonSectionBlock}>
+                <span className={styles.commonSectionSchool}>Kalitniki</span>
+                <span className={styles.commonSectionName}>
+                  UX/UI/Product Designer
+                </span>
+                <span className={styles.commonSectionDate}>2024 — н.в.</span>
+              </div>
+              <div className={styles.commonSectionBlock}>
+                <span className={styles.commonSectionSchool}>
+                  Студия Макс TI
+                </span>
+                <span className={styles.commonSectionName}>
+                  UX/UI/Product Designer
+                </span>
+                <span className={styles.commonSectionDate}>2021 — 2024</span>
+              </div>
+              <div className={styles.commonSectionBlock}>
+                <span className={styles.commonSectionSchool}>
+                  Центр Красоты
+                </span>
+                <span className={styles.commonSectionName}>
+                  Founder / управление
+                </span>
+                <span className={styles.commonSectionDate}>2008 — 2021</span>
+              </div>
+            </div>
+          </div>
+          <div className={styles.grid2} />
+          <div className={clsx(styles.grid6, styles.job)}>
             <img
-              src="images/sber/sber2.webp"
+              src="/images/home/bri2.avif"
               width="100%"
               alt="Британка, команда"
             />
-          </div>
-        </div>
-        <div
-          className={clsx(styles.pageGrid, styles.commonSection)}
-          style={{ marginBottom: "10vh" }}
-        >
-          <div className={styles.grid7} />
-          <div className={styles.grid4}>Опыт работы:</div>
-          <div className={styles.grid4}>
-            <div className={styles.commonSectionBlock}>
-              <span className={styles.commonSectionSchool}>Kalitniki</span>
-              <span className={styles.commonSectionName}>Product Designer</span>
-              <span className={styles.commonSectionDate}>2023 — 2025</span>
-            </div>
-            <div className={styles.commonSectionBlock}>
-              <span className={styles.commonSectionSchool}>Студия MaxT</span>
-              <span className={styles.commonSectionName}>UX/UI Designer</span>
-              <span className={styles.commonSectionDate}>2022 — 2024</span>
-            </div>
-            <div className={styles.commonSectionBlock}>
-              <span className={styles.commonSectionSchool}>Центр Красоты</span>
-              <span className={styles.commonSectionName}>
-                Founder / управление
-              </span>
-              <span className={styles.commonSectionDate}>2000 — 2021</span>
-            </div>
+            <p>
+              <Typograph>
+                Большой бэкграунд в управлении помогает мне эффективно работать
+                в режиме многозадачности в командах разного уровня,
+                анализировать, слышать бизнес и потребности пользователей
+              </Typograph>
+            </p>
           </div>
         </div>
       </section>
@@ -749,6 +785,8 @@ export default function Home() {
                 фреймворками
               </Typograph>
             </h2>
+
+            <img src="/images/home/bri3.avif" width="100%" alt="Британка" />
           </div>
         </div>
         <div
