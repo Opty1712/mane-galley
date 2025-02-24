@@ -2,7 +2,12 @@
 import { clsx } from "clsx";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { BottomNav, PortfolioLink, Typograph } from "../components";
+import {
+  BottomNav,
+  PortfolioLink,
+  ScrollingProject,
+  Typograph,
+} from "../components";
 import styles from "../styles.module.css";
 import { checkIsMobile, getProject } from "../utils";
 
@@ -261,7 +266,11 @@ export default function Home() {
             </span>
           </div>
           <div className={styles.grid7}>
-            <img src="/images/mos/mos1.webp" width="100%" alt="Макет Mos.ru" />
+            <ScrollingProject
+              alt="Макет Mos.ru"
+              src="/images/home/mos_home.avif"
+            />
+
             <Link
               href={`/projects/${getProject("Mos.ru").slug}`}
               className={styles.projectLink}
@@ -390,11 +399,11 @@ export default function Home() {
             </span>
           </div>
           <div className={styles.grid7}>
-            <img
-              src="/images/kalitniki/kalitniki_home.webp"
-              width="100%"
-              alt="Калитники"
+            <ScrollingProject
+              alt="Макет Калитники"
+              src="/images/kalitniki/kalitniki1.webp"
             />
+
             <Link
               href={`/projects/${getProject("Калитники").slug}`}
               className={styles.projectLink}

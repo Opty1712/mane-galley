@@ -1,0 +1,22 @@
+.scrolledWrapper {
+  background-color: var(--accent-background);
+  padding: 4vh 4vh 0 4vh;
+  box-sizing: border-box;
+  height: 20vw;
+  min-height: 25vh;
+
+  & .scrolledProject {
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+
+    & img {
+      position: absolute;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    padding: 2vh 2vh 0 2vh;
+    min-height: 50vh;
+  }
+}
