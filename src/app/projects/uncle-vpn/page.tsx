@@ -213,6 +213,7 @@ export default function Page() {
                   </Typograph>{" "}
                   <a
                     href="https://app.spline.design/file/538e74fd-a3d2-4112-aeaf-992db0f8ec53"
+                    target="_ blank"
                     rel="noopener noreferrer"
                     className={styles.link}
                     title="Посмотреть макет в Spline"
