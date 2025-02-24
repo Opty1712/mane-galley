@@ -17,9 +17,9 @@ export default function Home() {
           <div className={styles.grid5} />
           <div className={styles.grid14}>
             <h1 className={styles.h1}>
-              UX/UI designer
+              UX/UI / Product
               <br />
-              Product designer
+              designer
             </h1>
             <div className={styles.date}>2021 — 2025</div>
           </div>
@@ -38,27 +38,31 @@ export default function Home() {
           <div className={clsx(styles.intro, styles.grid13)}>
             <p>
               <Typograph>
-                Привет! Меня зовут Наталья, я — ментор в Британке и выпускница
-                двух годовых курсов, среди которых курс UX/UI, на котором была
-                одним из лучших студентов.
+                Привет, меня зовут Наталья, я создаю веб-сайтыи разрабатываю
+                мобильные приложения для стартапов, среднего и крупного бизнеса,
+                включая B2B и B2C продукты
               </Typograph>
             </p>
             <p>
               <Typograph>
-                Я занимаюсь созданием веб-сайтов и разработкой мобильных
-                приложений для стартапов, среднего и крупного бизнеса, включая
-                B2B и B2C-продукты. Спроектировала решения для mos.ru и Сбера.
-                Создала новые продукты с нуля, цифровизовала оффлайн-бизнес.
-                Занималась брендингом и ребрендингом, ресерчем, защищала решения
-                перед стейкхолдерами.
+                Спроектировала решения для Mos.ru и Сбера. Создала новые
+                продукты с нуля, цифровизовала оффлайн-бизнес. Занималась
+                брендингом и ребрендингом, ресерчем, защищала решения перед
+                стейкхолдерами
               </Typograph>
             </p>
             <p>
               <Typograph>
-                Мой опыт управления в бьюти-индустрии позволяет мне эффективно
-                интегрировать бизнес-задачи в пользовательский путь, работать в
-                многозадачном режиме и адаптироваться к разным командам ❤️
-              </Typograph>
+                Фокусируюсь на исследованиях, пользовательском опытеи задачах
+                бизнеса.
+              </Typograph>{" "}
+              <span className={styles.secondColor}>
+                <Typograph>
+                  Люблю работать с дизайн-системами, Ui-kit. Менторю в BHASD,
+                  слежу за трендами и постоянным развитием
+                </Typograph>
+              </span>
+              ❤️
             </p>
             <PortfolioLink />
           </div>
@@ -66,19 +70,19 @@ export default function Home() {
       </section>
 
       <section id="projects" className={styles.section}>
-        {/** UNCLE VPN */}
+        {/** UNCLEVPN */}
         <div
           className={clsx(styles.pageGrid, styles.project, styles.interactive)}
           title="Смотреть кейс"
           onClick={() =>
-            !isMobile && push(`/projects/${getProject("Uncle VPN").slug}`)
+            !isMobile && push(`/projects/${getProject("UncleVPN").slug}`)
           }
         >
           <div className={styles.grid5} />
           <div className={clsx(styles.grid6)}>
             <div className={styles.projectHeader}>
-              <Link href={`/projects/${getProject("Uncle VPN").slug}`}>
-                Uncle VPN
+              <Link href={`/projects/${getProject("UncleVPN").slug}`}>
+                UncleVPN
               </Link>
             </div>
             <div className={styles.projectDate}>Март 2023 — Ноябрь 2024</div>
@@ -127,10 +131,10 @@ export default function Home() {
               <img
                 src="/images/uncle/vpn_home.webp"
                 width="100%"
-                alt="макет Uncle VPN"
+                alt="макет UncleVPN"
               />
               <Link
-                href={`/projects/${getProject("Uncle VPN").slug}`}
+                href={`/projects/${getProject("UncleVPN").slug}`}
                 className={styles.projectLink}
               >
                 Подробнее
@@ -177,7 +181,7 @@ export default function Home() {
             <span>
               <div className={styles.projectSubHeader}>[Бизнес-задача]</div>
               <Typograph>
-                Сохранить аудиторию приложения Uncle VPN после блокировки в
+                Сохранить аудиторию приложения UncleVPN после блокировки в
                 сторах РФ
               </Typograph>
             </span>

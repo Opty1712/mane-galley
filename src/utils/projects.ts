@@ -1,5 +1,5 @@
 export const projects = [
-  { title: "Uncle VPN", slug: "uncle-vpn" },
+  { title: "UncleVPN", slug: "uncle-vpn" },
   { title: "xCore VPN", slug: "x-core-vpn" },
   { title: "Mos.ru", slug: "mos-ru-sport" },
   { title: "Supra", slug: "supra" },

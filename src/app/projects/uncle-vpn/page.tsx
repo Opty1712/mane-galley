@@ -10,7 +10,7 @@ export default function Page() {
         <div className={styles.pageGrid}>
           <div className={styles.grid5} />
           <div className={styles.grid14}>
-            <h1 className={styles.h1}>Uncle VPN</h1>
+            <h1 className={styles.h1}>UncleVPN</h1>
             <div className={styles.date}>Март 2023 — Ноябрь 2024</div>
           </div>
           <div className={styles.grid3} />
@@ -158,7 +158,7 @@ export default function Page() {
 
               <p>
                 <Typograph>
-                  Когда Uncle VPN успешно прошел в App Store и Google Play,
+                  Когда UncleVPN успешно прошел в App Store и Google Play,
                   команда доверила мне дальнейшее развитие продуктового дизайна
                   приложения.
                 </Typograph>
@@ -338,10 +338,10 @@ export default function Page() {
           <div className={styles.grid5} />
           <div className={clsx(styles.grid19, styles.photoBlocks)}>
             <h2 className={styles.h2}>Макеты MVP</h2>
-            <img src="/images/uncle/vpn1.webp" width="100%" alt="Uncle VPN" />
-            <img src="/images/uncle/vpn2.webp" width="100%" alt="Uncle VPN" />
-            <img src="/images/uncle/vpn3.webp" width="100%" alt="Uncle VPN" />
-            <img src="/images/uncle/vpn4.webp" width="100%" alt="Uncle VPN" />
+            <img src="/images/uncle/vpn1.webp" width="100%" alt="UncleVPN" />
+            <img src="/images/uncle/vpn2.webp" width="100%" alt="UncleVPN" />
+            <img src="/images/uncle/vpn3.webp" width="100%" alt="UncleVPN" />
+            <img src="/images/uncle/vpn4.webp" width="100%" alt="UncleVPN" />
           </div>
         </div>
       </section>
@@ -368,7 +368,7 @@ export default function Page() {
               </Typograph>
               <Typograph>
                 Провела 4 глубинных интервью. Выборка респондентов: 2
-                пользователя Uncle VPN, 2 пользователя других VPN-сервисов.
+                пользователя UncleVPN, 2 пользователя других VPN-сервисов.
                 Причина снижения конверсии:
               </Typograph>
               <ul className={styles.projectNumber}>
@@ -430,7 +430,7 @@ export default function Page() {
                 После фичи резко выросло количество уникальных пользователей на
                 IOS
               </Typograph>
-              <img src="/images/uncle/vpn5.webp" width="100%" alt="Uncle VPN" />
+              <img src="/images/uncle/vpn5.webp" width="100%" alt="UncleVPN" />
             </span>
           </div>
 
@@ -535,7 +535,7 @@ export default function Page() {
           <div className={styles.grid5} />
           <div className={styles.grid5} />
           <div className={styles.grid19}>
-            <img src="/images/uncle/vpn6.webp" width="100%" alt="Uncle VPN" />
+            <img src="/images/uncle/vpn6.webp" width="100%" alt="UncleVPN" />
           </div>
         </div>
 
@@ -577,7 +577,7 @@ export default function Page() {
           { id: "steps", title: "Этапы" },
           { id: "research", title: "Исследования" },
           { id: "pictures", title: "Макеты MVP" },
-          { id: "problems", title: "Проблемы и фичи" },
+          { id: "problems", title: "Проблемы и решения" },
         ]}
       />
     </>
