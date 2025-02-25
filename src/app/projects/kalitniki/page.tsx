@@ -22,7 +22,7 @@ export default function Page() {
             </Typograph>
             <p>
               <img
-                src="/images/kalitniki/teaser.webp"
+                src="/images/kalitniki/teaser.avif"
                 width="100%"
                 alt="Баня мем"
               />

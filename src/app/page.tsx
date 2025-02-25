@@ -129,8 +129,14 @@ export default function Home() {
         <div className={styles.grid7}>
           <ScrollingProject
             alt="Макет Mos.ru"
-            src="/images/home/mos_home.avif"
+            src="/images/home/mos1.avif"
             id="mos"
+          />
+          <img
+            src="/images/home/mos2.avif"
+            width="100%"
+            alt="Макет Mos.ru"
+            className={styles.img}
           />
 
           <Link
@@ -275,7 +281,7 @@ export default function Home() {
           <div className={styles.grid7}>
             <ScrollingProject
               alt="Макет Калитники"
-              src="/images/home/kalitniki.avif"
+              src="/images/home/kalitniki1.avif"
               id="kalitniki"
             />
 

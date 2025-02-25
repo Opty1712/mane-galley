@@ -298,6 +298,10 @@
       background-color: var(--accent-color);
     }
   }
+
+  .img {
+    margin-top: 2vh;
+  }
 }
 
 .opinionBlock {
