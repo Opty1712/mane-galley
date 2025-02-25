@@ -33,6 +33,7 @@ export const ScrollingProject: FC<ScrollingProjectProps> = ({
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
+          updateHeight();
           setIsAnimating(entry.isIntersecting);
         });
       },
