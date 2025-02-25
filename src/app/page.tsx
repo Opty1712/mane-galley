@@ -414,7 +414,7 @@ export default function Home() {
             </span>
           </div>
           <div className={styles.grid7}>
-            <img src="/images/supra/supra1.webp" width="100%" alt="Супра" />
+            <img src="/images/home/supra1.avif" width="100%" alt="Супра" />
             <Link
               href={`/projects/${getProject("Supra").slug}`}
               className={styles.projectLink}
