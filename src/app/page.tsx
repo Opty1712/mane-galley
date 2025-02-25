@@ -275,7 +275,7 @@ export default function Home() {
           <div className={styles.grid7}>
             <ScrollingProject
               alt="Макет Калитники"
-              src="/images/kalitniki/kalitniki1.avif"
+              src="/images/home/kalitniki.avif"
               id="kalitniki"
             />
 
@@ -694,8 +694,7 @@ export default function Home() {
           <div className={styles.grid5}>
             <div className={styles.commonSectionBlock}>
               <h2 className={clsx(styles.h2, styles.subsection)}>
-                UX —<br />
-                Ресерч
+                UX — Ресерч
               </h2>
               <span>Бенчмаркинг</span>
               <span>Юзабилити-тесты</span>
@@ -843,12 +842,15 @@ export default function Home() {
                 href="https://t.me/NatalyMane"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.link}
+                className={clsx(styles.link, styles.dark)}
               >
                 телеграм
               </a>{" "}
               или на{" "}
-              <a href="mailto:manatkina@mail.ru" className={styles.link}>
+              <a
+                href="mailto:manatkina@mail.ru"
+                className={clsx(styles.link, styles.dark)}
+              >
                 почту
               </a>{" "}
               — обсудим)
@@ -939,6 +941,18 @@ export default function Home() {
               <span>
                 <a href="mailto:manatkina@mail.ru" className={styles.link}>
                   manatkina@mail.ru
+                </a>
+              </span>
+            </div>
+            <div className={styles.commonSectionBlock}>
+              <span className={styles.contactSections}>[CV]</span>
+              <span>
+                <a
+                  href="/Manatkina_Natalia__Product_Designer.pdf"
+                  className={styles.link}
+                  download
+                >
+                  Скачать резюме в PDF
                 </a>
               </span>
             </div>

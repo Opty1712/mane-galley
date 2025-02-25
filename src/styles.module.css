@@ -409,13 +409,15 @@
 .link {
   color: var(--accent-color);
   text-decoration: none;
-  border-bottom: 1px solid #f9132e;
+  border-bottom: 1px solid var(--accent-color);
   position: relative;
+  will-change: color;
+  transition: color 0.3s ease;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -2px;
+    bottom: -3px;
     left: 50%;
     width: 0;
     height: 3px;
@@ -426,6 +428,15 @@
 
     @media (max-width: 1000px) {
       bottom: 0;
+    }
+  }
+
+  &.dark {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+
+    &:hover {
+      color: var(--accent-color);
     }
   }
 

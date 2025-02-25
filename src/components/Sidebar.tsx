@@ -144,20 +144,28 @@ export const Sidebar = () => {
               </Link>
             ))}
           </nav>
-          <a
-            href="https://t.me/NatalyMane"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Написать мне в telegram @NatalyMane"
-          >
-            <img
-              src="/icons/telegram.svg"
-              width={20}
-              height={20}
-              alt="Telegram"
-              style={{ marginTop: "20px", padding: "10px 10px 10px 0" }}
-            />
-          </a>
+          <span className={styles.links}>
+            <a
+              href="/Manatkina_Natalia__Product_Designer.pdf"
+              download
+              title="Скачать резюме в PDF"
+            >
+              <img src="/icons/pdf.svg" width={20} height={20} alt="PDF" />
+            </a>
+            <a
+              href="https://t.me/NatalyMane"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Написать мне в telegram @NatalyMane"
+            >
+              <img
+                src="/icons/telegram.svg"
+                width={20}
+                height={20}
+                alt="Telegram"
+              />
+            </a>
+          </span>
         </span>
       </aside>
     </>

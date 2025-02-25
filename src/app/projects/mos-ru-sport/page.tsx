@@ -301,7 +301,7 @@ export default function Page() {
           <div className={styles.grid5} />
           <div className={clsx(styles.grid19, styles.photoBlocks)}>
             <h2 className={styles.h2}>Макет</h2>
-            <img src="/images/mos/mos11.webp" width="100%" alt="Mos.ru Спорт" />
+            <img src="/images/mos/mos11.avif" width="100%" alt="Mos.ru Спорт" />
           </div>
         </div>
       </section>
