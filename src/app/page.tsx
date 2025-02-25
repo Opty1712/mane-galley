@@ -74,6 +74,74 @@ export default function Home() {
         </div>
       </section>
 
+      {/** Mos.ru */}
+      <div
+        className={clsx(styles.pageGrid, styles.project, styles.interactive)}
+        title="Смотреть кейс"
+        onClick={() =>
+          !isMobile && push(`/projects/${getProject("Mos.ru").slug}`)
+        }
+      >
+        <div className={styles.grid5} />
+        <div className={clsx(styles.grid6)}>
+          <div className={styles.projectHeader}>
+            <Link href={`/projects/${getProject("Mos.ru").slug}`}>
+              Спорт на mos.ru
+            </Link>
+          </div>
+          <div className={styles.projectDate}>Февраль — Март 2024</div>
+          <div>
+            <span className={styles.projectBadge}>UX/UI</span>
+            <span className={styles.projectBadge}>Web</span>
+            <span className={styles.projectBadge}>Prod</span>
+          </div>
+        </div>
+        <div
+          className={clsx(
+            styles.grid6,
+            styles.projectCell,
+            styles.projectDescription
+          )}
+        >
+          <span className={styles.projectLine}>
+            <Typograph>
+              Mos.ru — портал для оказания услуг жителям Москвы. Департамент
+              спорта — организация, отвечающая за всё, что связано со спортом
+            </Typograph>
+          </span>
+          <span>
+            <div className={styles.projectSubHeader}>[Бизнес-задача]</div>
+            <Typograph>
+              Понять и показать как можно интегрировать сервисы Департамента
+              спорта города Москвы в платформу MOS.RU
+            </Typograph>
+          </span>
+          <span>
+            <div className={styles.projectSubHeader}>[Результат]</div>
+            <ul className={styles.projectNumber}>
+              <li>Новый портал о спорте</li>
+              <li>Верстка в новом дизайне</li>
+              <li>Раздел для людей с ОВЗ</li>
+              <li>Публичный питчинг проекта</li>
+            </ul>
+          </span>
+        </div>
+        <div className={styles.grid7}>
+          <ScrollingProject
+            alt="Макет Mos.ru"
+            src="/images/home/mos_home.avif"
+            id="mos"
+          />
+
+          <Link
+            href={`/projects/${getProject("Mos.ru").slug}`}
+            className={styles.projectLink}
+          >
+            Подробнее
+          </Link>
+        </div>
+      </div>
+
       <section id="projects" className={styles.section}>
         {/** UNCLEVPN */}
         <div
@@ -149,6 +217,77 @@ export default function Home() {
           </div>
         </div>
 
+        {/** Kalitniki */}
+        <div
+          className={clsx(styles.pageGrid, styles.project, styles.interactive)}
+          title="Смотреть кейс"
+          onClick={() =>
+            !isMobile && push(`/projects/${getProject("Калитники").slug}`)
+          }
+        >
+          <div className={styles.grid5} />
+          <div className={clsx(styles.grid6)}>
+            <div className={styles.projectHeader}>
+              <Link href={`/projects/${getProject("Калитники").slug}`}>
+                Калитники
+              </Link>
+            </div>
+            <div className={styles.projectDate}>Апрель 2023 — Февраль 2025</div>
+            <div>
+              <span className={styles.projectBadge}>UX/UI</span>
+              <span className={styles.projectBadge}>Web</span>
+              <span className={styles.projectBadge}>Prod</span>
+            </div>
+          </div>
+          <div
+            className={clsx(
+              styles.grid6,
+              styles.projectCell,
+              styles.projectDescription
+            )}
+          >
+            <span className={styles.projectLine}>
+              <Typograph>
+                Калитниковские бани — популярный банный комплекс в центре Москвы
+              </Typograph>
+            </span>
+            <span>
+              <div className={styles.projectSubHeader}>[Бизнес-задача]</div>
+              <Typograph>
+                Итерационная цифровизация оффлайн-бизнеса с увеличением
+                конверсии в покупку на сайте. Обновление визуальной
+                коммуникации, улучшение клиентского опыта в вебе
+              </Typograph>
+            </span>
+            <span>
+              <div className={styles.projectSubHeader}>[Результат]</div>
+              <ul className={styles.projectNumber}>
+                <li>Редизайн сайта</li>
+                <li>Дизайн-система, UI-kit</li>
+                <li>
+                  <Typograph>
+                    Интегрирование системы бронирования в путь пользователя
+                  </Typograph>
+                </li>
+              </ul>
+            </span>
+          </div>
+          <div className={styles.grid7}>
+            <ScrollingProject
+              alt="Макет Калитники"
+              src="/images/kalitniki/kalitniki1.avif"
+              id="kalitniki"
+            />
+
+            <Link
+              href={`/projects/${getProject("Калитники").slug}`}
+              className={styles.projectLink}
+            >
+              Подробнее
+            </Link>
+          </div>
+        </div>
+
         {/** Xcore Vpn  */}
         <div
           className={clsx(styles.pageGrid, styles.project, styles.interactive)}
@@ -214,74 +353,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/** Mos.ru */}
-        <div
-          className={clsx(styles.pageGrid, styles.project, styles.interactive)}
-          title="Смотреть кейс"
-          onClick={() =>
-            !isMobile && push(`/projects/${getProject("Mos.ru").slug}`)
-          }
-        >
-          <div className={styles.grid5} />
-          <div className={clsx(styles.grid6)}>
-            <div className={styles.projectHeader}>
-              <Link href={`/projects/${getProject("Mos.ru").slug}`}>
-                Спорт на mos.ru
-              </Link>
-            </div>
-            <div className={styles.projectDate}>Февраль — Март 2024</div>
-            <div>
-              <span className={styles.projectBadge}>UX/UI</span>
-              <span className={styles.projectBadge}>Web</span>
-              <span className={styles.projectBadge}>Prod</span>
-            </div>
-          </div>
-          <div
-            className={clsx(
-              styles.grid6,
-              styles.projectCell,
-              styles.projectDescription
-            )}
-          >
-            <span className={styles.projectLine}>
-              <Typograph>
-                Mos.ru — портал для оказания услуг жителям Москвы. Департамент
-                спорта — организация, отвечающая за всё, что связано со спортом
-              </Typograph>
-            </span>
-            <span>
-              <div className={styles.projectSubHeader}>[Бизнес-задача]</div>
-              <Typograph>
-                Понять и показать как можно интегрировать сервисы Департамента
-                спорта города Москвы в платформу MOS.RU
-              </Typograph>
-            </span>
-            <span>
-              <div className={styles.projectSubHeader}>[Результат]</div>
-              <ul className={styles.projectNumber}>
-                <li>Новый портал о спорте</li>
-                <li>Верстка в новом дизайне</li>
-                <li>Раздел для людей с ОВЗ</li>
-                <li>Публичный питчинг проекта</li>
-              </ul>
-            </span>
-          </div>
-          <div className={styles.grid7}>
-            <ScrollingProject
-              alt="Макет Mos.ru"
-              src="/images/home/mos_home.avif"
-              id="mos"
-            />
-
-            <Link
-              href={`/projects/${getProject("Mos.ru").slug}`}
-              className={styles.projectLink}
-            >
-              Подробнее
-            </Link>
-          </div>
-        </div>
-
         {/** Supra */}
         <div
           className={clsx(styles.pageGrid, styles.project, styles.interactive)}
@@ -340,77 +411,6 @@ export default function Home() {
             <img src="/images/supra/supra1.webp" width="100%" alt="Супра" />
             <Link
               href={`/projects/${getProject("Supra").slug}`}
-              className={styles.projectLink}
-            >
-              Подробнее
-            </Link>
-          </div>
-        </div>
-
-        {/** Kalitniki */}
-        <div
-          className={clsx(styles.pageGrid, styles.project, styles.interactive)}
-          title="Смотреть кейс"
-          onClick={() =>
-            !isMobile && push(`/projects/${getProject("Калитники").slug}`)
-          }
-        >
-          <div className={styles.grid5} />
-          <div className={clsx(styles.grid6)}>
-            <div className={styles.projectHeader}>
-              <Link href={`/projects/${getProject("Калитники").slug}`}>
-                Калитники
-              </Link>
-            </div>
-            <div className={styles.projectDate}>Апрель 2023 — Февраль 2025</div>
-            <div>
-              <span className={styles.projectBadge}>UX/UI</span>
-              <span className={styles.projectBadge}>Web</span>
-              <span className={styles.projectBadge}>Prod</span>
-            </div>
-          </div>
-          <div
-            className={clsx(
-              styles.grid6,
-              styles.projectCell,
-              styles.projectDescription
-            )}
-          >
-            <span className={styles.projectLine}>
-              <Typograph>
-                Калитниковские бани — популярный банный комплекс в центре Москвы
-              </Typograph>
-            </span>
-            <span>
-              <div className={styles.projectSubHeader}>[Бизнес-задача]</div>
-              <Typograph>
-                Итерационная цифровизация оффлайн-бизнеса с увеличением
-                конверсии в покупку на сайте. Обновление визуальной
-                коммуникации, улучшение клиентского опыта в вебе
-              </Typograph>
-            </span>
-            <span>
-              <div className={styles.projectSubHeader}>[Результат]</div>
-              <ul className={styles.projectNumber}>
-                <li>Редизайн сайта</li>
-                <li>Дизайн-система, UI-kit</li>
-                <li>
-                  <Typograph>
-                    Интегрирование системы бронирования в путь пользователя
-                  </Typograph>
-                </li>
-              </ul>
-            </span>
-          </div>
-          <div className={styles.grid7}>
-            <ScrollingProject
-              alt="Макет Калитники"
-              src="/images/kalitniki/kalitniki1.avif"
-              id="kalitniki"
-            />
-
-            <Link
-              href={`/projects/${getProject("Калитники").slug}`}
               className={styles.projectLink}
             >
               Подробнее

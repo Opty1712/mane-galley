@@ -1,10 +1,10 @@
 export const projects = [
-  { title: "UncleVPN", slug: "uncle-vpn" },
-  { title: "xCore VPN", slug: "x-core-vpn" },
   { title: "Mos.ru", slug: "mos-ru-sport" },
+  { title: "UncleVPN", slug: "uncle-vpn" },
+  { title: "Калитники", slug: "kalitniki" },
+  { title: "xCore VPN", slug: "x-core-vpn" },
   { title: "Supra", slug: "supra" },
   { title: "SberJazz", slug: "sber-jazz" },
-  { title: "Калитники", slug: "kalitniki" },
 ] as const;
 
 type Project = (typeof projects)[number];

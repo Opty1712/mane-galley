@@ -465,3 +465,13 @@
     justify-content: flex-start;
   }
 }
+
+.photos {
+  & img {
+    margin-bottom: 4vh;
+
+    @media (max-width: 1000px) {
+      margin-bottom: 1vh;
+    }
+  }
+}
