@@ -39,7 +39,7 @@ export default function Page() {
             <h2 className={styles.h2}>Макеты</h2>
             <p>
               <img
-                src="/images/kalitniki/kalitniki1.webp"
+                src="/images/home/kalitniki.avif"
                 width="100%"
                 alt="Макет Калитников"
               />

@@ -405,7 +405,7 @@ export default function Home() {
           <div className={styles.grid7}>
             <ScrollingProject
               alt="Макет Калитники"
-              src="/images/kalitniki/kalitniki1.webp"
+              src="/images/kalitniki/kalitniki1.avif"
               id="kalitniki"
             />
 
@@ -681,8 +681,8 @@ export default function Home() {
             />
             <p>
               <Typograph>
-                Корпоративный уровень Figma, работаю с вектором, могу немножко в
-                анимацию и 3D)
+                Корпоративный уровень владения Figma, работаю с вектором, могу
+                немножко в анимацию и 3D)
               </Typograph>
             </p>
           </div>
@@ -709,9 +709,9 @@ export default function Home() {
           <div className={styles.grid2} />
           <div className={clsx(styles.grid6, styles.job)}>
             <img
-              src="/images/home/bri4.webp"
+              src="/images/home/research.avif"
               width="100%"
-              alt="Британка, команда"
+              alt="Исследования"
             />
             <p>
               <Typograph>
@@ -793,28 +793,39 @@ export default function Home() {
           className={clsx(
             styles.pageGrid,
             styles.commonSection,
-            styles.summaryStages
+            styles.summaryStages,
+            styles.job
           )}
         >
           <div className={styles.grid5} />
+
+          <div className={styles.grid5}>
+            <Typograph>
+              Верю, что качественного UI не получится без UX. Поэтому люблю,
+              когда удобно и красиво)
+            </Typograph>
+          </div>
+          <div className={styles.grid1} />
           <div className={styles.grid4}>
             <div className={styles.summaryDigits}>120+</div>
             <span className={styles.commonSectionSchool}>
               <Typograph>Экранов в дизайне сделано</Typograph>
             </span>
           </div>
-          <div className={styles.grid4} />
+          <div className={styles.grid2} />
           <div className={styles.grid2}>
             <div className={styles.summaryDigits}>5</div>
             <span className={styles.commonSectionSchool}>
               <Typograph>Проектов завершено</Typograph>
             </span>
           </div>
-          <div className={styles.grid5} />
-          <div className={styles.grid4}>
-            <div className={styles.summaryDigits}>5</div>
-            <span className={styles.commonSectionSchool}>
-              <Typograph>Исследований проведено</Typograph>
+          <div className={styles.grid1} />
+          <div className={clsx(styles.grid4, styles.researchDone)}>
+            <span style={{ width: "min-content" }}>
+              <div className={styles.summaryDigits}>70+</div>
+              <span className={styles.commonSectionSchool}>
+                <Typograph>Исследований проведено</Typograph>
+              </span>
             </span>
           </div>
         </div>
@@ -825,7 +836,10 @@ export default function Home() {
           <div className={styles.grid5} />
           <div className={styles.grid19}>
             <h2 className={clsx(styles.h2, styles.divider)}>
-              <Typograph>Обсудим предложения и проекты?</Typograph>
+              <Typograph>
+                У вас есть вопрос, невероятная идея или предложение? Пишите в
+                телеграм или на почту, обсудим)
+              </Typograph>
             </h2>
           </div>
         </div>
@@ -839,33 +853,48 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className={styles.pageGrid}>
-          <div className={styles.grid11} />
-          <div className={clsx(styles.grid9, styles.contactText)}>
-            <Typograph>
-              Рассматриваю предложения о работе и сотрудничестве в сфере
-              продуктового дизайна. Открыта к новым возможностям, интересным
-              проектам и командам, с которыми можно создать что-то по-настоящему
-              ценное. Буду рада диалогу и взаимовыгодному сотрудничеству.
-            </Typograph>
-          </div>
-        </div>
 
-        <div className={styles.pageGrid}>
-          <div className={styles.grid13} />
-          <div className={clsx(styles.grid11, styles.contactText)}>
-            <Typograph>
-              Слушаю французский рэп, не могу без литра кофе с утра, катаюсь на
-              сноуборде, плаваю в бассейне, делаю оригинальные кадры на телефон,
-              глажу маленьких собачек 🐶
-            </Typograph>
+        <div className={clsx(styles.pageGrid, styles.commonSection)}>
+          <div className={styles.grid11} />
+          <div className={styles.grid9}>
+            <p>
+              <Typograph>
+                С отличием закончила две годовых программы в Британке: основы
+                графдизайна и UX/UI. Вошла в профессию как веб-дизайнер и SMM.
+                Следующая работа была в студии, где я начала с проектирования и
+                дизайна мобильного приложения — это был невероятный опыт! В
+                процессе я углубилась в UX/UI, и сейчас активно использую
+                исследования и фреймворки)
+              </Typograph>
+            </p>
+            <p>
+              <Typograph>
+                Сейчас я ментор в BHSAD, помогаю дизайнерам на разных этапах их
+                роста, для меня это захватывающий опыт и новый скилл
+              </Typograph>
+            </p>
+            <p>
+              <Typograph>
+                Мне нравится работать в команде и фокусироваться на создании
+                функционального и визуального цифрового опыта, сочетать
+                креативность с аналитикой!
+              </Typograph>
+            </p>
+            <p>
+              <Typograph>
+                Вне работы я увлечена спортивным плаванием, катанием на
+                сноуборде и кулинарией. Без ума от путешествий, вкусного кофе и
+                своего маленького песика по кличке
+              </Typograph>{" "}
+              Веня{" "}🐾
+            </p>
           </div>
         </div>
         <div className={styles.pageGrid}>
           <div className={styles.grid11} />
           <div className={styles.grid13} style={{ marginTop: "5vh" }}>
             <h2 className={clsx(styles.h2, styles.divider)}>
-              <Typograph>Делаю удобно и красиво!</Typograph>
+              <Typograph>Остаемся на связи!</Typograph>
             </h2>
           </div>
         </div>
