@@ -98,7 +98,7 @@ export default function Home() {
         </div>
         <div
           className={clsx(
-            styles.grid6,
+            styles.grid5,
             styles.projectCell,
             styles.projectDescription
           )}
@@ -126,6 +126,7 @@ export default function Home() {
             </ul>
           </span>
         </div>
+        <div className={styles.grid1} />
         <div className={styles.grid7}>
           <ScrollingProject
             alt="Макет Mos.ru"
@@ -173,7 +174,7 @@ export default function Home() {
           </div>
           <div
             className={clsx(
-              styles.grid6,
+              styles.grid5,
               styles.projectCell,
               styles.projectDescription
             )}
@@ -206,13 +207,20 @@ export default function Home() {
               </ul>
             </span>
           </div>
+
+          <div className={styles.grid1} />
           <div className={styles.grid7}>
             <span>
+              <img
+                src="/images/home/uncle.avif"
+                width="100%"
+                alt="макет UncleVPN"
+              />
               <img
                 src="/images/home/uncle2.avif"
                 width="100%"
                 alt="макет UncleVPN"
-                // className={styles.img}
+                className={styles.img}
               />
               <Link
                 href={`/projects/${getProject("UncleVPN").slug}`}
@@ -248,7 +256,7 @@ export default function Home() {
           </div>
           <div
             className={clsx(
-              styles.grid6,
+              styles.grid5,
               styles.projectCell,
               styles.projectDescription
             )}
@@ -279,6 +287,8 @@ export default function Home() {
               </ul>
             </span>
           </div>
+
+          <div className={styles.grid1} />
           <div className={styles.grid7}>
             <ScrollingProject
               alt="Макет Калитники"
@@ -319,7 +329,7 @@ export default function Home() {
           </div>
           <div
             className={clsx(
-              styles.grid6,
+              styles.grid5,
               styles.projectCell,
               styles.projectDescription
             )}
@@ -345,6 +355,8 @@ export default function Home() {
               </ul>
             </span>
           </div>
+
+          <div className={styles.grid1} />
           <div className={styles.grid7}>
             <img
               src="/images/home/xcore1.avif"
@@ -383,7 +395,7 @@ export default function Home() {
           </div>
           <div
             className={clsx(
-              styles.grid6,
+              styles.grid5,
               styles.projectCell,
               styles.projectDescription
             )}
@@ -414,14 +426,10 @@ export default function Home() {
               </ul>
             </span>
           </div>
+
+          <div className={styles.grid1} />
           <div className={styles.grid7}>
             <img src="/images/home/supra.avif" width="100%" alt="Супра" />
-            {/* <img
-              src="/images/home/supra2.avif"
-              width="100%"
-              alt="Супра"
-              className={styles.img}
-            /> */}
 
             <Link
               href={`/projects/${getProject("Supra").slug}`}
@@ -457,7 +465,7 @@ export default function Home() {
           </div>
           <div
             className={clsx(
-              styles.grid6,
+              styles.grid5,
               styles.projectCell,
               styles.projectDescription
             )}
@@ -484,6 +492,8 @@ export default function Home() {
               </ul>
             </span>
           </div>
+
+          <div className={styles.grid1} />
           <div className={styles.grid7}>
             <img src="/images/sber/sber1.webp" width="100%" alt="SberJazz" />
             <Link
@@ -851,23 +861,8 @@ export default function Home() {
             <h2 className={clsx(styles.h2, styles.divider)}>
               <Typograph>
                 У вас есть вопрос, невероятная идея или предложение? Пишите в
-              </Typograph>{" "}
-              <a
-                href="https://t.me/NatalyMane"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={clsx(styles.link, styles.dark)}
-              >
-                телеграм
-              </a>{" "}
-              или на{" "}
-              <a
-                href="mailto:manatkina@mail.ru"
-                className={clsx(styles.link, styles.dark)}
-              >
-                почту
-              </a>{" "}
-              — обсудим)
+                телеграм или на почту — обсудим)
+              </Typograph>
             </h2>
           </div>
         </div>
@@ -875,12 +870,12 @@ export default function Home() {
           <div className={styles.grid11} />
           <div className={styles.grid4}>
             <img
-              src="/images/me_small.webp"
+              src="/images/home/me.avif"
               width="100%"
               alt="Наталья, продуктовый дизайнер"
             />
           </div>
-          <div className={styles.grid5}>
+          <div className={styles.grid4}>
             <Typograph>
               Сейчас я ментор в BHSAD, помогаю дизайнерам на разных этапах их
               роста,
@@ -895,7 +890,7 @@ export default function Home() {
 
         <div className={clsx(styles.pageGrid, styles.commonSection)}>
           <div className={styles.grid11} />
-          <div className={styles.grid9}>
+          <div className={styles.grid8}>
             <p>
               <Typograph>
                 С отличием закончила две годовых программы в Британке: основы
@@ -906,9 +901,6 @@ export default function Home() {
                 исследования и фреймворки)
               </Typograph>
             </p>
-          </div>{" "}
-          <div className={styles.grid11} />
-          <div className={styles.grid7}>
             <p>
               <Typograph>
                 Мне нравится работать в команде и фокусироваться на создании
@@ -921,10 +913,11 @@ export default function Home() {
                 Вне работы я увлечена спортивным плаванием и катанием на
                 сноуборде. Без ума от путешествий, вкусного кофе и своего
                 маленького песика по кличке
-              </Typograph>{" "}
+              </Typograph>
               Веня{" "}🐾
             </p>
           </div>
+          <div className={styles.grid11} />
         </div>
         <div className={styles.pageGrid}>
           <div className={styles.grid11} />
