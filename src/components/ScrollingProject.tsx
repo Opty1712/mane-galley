@@ -55,12 +55,12 @@ export const ScrollingProject: FC<ScrollingProjectProps> = ({
       <div className={styles.scrolledProject} ref={setWrapperRef}>
         <style>
           {`@keyframes ${id} {
-            0%,
-            5% {top: 0;}
-            45%,
-            55% {top: -${height}px;}
-            95%,
-            100% {top: 0;}
+            0% { top: 0; }
+            45%, 55% { top: -${height}px; }
+            95%, 100% { top: 0; }
+            100%, 105% { top: 0; } 
+            145%, 155% { top: -${height}px; }
+            195%, 200% { top: 0; }
           }`}
         </style>
         <img
@@ -70,7 +70,7 @@ export const ScrollingProject: FC<ScrollingProjectProps> = ({
           alt={alt}
           className={styles.scrollMos}
           style={{
-            animation: `${id} 20s ease-in-out infinite alternate`,
+            animation: `${id} 20s ease-in-out infinite`,
             animationPlayState: isAnimating ? "initial" : "paused",
           }}
         />
