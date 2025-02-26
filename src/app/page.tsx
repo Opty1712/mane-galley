@@ -422,6 +422,13 @@ export default function Home() {
           </div>
           <div className={styles.grid7}>
             <img src="/images/home/supra1.avif" width="100%" alt="Супра" />
+            <img
+              src="/images/home/supra2.avif"
+              width="100%"
+              alt="Супра"
+              className={styles.img}
+            />
+
             <Link
               href={`/projects/${getProject("Supra").slug}`}
               className={styles.projectLink}
