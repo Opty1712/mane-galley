@@ -411,6 +411,7 @@
 
 .link:visited,
 .link {
+  display: inline-block;
   color: var(--accent-color);
   text-decoration: none;
   border-bottom: 1px solid var(--accent-color);

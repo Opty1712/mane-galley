@@ -209,9 +209,15 @@ export default function Home() {
           <div className={styles.grid7}>
             <span>
               <img
-                src="/images/uncle/vpn_home.webp"
+                src="/images/home/uncle1.avif"
                 width="100%"
                 alt="макет UncleVPN"
+              />
+              <img
+                src="/images/home/uncle2.avif"
+                width="100%"
+                alt="макет UncleVPN"
+                className={styles.img}
               />
               <Link
                 href={`/projects/${getProject("UncleVPN").slug}`}
@@ -346,9 +352,15 @@ export default function Home() {
           </div>
           <div className={styles.grid7}>
             <img
-              src="/images/xcore/xcore_home.webp"
+              src="/images/home/xcore1.avif"
               width="100%"
               alt="макет xCore VPN"
+            />
+            <img
+              src="/images/home/xcore2.avif"
+              width="100%"
+              alt="макет xCore VPN"
+              className={styles.img}
             />
             <Link
               href={`/projects/${getProject("xCore VPN").slug}`}
