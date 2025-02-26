@@ -86,7 +86,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="task" className={styles.section}>
+      <section id="design" className={styles.section}>
         <div className={clsx(styles.pageGrid, styles.project)}>
           <div className={styles.grid5} />
           <div

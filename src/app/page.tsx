@@ -351,12 +351,6 @@ export default function Home() {
               width="100%"
               alt="макет xCore VPN"
             />
-            <img
-              src="/images/home/xcore2.avif"
-              width="100%"
-              alt="макет xCore VPN"
-              className={styles.img}
-            />
             <Link
               href={`/projects/${getProject("xCore VPN").slug}`}
               className={styles.projectLink}

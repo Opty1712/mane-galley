@@ -41,6 +41,30 @@ export default function Page() {
               styles.projectDescription
             )}
           >
+            <h2 className={styles.h2}>Задача</h2>
+            <span>
+              <Typograph>
+                Спроектировать систему бронирования для хоста на основе
+                поведенческих характеристик гостей с применением ИИ. Система
+                бронирования должна снять нагрузку на персонал, уменьшить риск
+                ошибки на подбор параметров бронирования, увеличить скорость
+                обслуживания и оборот столов на 10%
+              </Typograph>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section id="" className={styles.section}>
+        <div className={clsx(styles.pageGrid, styles.project)}>
+          <div className={styles.grid11} />
+          <div
+            className={clsx(
+              styles.grid8,
+              styles.projectCell,
+              styles.projectDescription
+            )}
+          >
             <h2 className={styles.h2}>Простите</h2>
             <span>
               <Typograph>Я еще не успела заполнить эту страничку</Typograph>
