@@ -209,15 +209,10 @@ export default function Home() {
           <div className={styles.grid7}>
             <span>
               <img
-                src="/images/home/uncle1.avif"
-                width="100%"
-                alt="макет UncleVPN"
-              />
-              <img
                 src="/images/home/uncle2.avif"
                 width="100%"
                 alt="макет UncleVPN"
-                className={styles.img}
+                // className={styles.img}
               />
               <Link
                 href={`/projects/${getProject("UncleVPN").slug}`}
