@@ -42,7 +42,7 @@ body {
   color: var(--main-color);
 
   @media (max-width: 1000px) {
-    padding-bottom: 20vh;
+    padding-bottom: 14vh;
   }
 }
 
