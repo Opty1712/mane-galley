@@ -290,7 +290,7 @@
     display: inline-block;
     font-size: clamp(16px, 1.3vw, 20px);
     color: var(--link);
-    padding: 1vh 2vh;
+    padding: 1.5vh 5vh;
     background-color: var(--main-color);
     text-decoration: none;
     will-change: background-color;
