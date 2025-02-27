@@ -239,7 +239,7 @@ export default function Page() {
               alt="Исследования"
             />
           </div>
-          <div className={styles.grid5} />
+          {/* <div className={styles.grid5} />
           <div className={styles.grid9}>
             <img
               src="/images/kalitniki/research2.avif"
@@ -254,7 +254,7 @@ export default function Page() {
               width="100%"
               alt="Исследования"
             />
-          </div>
+          </div> */}
           <div className={styles.grid5} />
           <div className={styles.grid9}>
             <img
@@ -271,7 +271,7 @@ export default function Page() {
               alt="Исследования"
             />
           </div>
-          <div className={styles.grid5} />
+          <div className={styles.grid15} />
           <div className={styles.grid9}>
             <img
               src="/images/kalitniki/research6.avif"
@@ -279,14 +279,14 @@ export default function Page() {
               alt="Исследования"
             />
           </div>
-          <div className={styles.grid1} />
+          {/* <div className={styles.grid1} />
           <div className={styles.grid9}>
             <img
               src="/images/kalitniki/research7.avif"
               width="100%"
               alt="Исследования"
             />
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -450,11 +450,11 @@ export default function Page() {
               </ul>
             </span>
 
-            <img
+            {/* <img
               src="/images/kalitniki/ready.avif"
               width="100%"
               alt="Исследования"
-            />
+            /> */}
 
             <span>
               <div className={styles.projectSubHeader}>
@@ -563,11 +563,11 @@ export default function Page() {
               </ul>
             </span>
 
-            <img
+            {/* <img
               src="/images/kalitniki/concept.avif"
               width="100%"
               alt="Исследования"
-            />
+            /> */}
 
             <span>
               <div className={styles.projectSubHeader}>

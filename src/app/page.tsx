@@ -343,7 +343,7 @@ export default function Home() {
             <span>
               <div className={styles.projectSubHeader}>[Бизнес-задача]</div>
               <Typograph>
-                Сохранить аудиторию приложения Uncle VPN после блокировки в в
+                Сохранить аудиторию приложения Uncle VPN после блокировки в
                 Google Play / AppStore
               </Typograph>
             </span>
@@ -496,6 +496,13 @@ export default function Home() {
           <div className={styles.grid1} />
           <div className={styles.grid7}>
             <img src="/images/sber/sber1.webp" width="100%" alt="SberJazz" />
+            <div style={{ marginTop: "1vh" }}>
+              <Typograph>
+                Проект под NDA, ссылки и скриншоты недоступны, подробнее
+                расскажу на собеседовании
+              </Typograph>
+            </div>
+
             <Link
               href={`/projects/${getProject("SberJazz").slug}`}
               className={styles.projectLink}
@@ -619,7 +626,7 @@ export default function Home() {
             </h2>
           </div>
         </div>
-        <div className={styles.pageGrid}>
+        <div className={clsx(styles.pageGrid, styles.britanka)}>
           <div className={styles.grid5} />
           <div className={styles.grid13}>
             <img src="/images/home/bri1.avif" width="100%" alt="Британка" />
@@ -627,7 +634,9 @@ export default function Home() {
         </div>
         <div className={clsx(styles.pageGrid, styles.commonSection)}>
           <div className={styles.grid5} />
-          <div className={styles.grid6}>Мой любимый универ:)</div>
+          <div className={clsx(styles.grid6, styles.mobileHidden)}>
+            Мой любимый универ:)
+          </div>
           <div className={styles.grid7}>
             <div className={styles.commonSectionBlock}>
               <span className={styles.commonSectionSchool}>
@@ -683,7 +692,7 @@ export default function Home() {
 
         <div className={clsx(styles.pageGrid, styles.commonSection)}>
           <div className={styles.grid5} />
-          <div className={clsx(styles.grid6, styles.secondColor)}>[01]</div>
+          <div className={styles.grid6}>[01]</div>
           <div className={styles.grid5}>
             <div className={styles.commonSectionBlock}>
               <h2 className={clsx(styles.h2, styles.subsection)}>
@@ -714,7 +723,7 @@ export default function Home() {
 
         <div className={clsx(styles.pageGrid, styles.commonSection)}>
           <div className={styles.grid5} />
-          <div className={clsx(styles.grid6, styles.secondColor)}>[02]</div>
+          <div className={styles.grid6}>[02]</div>
           <div className={styles.grid5}>
             <div className={styles.commonSectionBlock}>
               <h2 className={clsx(styles.h2, styles.subsection)}>
@@ -747,7 +756,7 @@ export default function Home() {
 
         <div className={clsx(styles.pageGrid, styles.commonSection)}>
           <div className={styles.grid5} />
-          <div className={clsx(styles.grid6, styles.secondColor)}>[03]</div>
+          <div className={styles.grid6}>[03]</div>
           <div className={styles.grid5}>
             <div className={styles.commonSectionBlock}>
               <h2 className={clsx(styles.h2, styles.subsection)}>
@@ -880,10 +889,9 @@ export default function Home() {
               Сейчас я ментор в BHSAD, помогаю дизайнерам на разных этапах их
               роста,
             </Typograph>{" "}
+            для{" "}меня{" "}
             <span className={styles.secondColor}>
-              <Typograph>
-                для меня это захватывающий опыт и новый скилл
-              </Typograph>
+              <Typograph>это захватывающий опыт и новый скилл</Typograph>
             </span>
           </div>
         </div>
