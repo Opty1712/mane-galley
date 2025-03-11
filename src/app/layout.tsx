@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         alt: "Наталья, продуктовый дизайнер, UX/UI дизайнер",
       },
     ],
-    siteName: "Notion",
+    siteName: "ManeGallery",
     locale: "ru_RU",
   },
   twitter: {
