@@ -1,10 +1,15 @@
 "use client";
 
 import { clsx } from "clsx";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { checkIsMobile, projects, useScrollDirection } from "../utils";
+import {
+  checkIsMobile,
+  projects,
+  scrollToSection,
+  useScrollDirection,
+} from "../utils";
 import styles from "./Sidebar.module.css";
 
 export const Sidebar = () => {
@@ -34,12 +39,6 @@ export const Sidebar = () => {
   }, []);
 
   useEffect(() => {
-    if (!window.location.hash) {
-      window.scrollTo(0, 0);
-    }
-  }, [pathname]);
-
-  useEffect(() => {
     window.addEventListener("scroll", animate);
 
     return () => window.removeEventListener("scroll", animate);
@@ -53,6 +52,15 @@ export const Sidebar = () => {
   const isMainPage = pathname === "/";
   const mainHref = isMainPage ? "#content" : "/";
 
+  const logo = (
+    <img
+      src="/images/logo.svg"
+      width={31}
+      height={26}
+      alt="Лого Манаткина Наталья"
+    />
+  );
+
   return (
     <>
       <div
@@ -61,14 +69,21 @@ export const Sidebar = () => {
           isScrollDown && scrollTop && styles.hidden
         )}
       >
-        <Link href={mainHref} className={styles.logoMobile}>
-          <img
-            src="/images/logo.svg"
-            width={31}
-            height={26}
-            alt="Лого Манаткина Наталья"
-          />
-        </Link>
+        {isMainPage ? (
+          <a
+            className={styles.logoMobile}
+            onClick={(event) => {
+              event.preventDefault();
+              scrollToSection("#content");
+            }}
+          >
+            {logo}
+          </a>
+        ) : (
+          <Link href={mainHref} className={styles.logoMobile}>
+            {logo}
+          </Link>
+        )}
 
         <span className={styles.headerIcon}>
           <Link href={mainHref} className={styles.headerName}>

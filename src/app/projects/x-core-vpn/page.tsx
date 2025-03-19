@@ -1,6 +1,6 @@
 "use client";
 import { clsx } from "clsx";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 import { BottomNav, Typograph } from "../../../components";
 import styles from "../../../styles.module.css";
 

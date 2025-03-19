@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ViewTransitions } from "next-view-transitions";
 import Head from "next/head";
 import { FC } from "react";
 import { Footer, Sidebar } from "../components";
@@ -52,23 +53,25 @@ type RootLayoutProps = {
 
 const RootLayout: FC<RootLayoutProps> = ({ children }) => {
   return (
-    <html lang="ru">
-      <Head>
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, height=device-height, initial-scale=1, viewport-fit=cover"
-        />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-      </Head>
-      <body id="top">
-        <Sidebar />
-        <main className={styles.main} id="content">
-          {children}
-          <Footer />
-        </main>
-      </body>
-    </html>
+    <ViewTransitions>
+      <html lang="ru">
+        <Head>
+          <meta charSet="utf-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, height=device-height, initial-scale=1, viewport-fit=cover"
+          />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+        </Head>
+        <body id="top">
+          <Sidebar />
+          <main className={styles.main} id="content">
+            {children}
+            <Footer />
+          </main>
+        </body>
+      </html>
+    </ViewTransitions>
   );
 };
 

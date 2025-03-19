@@ -1,7 +1,7 @@
 "use client";
 import { clsx } from "clsx";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { Link, useTransitionRouter } from "next-view-transitions";
+
 import {
   BottomNav,
   PortfolioLink,
@@ -12,7 +12,7 @@ import styles from "../styles.module.css";
 import { checkIsMobile, getProject } from "../utils";
 
 export default function Home() {
-  const { push } = useRouter();
+  const { push } = useTransitionRouter();
   const isMobile = checkIsMobile();
 
   return (
