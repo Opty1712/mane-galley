@@ -50,13 +50,21 @@ export const Sidebar = () => {
   };
 
   const isMainPage = pathname === "/";
-  const mainHref = isMainPage ? "#content" : "/";
 
-  const logo = (
+  const logoMobile = (
     <img
       src="/images/logo.svg"
       width={31}
       height={26}
+      alt="Лого Манаткина Наталья"
+    />
+  );
+
+  const logoDesktop = (
+    <img
+      src="/images/logo.svg"
+      width={77}
+      height={70}
       alt="Лого Манаткина Наталья"
     />
   );
@@ -74,21 +82,34 @@ export const Sidebar = () => {
             className={styles.logoMobile}
             onClick={(event) => {
               event.preventDefault();
-              scrollToSection("#content");
+              scrollToSection("top");
             }}
           >
-            {logo}
+            {logoMobile}
           </a>
         ) : (
-          <Link href={mainHref} className={styles.logoMobile}>
-            {logo}
+          <Link href="/" className={styles.logoMobile}>
+            {logoMobile}
           </Link>
         )}
 
         <span className={styles.headerIcon}>
-          <Link href={mainHref} className={styles.headerName}>
-            Наталья
-          </Link>
+          {isMainPage ? (
+            <a
+              className={styles.headerName}
+              onClick={(event) => {
+                event.preventDefault();
+                scrollToSection("top");
+              }}
+            >
+              Наталья
+            </a>
+          ) : (
+            <Link href="/" className={styles.headerName}>
+              Наталья
+            </Link>
+          )}
+
           <a
             href="https://t.me/NatalyMane"
             target="_blank"
@@ -130,18 +151,27 @@ export const Sidebar = () => {
         }`}
       >
         <span className={styles.sidebarContent}>
-          <Link
-            href={mainHref}
-            className={styles.logo}
-            title="Вернуться на главную страницу"
-          >
-            <img
-              src="/images/logo.svg"
-              width={77}
-              height={70}
-              alt="Лого Манаткина Наталья"
-            />
-          </Link>
+          {isMainPage ? (
+            <a
+              className={styles.logo}
+              onClick={(event) => {
+                event.preventDefault();
+                scrollToSection("top");
+              }}
+              title="Вернуться наверх"
+            >
+              {logoDesktop}
+            </a>
+          ) : (
+            <Link
+              href="/"
+              className={styles.logo}
+              title="Вернуться на главную страницу"
+            >
+              {logoDesktop}
+            </Link>
+          )}
+
           <nav className={styles.nav}>
             <div className={styles.menuTitle}>Проекты [06]</div>
 

@@ -584,40 +584,40 @@ export default function Page() {
                   в мобильное приложение, где за минуту, проделав всего
                   несколько шагов, он получает продукт и вечер под ключ:
                 </Typograph>
-                <ul className={styles.projectNumber}>
-                  <li>
-                    <Typograph>Выбирает уютный столик по схеме зала</Typograph>
-                  </li>
-                  <li>
-                    <Typograph>
-                      Смотрит расписание парений и решает, что самый кайф - это
-                      придти в 19.15
-                    </Typograph>
-                  </li>
-                  <li>
-                    <Typograph>
-                      Он заходит в меню и к этому времени выбирает свежее пиво,
-                      креветки и барабульку. А к 19.45 — еще пару пива и шашлык!
-                    </Typograph>
-                  </li>
-                  <li>
-                    <Typograph>
-                      Заглядывает в раздел парений и бронирует банные процедуры
-                    </Typograph>
-                  </li>
-                  <li>
-                    <Typograph>
-                      Так как домой он заехать не успеет, то покупает шапку и
-                      арендует халат с тапочками
-                    </Typograph>
-                  </li>
-                  <li>
-                    <Typograph>
-                      Сразу всё это оплачивает и получает QR-код
-                    </Typograph>
-                  </li>
-                </ul>
               </p>
+              <ul className={styles.projectNumber}>
+                <li>
+                  <Typograph>Выбирает уютный столик по схеме зала</Typograph>
+                </li>
+                <li>
+                  <Typograph>
+                    Смотрит расписание парений и решает, что самый кайф - это
+                    придти в 19.15
+                  </Typograph>
+                </li>
+                <li>
+                  <Typograph>
+                    Он заходит в меню и к этому времени выбирает свежее пиво,
+                    креветки и барабульку. А к 19.45 — еще пару пива и шашлык!
+                  </Typograph>
+                </li>
+                <li>
+                  <Typograph>
+                    Заглядывает в раздел парений и бронирует банные процедуры
+                  </Typograph>
+                </li>
+                <li>
+                  <Typograph>
+                    Так как домой он заехать не успеет, то покупает шапку и
+                    арендует халат с тапочками
+                  </Typograph>
+                </li>
+                <li>
+                  <Typograph>
+                    Сразу всё это оплачивает и получает QR-код
+                  </Typograph>
+                </li>
+              </ul>
               <p>
                 <Typograph>
                   Василий с другом заходит в 19.15 в баню, показывает QR-код на
@@ -648,9 +648,7 @@ export default function Page() {
                 alt="Дизайн система"
               />
             </p>
-            <p>
-              <div className={styles.projectSubHeader}>[UI-kit]</div>
-            </p>
+            <p className={styles.projectSubHeader}>[UI-kit]</p>
             <p>
               <img
                 src="/images/kalitniki/ui-kit.avif"
@@ -658,9 +656,7 @@ export default function Page() {
                 alt="UI-kit"
               />
             </p>
-            <p>
-              <div className={styles.projectSubHeader}>[Макет]</div>
-            </p>
+            <p className={styles.projectSubHeader}>[Макет]</p>
             <p>
               <img
                 src="/images/kalitniki/kalitniki1.avif"
