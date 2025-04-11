@@ -2,8 +2,11 @@
 import styles from "../styles.module.css";
 import { scrollToSection } from "../utils";
 
-export const PortfolioLink = () => (
-  <a className={styles.scrollDown} onClick={() => scrollToSection("projects")}>
-    Смотреть портфолио ↓
+export const PortfolioLink = ({
+  text = "Смотреть портфолио",
+  section = "projects",
+}) => (
+  <a className={styles.scrollDown} onClick={() => scrollToSection(section)}>
+    {text} ↓
   </a>
 );

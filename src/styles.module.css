@@ -23,7 +23,12 @@
   width: min-content;
   white-space: nowrap;
   line-height: 100%;
+  transform: translateX(-3px);
   margin: 0;
+
+  @media (max-width: 1000px) {
+    transform: translateX(0);
+  }
 }
 
 .h2 {
@@ -164,8 +169,10 @@
 }
 
 .scrollDown {
+  text-decoration: none;
+  color: var(--main-color);
+  display: inline-block;
   margin: 6vh 0 6vh 0;
-  display: block;
   cursor: pointer;
   font-size: clamp(16px, 1.3vw, 20px);
   will-change: color;
@@ -463,6 +470,10 @@
 .nextProject {
   margin: 5vh 0;
   text-align: right;
+
+  @media (max-width: 1000px) {
+    margin: 10vh 0 0 0;
+  }
 }
 
 .secondColor {
@@ -504,6 +515,15 @@
 
 .britanka {
   margin-bottom: 1vh;
+
+  @media (max-width: 1000px) {
+    margin-bottom: 0;
+  }
+}
+
+.aboutLink.aboutLink {
+  display: inline-block;
+  margin-top: 10px;
 
   @media (max-width: 1000px) {
     margin-bottom: 0;

@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import { scrollToSection } from "../utils";
 import styles from "./ScrollToTop.module.css";
 export const ScrollToTop = () => {
   const ref = useRef<HTMLAnchorElement>(null);
@@ -42,6 +43,10 @@ export const ScrollToTop = () => {
       className={styles.backToTop}
       title="Прокрутить наверх"
       ref={ref}
+      onClick={(event) => {
+        event.preventDefault();
+        scrollToSection("top");
+      }}
     >
       <span className={styles.backToTopInner}>Прокрутить наверх</span>
     </a>
