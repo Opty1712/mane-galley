@@ -173,6 +173,8 @@ export const Sidebar = () => {
           )}
 
           <nav className={styles.nav}>
+            <div className={styles.menuTitle}>Проекты [06]</div>
+
             {projects.map((project) => (
               <Link
                 key={project.slug}
@@ -187,18 +189,6 @@ export const Sidebar = () => {
               </Link>
             ))}
           </nav>
-
-          <Link
-            href={`/about`}
-            className={clsx(
-              styles.menuItem,
-              pathname.includes("/about") && styles.active
-            )}
-            onClick={toggleMobileMenu}
-          >
-            Обо мне
-          </Link>
-
           <span className={styles.links}>
             <a
               href="/Manatkina_Natalia__Product_Designer.pdf"
