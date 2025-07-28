@@ -41,7 +41,7 @@ jobs:
         env:
           AWS_S3_BUCKET: mane.gallery
           AWS_ACCESS_KEY_ID: ${{ secrets.VK_ACCESS_KEY }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.VK_SECRET_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: 'ru-msk'
           AWS_S3_ENDPOINT: 'https://s3.ru-msk.vkcs.cloud'
           SOURCE_DIR: out
