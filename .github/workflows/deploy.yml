@@ -42,6 +42,5 @@ jobs:
           AWS_S3_BUCKET: mane.gallery
           AWS_ACCESS_KEY_ID: ${{ secrets.VK_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.VK_SECRET_KEY }}
-          AWS_REGION: ru-msk
           AWS_S3_ENDPOINT: https://hb.ru-msk.vkcloud-storage.ru
           SOURCE_DIR: out
