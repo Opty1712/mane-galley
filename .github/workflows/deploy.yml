@@ -1,0 +1,36 @@
+name: Deploy to Yandex Object Storage
+
+on:
+  push:
+    branches:
+      - main  # или твоя основная ветка
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: 📦 Install dependencies
+        run: npm ci
+
+      - name: 🔨 Build project
+        run: npm run build
+
+      - name: 📤 Upload to Yandex Object Storage
+        uses: shallwefootball/s3-upload-action@master
+        with:
+          aws_key_id: ${{ secrets.YC_S3_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.YC_S3_SECRET_ACCESS_KEY }}
+          bucket: mane.gallery
+          region: ru-central1
+          source_dir: dist
+          destination_dir: /
+          endpoint: https://storage.yandexcloud.net
