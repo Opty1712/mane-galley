@@ -31,5 +31,5 @@ jobs:
           aws_secret_access_key: ${{ secrets.YC_S3_SECRET_ACCESS_KEY }}
           aws_bucket: mane.gallery
           source_dir: out
-          destination_dir: /
+          destination_dir: ''
           endpoint: https://storage.yandexcloud.net
