@@ -29,8 +29,7 @@ jobs:
         with:
           aws_key_id: ${{ secrets.YC_S3_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.YC_S3_SECRET_ACCESS_KEY }}
-          bucket: mane.gallery
-          region: ru-central1
-          source_dir: dist
+          aws_bucket: mane.gallery
+          source_dir: out
           destination_dir: /
           endpoint: https://storage.yandexcloud.net
