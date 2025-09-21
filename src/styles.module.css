@@ -429,6 +429,7 @@
   position: relative;
   will-change: color;
   transition: color 0.3s ease;
+  width: fit-content;
 
   &::after {
     content: "";
@@ -528,4 +529,8 @@
   @media (max-width: 1000px) {
     margin-bottom: 0;
   }
+}
+
+.nowrap {
+  white-space: nowrap;
 }

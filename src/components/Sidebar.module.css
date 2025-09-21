@@ -119,8 +119,9 @@
   text-decoration: none;
   will-change: color;
   transition: color 0.3s;
+  cursor: pointer;
 
-  &a:hover {
+  &:hover {
     color: var(--accent-color);
   }
 

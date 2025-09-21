@@ -14,7 +14,16 @@ export default function Page() {
             <div className={styles.date}>Февраль — Март 2024</div>
           </div>
           <div className={styles.grid3} />
-          <div className={styles.grid2} />
+          <div className={clsx(styles.grid2, styles.stores, styles.nowrap)}>
+            <a
+              href="https://sport.mos.ru/"
+              target="_blank"
+              rel="noopener  noreferrer"
+              className={clsx(styles.link)}
+            >
+              sport.mos.ru
+            </a>
+          </div>
         </div>
         <div className={styles.pageGrid}>
           <div className={styles.grid11} />

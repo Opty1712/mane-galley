@@ -173,7 +173,21 @@ export const Sidebar = () => {
           )}
 
           <nav className={styles.nav}>
-            <div className={styles.menuTitle}>Проекты [06]</div>
+            {isMainPage ? (
+              <a
+                className={styles.menuTitle}
+                onClick={(event) => {
+                  event.preventDefault();
+                  scrollToSection("projects");
+                }}
+              >
+                Проекты [06]
+              </a>
+            ) : (
+              <Link href="/#projects" className={styles.menuTitle}>
+                Проекты [06]
+              </Link>
+            )}
 
             {projects.map((project) => (
               <Link

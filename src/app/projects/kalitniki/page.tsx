@@ -13,6 +13,17 @@ export default function Page() {
             <h1 className={styles.h1}>Калитники</h1>
             <div className={styles.date}>Апрель 2023 — Февраль 2025</div>
           </div>
+          <div className={styles.grid3} />
+          <div className={clsx(styles.grid2, styles.stores)}>
+            <a
+              href="https://kalitniki.vercel.app/"
+              target="_blank"
+              className={clsx(styles.link, styles.nowrap)}
+              rel="noopener  noreferrer"
+            >
+              Демо-сайт (в работе)
+            </a>
+          </div>
         </div>
         <div className={styles.pageGrid}>
           <div className={styles.grid11} />
@@ -207,13 +218,13 @@ export default function Page() {
                 </li>
                 <li>
                   <Typograph>
-                    Ставлю задачу программисту на разработку сайта, провожу
-                    дизайн-ревью
+                    Ставлю задачу программисту на разработку сайта
                   </Typograph>
                 </li>
                 <li>
                   <Typograph>
-                    На текущий момент я как раз здесь, в будущем дополню)
+                    Контролирую разработку и провожу дизайн-ревью. На текущий
+                    момент я здесь, в будущем дополню!
                   </Typograph>
                 </li>
               </ul>
@@ -656,10 +667,33 @@ export default function Page() {
                 alt="UI-kit"
               />
             </p>
-            <p className={styles.projectSubHeader}>[Макет]</p>
+          </div>
+          <div className={styles.grid5} />
+          <div className={styles.grid11}>
+            <p className={styles.projectSubHeader}>[Десктоп]</p>
             <p>
               <img
-                src="/images/kalitniki/kalitniki1.avif"
+                src="/images/kalitniki/1440.avif"
+                width="100%"
+                alt="Макет Калитников"
+              />
+            </p>
+          </div>
+          <div className={styles.grid5}>
+            <p className={styles.projectSubHeader}>[Планшет]</p>
+            <p>
+              <img
+                src="/images/kalitniki/768.avif"
+                width="100%"
+                alt="Макет Калитников"
+              />
+            </p>
+          </div>
+          <div className={styles.grid3}>
+            <p className={styles.projectSubHeader}>[Мобилка]</p>
+            <p>
+              <img
+                src="/images/kalitniki/375.avif"
                 width="100%"
                 alt="Макет Калитников"
               />

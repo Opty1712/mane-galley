@@ -1,13 +1,13 @@
 export const projects = [
-  { title: "Mos.ru", slug: "mos-ru-sport" },
-  { title: "UncleVPN", slug: "uncle-vpn" },
   { title: "Калитники", slug: "kalitniki" },
+  { title: "UncleVPN", slug: "uncle-vpn" },
+  { title: "Mos.ru", slug: "mos-ru-sport" },
   { title: "xCore VPN", slug: "x-core-vpn" },
   { title: "Supra", slug: "supra" },
   { title: "SberJazz", slug: "sber-jazz" },
 ] as const;
 
-type Project = (typeof projects)[number];
+export type Project = (typeof projects)[number];
 
 export const getProject = (title: Project["title"]) => {
   const index = projects.findIndex((project) => project.title === title);

@@ -7,6 +7,7 @@ export {
   getProject,
   projects,
 } from "./projects";
+export type { Project } from "./projects";
 export { scrollToSection } from "./scrollToSection";
 export { typogrpah } from "./typogrpah";
 export { useScrollDirection } from "./useScrollDirection";
