@@ -1,5 +1,0 @@
-RewriteEngine On
-
-# Редирект www → https://manedigital.ru
-RewriteCond %{HTTP_HOST} ^www\.manedigital\.ru$ [NC]
-RewriteRule ^(.*)$ https://manedigital.ru/$1 [R=301,L]
