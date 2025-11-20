@@ -12,15 +12,27 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Use Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
+          cache: 'npm' # встроенное кеширование npm (по lock-файлу)
 
-      - name: Install deps
+      # Дополнительный кеш для build/next
+      - name: Cache Next.js build
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.npm
+            .next/cache
+          key: ${{ runner.os }}-next-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-next-
+
+      - name: Install dependencies
         run: npm ci
 
-      - name: Build static
+      - name: Build static site
         run: |
           npm run build
 
