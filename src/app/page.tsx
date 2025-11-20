@@ -19,6 +19,7 @@ export default function Home() {
   const ProjectsContent: Record<Project["slug"], JSX.Element> = {
     "mos-ru-sport": (
       <div
+        key="mos-ru-sport"
         className={clsx(styles.pageGrid, styles.project, styles.interactive)}
         title="Смотреть кейс"
         onClick={() =>
@@ -94,6 +95,7 @@ export default function Home() {
     ),
     "sber-jazz": (
       <div
+        key="sber-jazz"
         className={clsx(styles.pageGrid, styles.project, styles.interactive)}
         title="Смотреть кейс"
         onClick={() =>
@@ -166,6 +168,7 @@ export default function Home() {
     ),
     "uncle-vpn": (
       <div
+        key="uncle-vpn"
         className={clsx(styles.pageGrid, styles.project, styles.interactive)}
         title="Смотреть кейс"
         onClick={() =>
@@ -248,6 +251,7 @@ export default function Home() {
     ),
     "x-core-vpn": (
       <div
+        key="x-core-vpn"
         className={clsx(styles.pageGrid, styles.project, styles.interactive)}
         title="Смотреть кейс"
         onClick={() =>
@@ -315,6 +319,7 @@ export default function Home() {
     ),
     kalitniki: (
       <div
+        key="kalitniki"
         className={clsx(styles.pageGrid, styles.project, styles.interactive)}
         title="Смотреть кейс"
         onClick={() =>
@@ -388,6 +393,7 @@ export default function Home() {
     ),
     supra: (
       <div
+        key="supra"
         className={clsx(styles.pageGrid, styles.project, styles.interactive)}
         title="Смотреть кейс"
         onClick={() =>
