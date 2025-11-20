@@ -20,14 +20,14 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
     other: [{ rel: "manifest", url: "/site.webmanifest" }],
   },
-  metadataBase: new URL("https://www.mane.gallery/"),
+  metadataBase: new URL("https://www.manedigital.ru/"),
   title: "Наталья, продуктовый дизайнер, UX/UI дизайнер",
   description: "Резюме и портфолио Натальи, UX/UI дизайнер",
   openGraph: {
     type: "website",
     title: "Наталья, продуктовый дизайнер, UX/UI дизайнер",
     description: "Наталья, продуктовый дизайнер, UX/UI дизайнер",
-    url: "https://www.mane.gallery/",
+    url: "https://www.manedigital.ru/",
     images: [
       {
         url: "/images/me_small.webp",
@@ -36,12 +36,12 @@ export const metadata: Metadata = {
         alt: "Наталья, продуктовый дизайнер, UX/UI дизайнер",
       },
     ],
-    siteName: "ManeGallery",
+    siteName: "ManeDigital",
     locale: "ru_RU",
   },
   twitter: {
     card: "summary_large_image",
-    site: "https://www.mane.gallery/",
+    site: "https://www.manedigital.ru/",
     description: "Наталья, продуктовый дизайнер, UX/UI дизайнер",
     images: ["/images/me_small.webp"],
   },

@@ -5,7 +5,7 @@ import { copyToClipboard } from "../utils";
 export const FooterCopy = () => (
   <div
     className={styles.commonSectionBlock}
-    onClick={() => copyToClipboard("https://mane.gallery")}
+    onClick={() => copyToClipboard("https://manedigital.ru")}
     style={{
       cursor: "pointer",
       width: "min-content",
@@ -14,6 +14,6 @@ export const FooterCopy = () => (
     title="Скопировать адрес сайта в буфер обмена"
   >
     <span className={styles.contactSections}>[Скопировать]</span>
-    <span>www.mane.gallery</span>
+    <span>www.manedigital.ru</span>
   </div>
 );
