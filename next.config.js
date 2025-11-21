@@ -5,6 +5,7 @@ const nextConfig = {
     ignoreDuringBuilds: false,
   },
   images: { unoptimized: true },
+  trailingSlash: true,
   // experimental: {
   //   viewTransition: true,
   // },
