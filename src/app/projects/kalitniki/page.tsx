@@ -11,7 +11,7 @@ export default function Page() {
           <div className={styles.grid5} />
           <div className={styles.grid14}>
             <h1 className={styles.h1}>Калитники</h1>
-            <div className={styles.date}>Апрель 2023 — Февраль 2025</div>
+            <div className={styles.date}>Апрель 2024 — наст. вр.</div>
           </div>
           <div className={styles.grid3} />
           <div className={clsx(styles.grid2, styles.stores)}>
@@ -250,54 +250,6 @@ export default function Page() {
               alt="Исследования"
             />
           </div>
-          {/* <div className={styles.grid5} />
-          <div className={styles.grid9}>
-            <img
-              src="/images/kalitniki/research2.avif"
-              width="100%"
-              alt="Исследования"
-            />
-          </div>
-          <div className={styles.grid1} />
-          <div className={styles.grid9}>
-            <img
-              src="/images/kalitniki/research3.avif"
-              width="100%"
-              alt="Исследования"
-            />
-          </div> */}
-          <div className={styles.grid5} />
-          <div className={styles.grid9}>
-            <img
-              src="/images/kalitniki/research4.avif"
-              width="100%"
-              alt="Исследования"
-            />
-          </div>
-          <div className={styles.grid1} />
-          <div className={styles.grid9}>
-            <img
-              src="/images/kalitniki/research5.avif"
-              width="100%"
-              alt="Исследования"
-            />
-          </div>
-          <div className={styles.grid15} />
-          <div className={styles.grid9}>
-            <img
-              src="/images/kalitniki/research6.avif"
-              width="100%"
-              alt="Исследования"
-            />
-          </div>
-          {/* <div className={styles.grid1} />
-          <div className={styles.grid9}>
-            <img
-              src="/images/kalitniki/research7.avif"
-              width="100%"
-              alt="Исследования"
-            />
-          </div> */}
         </div>
       </section>
 
