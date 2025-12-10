@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { ViewTransitions } from "next-view-transitions";
 import Head from "next/head";
-import Script from "next/script";
 import { FC } from "react";
-import { Footer, Sidebar } from "../components";
+import { Footer, Sidebar, YandexMetrika } from "../components";
 import "../globals.css";
 import styles from "../styles.module.css";
 
@@ -65,41 +64,7 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => {
           <meta name="apple-mobile-web-app-capable" content="yes" />
         </Head>
         <body id="top">
-          <Script
-            id="yandex-metrika"
-            strategy="afterInteractive" // не ломает Lighthouse
-            dangerouslySetInnerHTML={{
-              __html: `
-              (function(m,e,t,r,i,k,a){
-                  m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-                  m[i].l=1*new Date();
-                  for (var j = 0; j < document.scripts.length; j++) {
-                    if (document.scripts[j].src === r) { return; }
-                  }
-                  k=e.createElement(t),a=e.getElementsByTagName(t)[0];
-                  k.async=1;k.src=r;a.parentNode.insertBefore(k,a)
-              })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=105426640', 'ym');
-
-              ym(105426640, 'init', {
-                ssr:true,
-                webvisor:true,
-                clickmap:true,
-                ecommerce:"dataLayer",
-                accurateTrackBounce:true,
-                trackLinks:true
-              });
-            `,
-            }}
-          />
-          <noscript>
-            <div>
-              <img
-                src="https://mc.yandex.ru/watch/105426640"
-                style={{ position: "absolute", left: "-9999px" }}
-                alt=""
-              />
-            </div>
-          </noscript>
+          <YandexMetrika />
           <Sidebar />
           <main className={styles.main} id="content">
             {children}
