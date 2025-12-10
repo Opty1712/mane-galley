@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import Script from "next/script";
-import { useEffect, useMemo, useRef } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
+import Script from "next/script";
+import { Suspense, useEffect, useMemo, useRef } from "react";
 
 const METRIKA_ID = 105426640;
 const INIT_EVENT = `yacounter${METRIKA_ID}inited`;
@@ -28,7 +28,7 @@ const buildUrl = (
   return `${origin}${url}`;
 };
 
-export const YandexMetrika = () => {
+const YandexMetrikaInner = () => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const previousUrl = useRef<string | null>(
@@ -116,3 +116,9 @@ export const YandexMetrika = () => {
     </>
   );
 };
+
+export const YandexMetrika = () => (
+  <Suspense fallback={null}>
+    <YandexMetrikaInner />
+  </Suspense>
+);
