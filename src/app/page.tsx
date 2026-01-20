@@ -472,7 +472,7 @@ export default function Home() {
               <br />
               Designer
             </h1>
-            <div className={styles.date}>2021 — 2025</div>
+            <div className={styles.date}>2021 — {new Date().getFullYear()}</div>
           </div>
           <div className={styles.grid2} />
           <div className={styles.grid3}>
