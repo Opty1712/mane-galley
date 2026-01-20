@@ -15,14 +15,17 @@ export default function Page() {
           </div>
           <div className={styles.grid3} />
           <div className={clsx(styles.grid2, styles.stores)}>
-            <a
-              href="https://kalitniki.vercel.app/"
-              target="_blank"
-              className={clsx(styles.link, styles.nowrap)}
-              rel="noopener  noreferrer"
-            >
-              Демо-сайт (в работе)
-            </a>
+            <div>
+              Прод →{" "}
+              <a
+                href="https://kalitniki.com/"
+                target="_blank"
+                className={clsx(styles.link, styles.nowrap)}
+                rel="noopener  noreferrer"
+              >
+                kalitniki.com
+              </a>
+            </div>
           </div>
         </div>
         <div className={styles.pageGrid}>
@@ -49,7 +52,7 @@ export default function Page() {
             className={clsx(
               styles.grid13,
               styles.projectCell,
-              styles.projectDescription
+              styles.projectDescription,
             )}
           >
             <h2 className={styles.h2}>Задача</h2>
@@ -109,7 +112,7 @@ export default function Page() {
             className={clsx(
               styles.grid13,
               styles.projectCell,
-              styles.projectDescription
+              styles.projectDescription,
             )}
           >
             <h2 className={styles.h2}>Этапы работы</h2>
@@ -240,7 +243,7 @@ export default function Page() {
             className={clsx(
               styles.grid19,
               styles.projectCell,
-              styles.projectDescription
+              styles.projectDescription,
             )}
           >
             <h2 className={styles.h2}>Исследования</h2>
@@ -260,7 +263,7 @@ export default function Page() {
             className={clsx(
               styles.grid9,
               styles.projectCell,
-              styles.projectDescription
+              styles.projectDescription,
             )}
           >
             <h2 className={styles.h2}>Результаты</h2>

@@ -76,11 +76,13 @@ export const Footer = () => {
         className={clsx(
           styles.pageGrid,
           styles.footerText,
-          styles.commonSection
+          styles.commonSection,
         )}
       >
         <div className={styles.grid5} />
-        <div className={clsx(styles.grid6)}>©2025 Манаткина Наталья</div>
+        <div className={clsx(styles.grid6)}>
+          © Манаткина Наталья, {new Date().getFullYear()}
+        </div>
         <div className={clsx(styles.grid13)}>
           <Typograph>
             Контент предназначен исключительно для личного использования и
@@ -92,7 +94,7 @@ export const Footer = () => {
         className={clsx(
           styles.pageGrid,
           styles.footerText,
-          styles.commonSection
+          styles.commonSection,
         )}
       >
         <div className={styles.grid5} />

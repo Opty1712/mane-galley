@@ -44,7 +44,7 @@ export default function Home() {
           className={clsx(
             styles.grid5,
             styles.projectCell,
-            styles.projectDescription
+            styles.projectDescription,
           )}
         >
           <span className={styles.projectLine}>
@@ -121,7 +121,7 @@ export default function Home() {
           className={clsx(
             styles.grid5,
             styles.projectCell,
-            styles.projectDescription
+            styles.projectDescription,
           )}
         >
           <span className={styles.projectLine}>
@@ -193,7 +193,7 @@ export default function Home() {
           className={clsx(
             styles.grid5,
             styles.projectCell,
-            styles.projectDescription
+            styles.projectDescription,
           )}
         >
           <span className={styles.projectLine}>
@@ -276,7 +276,7 @@ export default function Home() {
           className={clsx(
             styles.grid5,
             styles.projectCell,
-            styles.projectDescription
+            styles.projectDescription,
           )}
         >
           <span className={styles.projectLine}>
@@ -333,7 +333,7 @@ export default function Home() {
               Калитники
             </Link>
           </div>
-          <div className={styles.projectDate}>Апрель 2023 — Февраль 2025</div>
+          <div className={styles.projectDate}>Апрель 2023 — Январь 2026</div>
           <div>
             <span className={styles.projectBadge}>UX/UI</span>
             <span className={styles.projectBadge}>Web</span>
@@ -344,7 +344,7 @@ export default function Home() {
           className={clsx(
             styles.grid5,
             styles.projectCell,
-            styles.projectDescription
+            styles.projectDescription,
           )}
         >
           <span className={styles.projectLine}>
@@ -417,7 +417,7 @@ export default function Home() {
           className={clsx(
             styles.grid5,
             styles.projectCell,
-            styles.projectDescription
+            styles.projectDescription,
           )}
         >
           <span className={styles.projectLine}>
@@ -837,7 +837,7 @@ export default function Home() {
             styles.pageGrid,
             styles.commonSection,
             styles.summaryStages,
-            styles.job
+            styles.job,
           )}
         >
           <div className={styles.grid5} />
