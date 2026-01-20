@@ -1,5 +1,4 @@
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
+module.exports = {
   siteUrl: "https://manedigital.ru",
   generateRobotsTxt: true,
   robotsTxtOptions: {
